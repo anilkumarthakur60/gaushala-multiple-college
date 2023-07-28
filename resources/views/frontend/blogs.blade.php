@@ -50,7 +50,8 @@
                         <h3 class="text-uppercase mb-4" style="letter-spacing: 5px;">Recent Posts</h3>
 
                         @foreach($recentBlogs as $r)
-                            <a class="d-flex align-items-center text-decoration-none mb-3" href="{{route('frontend.blogs.detail',$r->slug)}}">
+                            <a class="d-flex align-items-center text-decoration-none mb-3"
+                               href="{{route('frontend.blogs.detail',$r->slug)}}">
                                 <img class="img-fluid rounded" src="{{asset('frontend/img/blog-80x80.jpg')}}" alt="">
                                 <div class="pl-3">
                                     <h6 class="m-1">{{$r->name}}</h6>
@@ -60,6 +61,16 @@
                                 </div>
                             </a>
                         @endforeach
+                    </div>
+                    <div class="mb-5">
+                        <h3 class="text-uppercase mb-4" style="letter-spacing: 5px;">Tag</h3>
+                        <div class="d-flex flex-wrap m-n1">
+                            @foreach($tags as $tag)
+                                <a href="{{route('frontend.blogs').'?tag='.$tag}}" class="btn btn-outline-primary m-1 {{request()->query('tag')===$tag?'btn-primary text-white':'btn-outline-primary'}} ">
+                                    {{$tag}}
+                                </a>
+                            @endforeach
+                        </div>
                     </div>
                 </div>
             </div>
