@@ -19,7 +19,7 @@ class UserSeeder extends Seeder
             [
                 'password' => bcrypt('aaaassss'),
                 'name' => 'admin',
-                'type' => true
+                'type' => true,
             ]);
     }
 }

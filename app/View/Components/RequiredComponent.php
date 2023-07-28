@@ -2,7 +2,6 @@
 
 namespace App\View\Components;
 
-use Closure;
 use Illuminate\Contracts\View\View;
 use Illuminate\View\Component;
 
@@ -14,12 +13,12 @@ class RequiredComponent extends Component
      * @return void
      */
     public function __construct(
-        public  $type,
-        public  $names,
-        public  $placeholder = null,
-        public  $classes = null,
-        public  $required = null,
-        public  $value = null,
+        public $type,
+        public $names,
+        public $placeholder = null,
+        public $classes = null,
+        public $required = null,
+        public $value = null,
     ) {
         //
     }

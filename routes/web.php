@@ -4,7 +4,6 @@ use App\Http\Controllers\BlogController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\FrontendController;
 use Illuminate\Support\Facades\Route;
-use UniSharp\LaravelFilemanager\Lfm;
 
 Route::controller(FrontendController::class)->as('frontend.')->group(function () {
     Route::get('/', 'index')->name('index');
@@ -20,13 +19,9 @@ Route::controller(FrontendController::class)->as('frontend.')->group(function ()
     Route::post('contact-us', 'contactUsStore')->name('contact-us.store');
 });
 
-
 Route::controller(DashboardController::class)
     ->middleware(['admin'])
     ->prefix('dashboard')->group(function () {
         Route::get('', 'index')->name('dashboard');
         Route::resource('blogs', BlogController::class);
     });
-
-
-

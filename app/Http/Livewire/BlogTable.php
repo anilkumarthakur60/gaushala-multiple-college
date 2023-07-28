@@ -50,7 +50,7 @@ class BlogTable extends DataTableComponent
                 })
                 ->buttons([
                     LinkColumn::make('View') // make() has no effect in this case but needs to be set anyway
-                    ->title(fn ($row) => 'Edit')
+                        ->title(fn ($row) => 'Edit')
                         ->location(fn ($row) => route('blogs.edit', $row?->slug))
                         ->attributes(function ($row) {
                             return [

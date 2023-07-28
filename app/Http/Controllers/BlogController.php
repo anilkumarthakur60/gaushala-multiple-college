@@ -25,7 +25,8 @@ class BlogController extends Controller
     {
 
         $tags = Tag::query()->get();
-        return view('backend.blogs.create',compact('tags'));
+
+        return view('backend.blogs.create', compact('tags'));
 
     }
 
@@ -50,7 +51,6 @@ class BlogController extends Controller
      */
     public function edit(Blog $blog)
     {
-
 
         return view('backend.blogs.edit');
         //

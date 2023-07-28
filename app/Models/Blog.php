@@ -10,6 +10,6 @@ use Plank\Mediable\Mediable;
 class Blog extends Model
 {
     use HasFactory;
-    use  Mediable;
-    use  Taggable;
+    use Mediable;
+    use Taggable;
 }
