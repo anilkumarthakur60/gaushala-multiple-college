@@ -52,7 +52,7 @@
                         <h1>Innovative Way To Learn</h1>
                     </div>
                     <p>Welcome to SKPS where we are passionate about revolutionizing the learning experience. Our platform takes a dynamic and engaging approach to education, combining cutting-edge technology with proven teaching methodologies. We believe in the power of interactive learning, allowing students to immerse themselves in the subject matter for a deeper understanding. Our mission is to make learning enjoyable and rewarding for everyone, regardless of age or background. At our core, we value creativity, curiosity, and collaboration, tailoring our innovative solutions to cater to the unique learning needs of each individual. Join us on this exciting journey to embrace the future of education and unlock your full potential.</p>
-                    <a href="{{ route('about') }}" class="btn btn-primary py-md-2 px-md-4 font-weight-semi-bold mt-2">Learn More</a>
+                    <a href="{{ route('frontend.about') }}" class="btn btn-primary py-md-2 px-md-4 font-weight-semi-bold mt-2">Learn More</a>
                 </div>
             </div>
         </div>
