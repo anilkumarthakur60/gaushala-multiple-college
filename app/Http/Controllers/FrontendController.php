@@ -23,4 +23,9 @@ class FrontendController extends Controller
         return view('frontend.teachers');
 
     }
+    public function contactUs()
+    {
+        return view('frontend.contact-us');
+
+    }
 }
