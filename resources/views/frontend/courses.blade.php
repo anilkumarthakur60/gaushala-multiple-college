@@ -103,7 +103,6 @@
                         <div class="bg-secondary p-4">
                             <div class="d-flex justify-content-between mb-3">
                                 <small class="m-0"><i class="fa fa-users text-primary mr-2"></i>18 Seats</small>
-                                <small class="m-0"><i class="far fa-clock text-primary mr-2"></i>01h 45m</small>
                             </div>
                             <a class="h5" href="">Digital Marketing Strategies</a>
                         </div>
@@ -115,7 +114,6 @@
                         <div class="bg-secondary p-4">
                             <div class="d-flex justify-content-between mb-3">
                                 <small class="m-0"><i class="fa fa-users text-primary mr-2"></i>22 Seats</small>
-                                <small class="m-0"><i class="far fa-clock text-primary mr-2"></i>02h 15m</small>
                             </div>
                             <a class="h5" href="">Photography Basics and Techniques</a>
                         </div>
@@ -127,7 +125,6 @@
                         <div class="bg-secondary p-4">
                             <div class="d-flex justify-content-between mb-3">
                                 <small class="m-0"><i class="fa fa-users text-primary mr-2"></i>35 Seats</small>
-                                <small class="m-0"><i class="far fa-clock text-primary mr-2"></i>02h 30m</small>
                             </div>
                             <a class="h5" href="">Mobile App Development with React Native</a>
 
@@ -140,7 +137,6 @@
                             <div class="bg-secondary p-4">
                                 <div class="d-flex justify-content-between mb-3">
                                     <small class="m-0"><i class="fa fa-users text-primary mr-2"></i>28 Seats</small>
-                                    <small class="m-0"><i class="far fa-clock text-primary mr-2"></i>02h 00m</small>
                                 </div>
                                 <a class="h5" href="">Introduction to Data Science</a>
 
@@ -154,7 +150,6 @@
                             <div class="bg-secondary p-4">
                                 <div class="d-flex justify-content-between mb-3">
                                     <small class="m-0"><i class="fa fa-users text-primary mr-2"></i>15 Seats</small>
-                                    <small class="m-0"><i class="far fa-clock text-primary mr-2"></i>01h 30m</small>
                                 </div>
                                 <a class="h5" href="">Creative Writing Workshop</a>
 
@@ -168,7 +163,6 @@
                             <div class="bg-secondary p-4">
                                 <div class="d-flex justify-content-between mb-3">
                                     <small class="m-0"><i class="fa fa-users text-primary mr-2"></i>20 Seats</small>
-                                    <small class="m-0"><i class="far fa-clock text-primary mr-2"></i>02h 15m</small>
                                 </div>
                                 <a class="h5" href="">Financial Planning and Investment</a>
 
