@@ -22,8 +22,8 @@
                     <div class="d-flex flex-column justify-content-start">
                         <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Web Design</a>
                         <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Apps Design</a>
+                        <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Development</a>
                         <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Marketing</a>
-                        <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Research</a>
                         <a class="text-white" href="#"><i class="fa fa-angle-right mr-2"></i>SEO</a>
                     </div>
                 </div>
@@ -31,7 +31,7 @@
         </div>
         <div class="col-lg-5 col-md-12 mb-5">
             <h5 class="text-primary text-uppercase mb-4" style="letter-spacing: 5px;">Newsletter</h5>
-            <p>Rebum labore lorem dolores kasd est, et ipsum amet et at kasd, ipsum sea tempor magna tempor. Accu kasd sed ea duo ipsum. Dolor duo eirmod sea justo no lorem est diam</p>
+            <p>Get the latest updates on school events, academic achievements, exciting activities, and important announcements delivered right to your inbox.</p>
             <div class="w-100">
                 <div class="input-group">
                     <input type="text" class="form-control border-light" style="padding: 30px;" placeholder="Your Email Address">
@@ -46,7 +46,7 @@
 <div class="container-fluid bg-dark text-white border-top py-4 px-sm-3 px-md-5" style="border-color: rgba(256, 256, 256, .1) !important;">
     <div class="row">
         <div class="col-lg-6 text-center text-md-left mb-3 mb-md-0">
-            <p class="m-0 text-white">&copy; <a href="#">Domain Name</a>. All Rights Reserved. Designed by <a href="https://htmlcodex.com">HTML Codex</a>
+            <p class="m-0 text-white">&copy; <a href="#">SKPS</a>. All Rights Reserved. Developed by <a href="#">RGBIT</a>
             </p>
         </div>
         <div class="col-lg-6 text-center text-md-right">
