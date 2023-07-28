@@ -435,7 +435,7 @@
                     <div class="blog-item position-relative overflow-hidden rounded mb-2">
                         <img class="img-fluid" src=" {{asset('frontend/img/blog-1.jpg')}}" alt="">
                         <a class="blog-overlay text-decoration-none" href="">
-                            <h5 class="text-white mb-3">Lorem elitr magna stet eirmod labore amet labore clita at ut clita</h5>
+                            <h5 class="text-white mb-3">Navigating the Future: How SKPS Prepares Students for Success</h5>
                             <p class="text-primary m-0">Jan 01, 2050</p>
                         </a>
                     </div>
@@ -444,7 +444,7 @@
                     <div class="blog-item position-relative overflow-hidden rounded mb-2">
                         <img class="img-fluid" src=" {{asset('frontend/img/blog-2.jpg')}}" alt="">
                         <a class="blog-overlay text-decoration-none" href="">
-                            <h5 class="text-white mb-3">Lorem elitr magna stet eirmod labore amet labore clita at ut clita</h5>
+                            <h5 class="text-white mb-3">Parent-Teacher Collaboration at SKPS: Empowering Together</h5>
                             <p class="text-primary m-0">Jan 01, 2050</p>
                         </a>
                     </div>
@@ -453,7 +453,7 @@
                     <div class="blog-item position-relative overflow-hidden rounded mb-2">
                         <img class="img-fluid" src=" {{asset('frontend/img/blog-3.jpg')}}" alt="">
                         <a class="blog-overlay text-decoration-none" href="">
-                            <h5 class="text-white mb-3">Lorem elitr magna stet eirmod labore amet labore clita at ut clita</h5>
+                            <h5 class="text-white mb-3">Celebrating Diversity: Embracing Inclusivity at SKPS</h5>
                             <p class="text-primary m-0">Jan 01, 2050</p>
                         </a>
                     </div>
