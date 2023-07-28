@@ -21,7 +21,7 @@ Route::controller(FrontendController::class)->as('frontend.')->group(function ()
 
 
 Route::controller(DashboardController::class)
-    ->middleware([AdminMiddleware::class])
+    ->middleware(['admin'])
     ->prefix('dashboard')->group(function () {
         Route::get('', 'index')->name('dashboard');
     });
