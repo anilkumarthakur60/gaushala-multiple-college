@@ -36,33 +36,70 @@
                             </a>
                         </div>
                     </div>
-
-                    @endforeach
-
+                    <<<<<<<<< Temporary merge branch 1 </a>
                 </div>
             </div>
+
+            @endforeach
+            @endforeach
+            =========
+            @empty
+
+            <div class="col-lg-12">
+                <div class="alert alert-danger">
+                    No Blog Found
+                </div>
+            </div>
+            @endforelse
+
+
+
         </div>
     </div>
 
     <div class="col-lg-3 mt-5 mt-lg-0">
         <!-- Recent Post -->
+
+        <div class="mb-5">
+            <form action="{{route('frontend.blogs')}}">
+                <div class="input-group">
+                    <input type="text" value="{{request()->query('query')}}" name="query"
+                        class="form-control form-control-lg" placeholder="Keyword">
+                    <div class="input-group-append">
+                        <span class="input-group-text bg-transparent text-primary"><i class="fa fa-search"></i></span>
+                    </div>
+                </div>
+            </form>
+        </div>
+
         <div class="mb-5">
             <h3 class="text-uppercase mb-4" style="letter-spacing: 5px;">Recent Posts</h3>
+            >>>>>>>>> Temporary merge branch 2
 
-            @foreach($recentBlogs as $r)
-            <a class="d-flex align-items-center text-decoration-none mb-3"
-                href="{{route('frontend.blogs.detail',$r->slug)}}">
-                <img class="img-fluid rounded" src="{{asset('frontend/img/blog-80x80.jpg')}}" alt="">
-                <div class="pl-3">
-                    <h6 class="m-1">{{$r->name}}</h6>
-                    <small>
-                        {{$r->created_at?->format('M d, Y')}}
-                    </small>
-                </div>
-            </a>
-            @endforeach
         </div>
     </div>
+</div>
+</div>
+
+<div class="col-lg-3 mt-5 mt-lg-0">
+    <!-- Recent Post -->
+    <div class="mb-5">
+        <h3 class="text-uppercase mb-4" style="letter-spacing: 5px;">Recent Posts</h3>
+
+        @foreach($recentBlogs as $r)
+        <a class="d-flex align-items-center text-decoration-none mb-3"
+            href="{{route('frontend.blogs.detail',$r->slug)}}">
+            <img class="img-fluid rounded" src="{{asset('frontend/img/blog-80x80.jpg')}}" alt="">
+            <div class="pl-3">
+                <h6 class="m-1">{{$r->name}}</h6>
+                <small>
+                    {{$r->created_at?->format('M d, Y')}}
+                </small>
+            </div>
+        </a>
+        @endforeach
+    </div>
+</div>
 </div>
 </div>
 </div>
