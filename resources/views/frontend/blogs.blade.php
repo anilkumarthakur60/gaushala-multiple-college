@@ -35,14 +35,11 @@
                                 </p>
                             </a>
                         </div>
-                    </div>
-                    <<<<<<<<< Temporary merge branch 1 </a>
+                    </div> </a>
                 </div>
             </div>
 
             @endforeach
-            @endforeach
-            =========
             @empty
 
             <div class="col-lg-12">
@@ -74,7 +71,6 @@
 
         <div class="mb-5">
             <h3 class="text-uppercase mb-4" style="letter-spacing: 5px;">Recent Posts</h3>
-            >>>>>>>>> Temporary merge branch 2
 
         </div>
     </div>
