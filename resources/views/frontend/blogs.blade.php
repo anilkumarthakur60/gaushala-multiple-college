@@ -39,7 +39,6 @@
                 </div>
             </div>
 
-            @endforeach
             @empty
 
             <div class="col-lg-12">
