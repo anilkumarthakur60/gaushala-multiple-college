@@ -28,7 +28,7 @@
                         <h1 class="mb-5">Vero ipsum sea justo dolore eirmod amet dolor tempor lorem</h1>
                         <img class="img-fluid rounded w-100 mb-4" src="{{asset('frontend/img/carousel-1.jpg')}}" alt="Image">
                         <p class="lead">Introduction</p>
-    <p>In a rapidly evolving world, preparing students for a successful future is of paramount importance. At <strong>[Your School Name] (SKPS)</strong>, we take pride in our unwavering commitment to providing our students with a comprehensive education that equips them with the skills, knowledge, and mindset needed to navigate the challenges of tomorrow. In this blog post, we will delve into the various initiatives and strategies that make SKPS a hub for fostering academic excellence, personal growth, and lifelong success.</p>
+    <p>In a rapidly evolving world, preparing students for a successful future is of paramount importance. At SKPS, we take pride in our unwavering commitment to providing our students with a comprehensive education that equips them with the skills, knowledge, and mindset needed to navigate the challenges of tomorrow. In this blog post, we will delve into the various initiatives and strategies that make SKPS a hub for fostering academic excellence, personal growth, and lifelong success.</p>
 
     <p class="lead">Emphasis on Holistic Education</p>
     <p>At SKPS, we believe that education goes beyond academics. We strive to provide a well-rounded, holistic education that nurtures students' intellectual, social, emotional, and physical development. Our curriculum is carefully designed to instill critical thinking, problem-solving abilities, creativity, and effective communication skills. We encourage students to explore their passions and interests, promoting a love for learning that extends beyond the classroom.</p>
@@ -52,9 +52,9 @@
     <p>We understand that a strong support system is essential for students to achieve their full potential. SKPS actively encourages parent and community involvement in the educational journey of our students. Regular parent-teacher conferences, workshops, and volunteering opportunities ensure a collaborative approach in nurturing each student's growth and success.</p>
 
     <p class="lead">Conclusion</p>
-    <p>At <strong>[Your School Name]</strong>, our commitment to preparing students for success goes beyond academic achievements. We believe in empowering students with the necessary skills, values, and confidence to navigate the future with purpose and determination. Through a holistic education, experienced faculty, technology integration, extracurricular opportunities, career guidance, global awareness, and strong community support, SKPS stands as a beacon of excellence in shaping future leaders and contributing to a better tomorrow.</p>
+    <p>At <strong>SKPS</strong>, our commitment to preparing students for success goes beyond academic achievements. We believe in empowering students with the necessary skills, values, and confidence to navigate the future with purpose and determination. Through a holistic education, experienced faculty, technology integration, extracurricular opportunities, career guidance, global awareness, and strong community support, SKPS stands as a beacon of excellence in shaping future leaders and contributing to a better tomorrow.</p>
 
-    <p>Join us at <strong>[Your School Name]</strong> as we continue our journey of empowering students and shaping the leaders of tomorrow!</p>
+    <p>Join us at <strong>SKPS</strong> as we continue our journey of empowering students and shaping the leaders of tomorrow!</p>
                     </div>
 
 
