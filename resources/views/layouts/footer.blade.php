@@ -52,13 +52,13 @@
         <div class="col-lg-6 text-center text-md-right">
             <ul class="nav d-inline-flex">
                 <li class="nav-item">
-                    <a class="nav-link text-white py-0" href="#">Privacy</a>
+                    <a class="nav-link text-white py-0" href="{{route('frontend.privacy-policy')}}">Privacy</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white py-0" href="#">Terms</a>
+                    <a class="nav-link text-white py-0" href="{{route('frontend.terms-and-condition')}}">Terms</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white py-0" href="#">FAQs</a>
+                    <a class="nav-link text-white py-0" href="{{route('frontend.faq')}}">FAQs</a>
                 </li>
             </ul>
         </div>
