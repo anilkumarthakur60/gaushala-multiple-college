@@ -57,4 +57,14 @@ class FrontendController extends Controller
         return view('frontend.blog-detail');
 
     }
+
+    public function  privacyPolicy(){
+        return view('frontend.privacy-policy');
+    }
+    public function  termsAndCondition(){
+        return view('frontend.terms-and-condition');
+    }
+    public function  faq(){
+        return view('frontend.faq');
+    }
 }
