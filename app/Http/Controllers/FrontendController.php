@@ -45,4 +45,16 @@ class FrontendController extends Controller
         return view('frontend.courses');
 
     }
+
+    public function blogs()
+    {
+        return view('frontend.blogs');
+
+    }
+
+    public function blogsDetail($slug)
+    {
+        return view('frontend.blog-detail');
+
+    }
 }
