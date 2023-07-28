@@ -11,9 +11,7 @@
     </div>
     <div class="sidebar-body pt-0 data-scrollbar">
         <div class="sidebar-list">
-            <!-- Sidebar Menu Start -->
             <ul class="navbar-nav iq-main-menu" id="sidebar-menu">
-
                 <li class="nav-item">
                     <a class="nav-link {{ request()->routeIs('dashboard') ? 'active' : '' }}"
                        href="{{route('dashboard')}}">
