@@ -23,8 +23,7 @@
         <div class="row">
             <div class="col-lg-8">
                 <div class="row pb-3">
-                    @foreach($blogs as $blog)
-
+                    @forelse ($blogs as $blog )
                     <div class="col-lg-4 mb-4">
                         <div class="blog-item position-relative overflow-hidden rounded mb-2">
                             <img class="img-fluid" src="{{asset($blog->firstMedia('blogImage')->getUrl())}}" alt="">
@@ -37,14 +36,37 @@
                             </a>
                         </div>
                     </div>
+                    @empty
 
-                    @endforeach
+                    <div class="col-lg-12">
+                        <div class="alert alert-danger">
+                            No Blog Found
+                        </div>
+                    </div>
+                    @endforelse
+
+
 
                 </div>
             </div>
 
                 <div class="col-lg-3 mt-5 mt-lg-0">
                     <!-- Recent Post -->
+
+                    <div class="mb-5">
+                        <form action="{{route('frontend.blogs')}}">
+                            <div class="input-group">
+                                <input type="text"
+                                       value="{{request()->query('query')}}"
+                                       name="query" class="form-control form-control-lg" placeholder="Keyword">
+                                <div class="input-group-append">
+                                    <span class="input-group-text bg-transparent text-primary"><i
+                                            class="fa fa-search"></i></span>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
                     <div class="mb-5">
                         <h3 class="text-uppercase mb-4" style="letter-spacing: 5px;">Recent Posts</h3>
 
