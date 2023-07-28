@@ -24,5 +24,4 @@ Route::controller(DashboardController::class)
     ->middleware([AdminMiddleware::class])
     ->prefix('dashboard')->group(function () {
         Route::get('', 'index')->name('dashboard');
-
     });
