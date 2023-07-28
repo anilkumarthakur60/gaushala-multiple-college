@@ -2,7 +2,7 @@
 <div class="container-fluid d-none d-lg-block">
     <div class="row align-items-center py-4 px-xl-5">
         <div class="col-lg-3">
-            <a href="" class="text-decoration-none">
+            <a href="{{ route('frontend.index') }}" class="text-decoration-none">
                 <h1 class="m-0"><span class="text-primary">E</span>COURSES</h1>
             </a>
         </div>
@@ -53,26 +53,25 @@
                 <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                     <div class="navbar-nav py-0">
                         <a href="{{route('frontend.index')}}"
-                           class="nav-item nav-link {{ request()->routeIs('frontend.index') ? 'active':'' }}">Home</a>
+                            class="nav-item nav-link {{ request()->routeIs('frontend.index') ? 'active':'' }}">Home</a>
                         <a href="{{route('frontend.about')}}"
-                           class="nav-item nav-link {{ request()->routeIs('frontend.about') ? 'active':'' }}">About</a>
+                            class="nav-item nav-link {{ request()->routeIs('frontend.about') ? 'active':'' }}">About</a>
                         <a href="{{route('frontend.courses')}}"
-                           class="nav-item nav-link {{ request()->routeIs('frontend.courses') ? 'active':'' }}">Courses</a>
+                            class="nav-item nav-link {{ request()->routeIs('frontend.courses') ? 'active':'' }}">Courses</a>
                         <a href="{{route('frontend.teachers')}}"
-                           class="nav-item nav-link {{ request()->routeIs('frontend.teachers') ? 'active':'' }}">Teachers</a>
+                            class="nav-item nav-link {{ request()->routeIs('frontend.teachers') ? 'active':'' }}">Teachers</a>
                         <a href="{{route('frontend.blogs')}}"
-                           class="nav-item nav-link {{ request()->routeIs('frontend.blogs') ? 'active':'' }}">Blogs</a>
+                            class="nav-item nav-link {{ request()->routeIs('frontend.blogs') ? 'active':'' }}">Blogs</a>
                         <a href="{{route('frontend.contact-us')}}"
-                           class="nav-item nav-link {{ request()->routeIs('frontend.contact-us') ? 'active':'' }}">Contact</a>
+                            class="nav-item nav-link {{ request()->routeIs('frontend.contact-us') ? 'active':'' }}">Contact</a>
 
                         @if(auth()->user()?->type===true)
-                            <a href="{{route('dashboard')}}"
-                               class="nav-item nav-link">Dashboard</a>
+                        <a href="{{route('dashboard')}}" class="nav-item nav-link">Dashboard</a>
                         @endif
 
                     </div>
                     <a class="btn btn-primary py-2 px-4 ml-auto d-none d-lg-block"
-                       href="{{route('frontend.contact-us')}}">Join Now</a>
+                        href="{{route('frontend.contact-us')}}">Get In Touch</a>
                 </div>
             </nav>
         </div>

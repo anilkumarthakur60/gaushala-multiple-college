@@ -55,7 +55,7 @@ class FrontendController extends Controller
         $queryTag=$request->query('tag');
         $blogs=Blog::query()
             ->active()
-            ->withAnyTags($queryTag)
+            ->when($queryTag,fn($query) => $query->withAnyTags($queryTag))
             ->paginate(10);
 
         $recentBlogs=Blog::query()
