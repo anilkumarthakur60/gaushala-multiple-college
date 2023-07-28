@@ -19,16 +19,16 @@
     <p>Last updated: [Insert Date]</p>
 
     <h3>Introduction</h3>
-    <p>These Terms and Conditions ("Terms") govern your use of [Your School Name] ("us", "we", or "our") website, [Your School Website URL] (the "Site"). By accessing or using the Site, you agree to be bound by these Terms. If you do not agree with any part of these Terms, you must not use the Site.</p>
+    <p>These Terms and Conditions ("Terms") govern your use of SKPS ("us", "we", or "our") website, [Your School Website URL] (the "Site"). By accessing or using the Site, you agree to be bound by these Terms. If you do not agree with any part of these Terms, you must not use the Site.</p>
 
     <h3>Intellectual Property</h3>
-    <p>The Site and its original content, features, and functionality are owned by [Your School Name] and are protected by international copyright, trademark, patent, trade secret, and other intellectual property or proprietary rights laws.</p>
+    <p>The Site and its original content, features, and functionality are owned by SKPS and are protected by international copyright, trademark, patent, trade secret, and other intellectual property or proprietary rights laws.</p>
 
     <h3>Use of the Site</h3>
-    <p>[Your School Name] grants you a limited, non-exclusive, non-transferable, and revocable license to access and use the Site for personal and non-commercial purposes. You must not use the Site for any illegal or unauthorized purpose. You agree not to modify, copy, distribute, transmit, display, perform, reproduce, publish, license, create derivative works from, transfer, or sell any information, software, products, or services obtained from the Site.</p>
+    <p>SKPS grants you a limited, non-exclusive, non-transferable, and revocable license to access and use the Site for personal and non-commercial purposes. You must not use the Site for any illegal or unauthorized purpose. You agree not to modify, copy, distribute, transmit, display, perform, reproduce, publish, license, create derivative works from, transfer, or sell any information, software, products, or services obtained from the Site.</p>
 
     <h3>Links to Third-Party Websites</h3>
-    <p>The Site may contain links to third-party websites or services that are not owned or controlled by [Your School Name]. We have no control over and assume no responsibility for the content, privacy policies, or practices of any third-party websites or services. You acknowledge and agree that [Your School Name] shall not be responsible or liable, directly or indirectly, for any damage or loss caused or alleged to be caused by or in connection with the use of or reliance on any such content, goods, or services available on or through any such websites or services.</p>
+    <p>The Site may contain links to third-party websites or services that are not owned or controlled by SKPS. We have no control over and assume no responsibility for the content, privacy policies, or practices of any third-party websites or services. You acknowledge and agree that SKPS shall not be responsible or liable, directly or indirectly, for any damage or loss caused or alleged to be caused by or in connection with the use of or reliance on any such content, goods, or services available on or through any such websites or services.</p>
 
     <h3>Termination</h3>
     <p>We may terminate or suspend your access to the Site immediately, without prior notice or liability, for any reason whatsoever, including without limitation if you breach the Terms. Upon termination, your right to use the Site will immediately cease.</p>
