@@ -30,16 +30,10 @@
                         <img class="img-fluid" src="{{asset('frontend/img/course-1.jpg')}}" alt="">
                         <div class="bg-secondary p-4">
                             <div class="d-flex justify-content-between mb-3">
-                                <small class="m-0"><i class="fa fa-users text-primary mr-2"></i>25 Students</small>
+                                <small class="m-0"><i class="fa fa-users text-primary mr-2"></i>25 Seats</small>
                                 <small class="m-0"><i class="far fa-clock text-primary mr-2"></i>01h 30m</small>
                             </div>
                             <a class="h5" href="">Web Design Fundamentals</a>
-                            <div class="border-top mt-4 pt-4">
-                                <div class="d-flex justify-content-between">
-                                    <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.5 <small>(250)</small></h6>
-                                    <h5 class="m-0">$99</h5>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -48,16 +42,10 @@
                         <img class="img-fluid" src="{{asset('frontend/img/course-2.jpg')}}" alt="">
                         <div class="bg-secondary p-4">
                             <div class="d-flex justify-content-between mb-3">
-                                <small class="m-0"><i class="fa fa-users text-primary mr-2"></i>30 Students</small>
+                                <small class="m-0"><i class="fa fa-users text-primary mr-2"></i>30 Seats</small>
                                 <small class="m-0"><i class="far fa-clock text-primary mr-2"></i>02h 15m</small>
                             </div>
                             <a class="h5" href="">Responsive Web Development</a>
-                            <div class="border-top mt-4 pt-4">
-                                <div class="d-flex justify-content-between">
-                                    <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.8 <small>(350)</small></h6>
-                                    <h5 class="m-0">$149</h5>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -66,16 +54,10 @@
                         <img class="img-fluid" src="{{asset('frontend/img/course-3.jpg')}}" alt="">
                         <div class="bg-secondary p-4">
                             <div class="d-flex justify-content-between mb-3">
-                                <small class="m-0"><i class="fa fa-users text-primary mr-2"></i>20 Students</small>
+                                <small class="m-0"><i class="fa fa-users text-primary mr-2"></i>20 Seats</small>
                                 <small class="m-0"><i class="far fa-clock text-primary mr-2"></i>01h 45m</small>
                             </div>
                             <a class="h5" href="">Introduction to JavaScript</a>
-                            <div class="border-top mt-4 pt-4">
-                                <div class="d-flex justify-content-between">
-                                    <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.6 <small>(200)</small></h6>
-                                    <h5 class="m-0">$79</h5>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -84,16 +66,10 @@
                         <img class="img-fluid" src="{{asset('frontend/img/course-4.jpg')}}" alt="">
                         <div class="bg-secondary p-4">
                             <div class="d-flex justify-content-between mb-3">
-                                <small class="m-0"><i class="fa fa-users text-primary mr-2"></i>40 Students</small>
+                                <small class="m-0"><i class="fa fa-users text-primary mr-2"></i>40 Seats</small>
                                 <small class="m-0"><i class="far fa-clock text-primary mr-2"></i>02h 30m</small>
                             </div>
                             <a class="h5" href="">Python Programming Basics</a>
-                            <div class="border-top mt-4 pt-4">
-                                <div class="d-flex justify-content-between">
-                                    <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.9 <small>(500)</small></h6>
-                                    <h5 class="m-0">$129</h5>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -102,16 +78,10 @@
                         <img class="img-fluid" src="{{asset('frontend/img/course-5.jpg')}}" alt="">
                         <div class="bg-secondary p-4">
                             <div class="d-flex justify-content-between mb-3">
-                                <small class="m-0"><i class="fa fa-users text-primary mr-2"></i>15 Students</small>
+                                <small class="m-0"><i class="fa fa-users text-primary mr-2"></i>15 Seats</small>
                                 <small class="m-0"><i class="far fa-clock text-primary mr-2"></i>01h 15m</small>
                             </div>
                             <a class="h5" href="">Introduction to UI/UX Design</a>
-                            <div class="border-top mt-4 pt-4">
-                                <div class="d-flex justify-content-between">
-                                    <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.7 <small>(180)</small></h6>
-                                    <h5 class="m-0">$89</h5>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -120,16 +90,10 @@
                         <img class="img-fluid" src="{{asset('frontend/img/course-6.jpg')}}" alt="">
                         <div class="bg-secondary p-4">
                             <div class="d-flex justify-content-between mb-3">
-                                <small class="m-0"><i class="fa fa-users text-primary mr-2"></i>28 Students</small>
+                                <small class="m-0"><i class="fa fa-users text-primary mr-2"></i>28 Seats</small>
                                 <small class="m-0"><i class="far fa-clock text-primary mr-2"></i>02h 00m</small>
                             </div>
                             <a class="h5" href="">Machine Learning Fundamentals</a>
-                            <div class="border-top mt-4 pt-4">
-                                <div class="d-flex justify-content-between">
-                                    <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.6 <small>(230)</small></h6>
-                                    <h5 class="m-0">$159</h5>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -138,16 +102,10 @@
                         <img class="img-fluid" src="{{asset('frontend/img/course-1.jpg')}}" alt="">
                         <div class="bg-secondary p-4">
                             <div class="d-flex justify-content-between mb-3">
-                                <small class="m-0"><i class="fa fa-users text-primary mr-2"></i>18 Students</small>
+                                <small class="m-0"><i class="fa fa-users text-primary mr-2"></i>18 Seats</small>
                                 <small class="m-0"><i class="far fa-clock text-primary mr-2"></i>01h 45m</small>
                             </div>
                             <a class="h5" href="">Digital Marketing Strategies</a>
-                            <div class="border-top mt-4 pt-4">
-                                <div class="d-flex justify-content-between">
-                                    <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.8 <small>(280)</small></h6>
-                                    <h5 class="m-0">$119</h5>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -156,16 +114,10 @@
                         <img class="img-fluid" src="{{asset('frontend/img/course-6.jpg')}}" alt="">
                         <div class="bg-secondary p-4">
                             <div class="d-flex justify-content-between mb-3">
-                                <small class="m-0"><i class="fa fa-users text-primary mr-2"></i>22 Students</small>
+                                <small class="m-0"><i class="fa fa-users text-primary mr-2"></i>22 Seats</small>
                                 <small class="m-0"><i class="far fa-clock text-primary mr-2"></i>02h 15m</small>
                             </div>
                             <a class="h5" href="">Photography Basics and Techniques</a>
-                            <div class="border-top mt-4 pt-4">
-                                <div class="d-flex justify-content-between">
-                                    <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.9 <small>(350)</small></h6>
-                                    <h5 class="m-0">$139</h5>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -174,16 +126,11 @@
                         <img class="img-fluid" src="{{asset('frontend/img/course-5.jpg')}}" alt="">
                         <div class="bg-secondary p-4">
                             <div class="d-flex justify-content-between mb-3">
-                                <small class="m-0"><i class="fa fa-users text-primary mr-2"></i>35 Students</small>
+                                <small class="m-0"><i class="fa fa-users text-primary mr-2"></i>35 Seats</small>
                                 <small class="m-0"><i class="far fa-clock text-primary mr-2"></i>02h 30m</small>
                             </div>
                             <a class="h5" href="">Mobile App Development with React Native</a>
-                            <div class="border-top mt-4 pt-4">
-                                <div class="d-flex justify-content-between">
-                                    <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.7 <small>(220)</small></h6>
-                                    <h5 class="m-0">$169</h5>
-                                </div>
-                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -192,16 +139,11 @@
                             <img class="img-fluid" src="{{asset('frontend/img/course-2.jpg')}}" alt="">
                             <div class="bg-secondary p-4">
                                 <div class="d-flex justify-content-between mb-3">
-                                    <small class="m-0"><i class="fa fa-users text-primary mr-2"></i>28 Students</small>
+                                    <small class="m-0"><i class="fa fa-users text-primary mr-2"></i>28 Seats</small>
                                     <small class="m-0"><i class="far fa-clock text-primary mr-2"></i>02h 00m</small>
                                 </div>
                                 <a class="h5" href="">Introduction to Data Science</a>
-                                <div class="border-top mt-4 pt-4">
-                                    <div class="d-flex justify-content-between">
-                                        <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.6 <small>(200)</small></h6>
-                                        <h5 class="m-0">$149</h5>
-                                    </div>
-                                </div>
+
                             </div>
                         </div>
                     </div>
@@ -211,16 +153,11 @@
                             <img class="img-fluid" src="{{asset('frontend/img/course-1.jpg')}}" alt="">
                             <div class="bg-secondary p-4">
                                 <div class="d-flex justify-content-between mb-3">
-                                    <small class="m-0"><i class="fa fa-users text-primary mr-2"></i>15 Students</small>
+                                    <small class="m-0"><i class="fa fa-users text-primary mr-2"></i>15 Seats</small>
                                     <small class="m-0"><i class="far fa-clock text-primary mr-2"></i>01h 30m</small>
                                 </div>
                                 <a class="h5" href="">Creative Writing Workshop</a>
-                                <div class="border-top mt-4 pt-4">
-                                    <div class="d-flex justify-content-between">
-                                        <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.5 <small>(120)</small></h6>
-                                        <h5 class="m-0">$89</h5>
-                                    </div>
-                                </div>
+
                             </div>
                         </div>
                     </div>
@@ -230,16 +167,11 @@
                             <img class="img-fluid" src="{{asset('frontend/img/course-2.jpg')}}" alt="">
                             <div class="bg-secondary p-4">
                                 <div class="d-flex justify-content-between mb-3">
-                                    <small class="m-0"><i class="fa fa-users text-primary mr-2"></i>20 Students</small>
+                                    <small class="m-0"><i class="fa fa-users text-primary mr-2"></i>20 Seats</small>
                                     <small class="m-0"><i class="far fa-clock text-primary mr-2"></i>02h 15m</small>
                                 </div>
                                 <a class="h5" href="">Financial Planning and Investment</a>
-                                <div class="border-top mt-4 pt-4">
-                                    <div class="d-flex justify-content-between">
-                                        <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.9 <small>(300)</small></h6>
-                                        <h5 class="m-0">$159</h5>
-                                    </div>
-                                </div>
+
                             </div>
                         </div>
                     </div>
