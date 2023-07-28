@@ -116,7 +116,6 @@
                             <div class="border-top mt-4 pt-4">
                                 <div class="d-flex justify-content-between">
                                     <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.5 <small>(250)</small></h6>
-                                    <h5 class="m-0">$99</h5>
                                 </div>
                             </div>
                         </div>
@@ -134,7 +133,6 @@
                             <div class="border-top mt-4 pt-4">
                                 <div class="d-flex justify-content-between">
                                     <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.8 <small>(350)</small></h6>
-                                    <h5 class="m-0">$149</h5>
                                 </div>
                             </div>
                         </div>
@@ -152,7 +150,6 @@
                             <div class="border-top mt-4 pt-4">
                                 <div class="d-flex justify-content-between">
                                     <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.6 <small>(200)</small></h6>
-                                    <h5 class="m-0">$79</h5>
                                 </div>
                             </div>
                         </div>
@@ -170,7 +167,6 @@
                             <div class="border-top mt-4 pt-4">
                                 <div class="d-flex justify-content-between">
                                     <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.9 <small>(500)</small></h6>
-                                    <h5 class="m-0">$129</h5>
                                 </div>
                             </div>
                         </div>
@@ -188,7 +184,6 @@
                             <div class="border-top mt-4 pt-4">
                                 <div class="d-flex justify-content-between">
                                     <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.7 <small>(180)</small></h6>
-                                    <h5 class="m-0">$89</h5>
                                 </div>
                             </div>
                         </div>
@@ -206,7 +201,6 @@
                             <div class="border-top mt-4 pt-4">
                                 <div class="d-flex justify-content-between">
                                     <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.6 <small>(230)</small></h6>
-                                    <h5 class="m-0">$159</h5>
                                 </div>
                             </div>
                         </div>
@@ -224,7 +218,6 @@
                             <div class="border-top mt-4 pt-4">
                                 <div class="d-flex justify-content-between">
                                     <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.8 <small>(280)</small></h6>
-                                    <h5 class="m-0">$119</h5>
                                 </div>
                             </div>
                         </div>
@@ -242,7 +235,6 @@
                             <div class="border-top mt-4 pt-4">
                                 <div class="d-flex justify-content-between">
                                     <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.9 <small>(350)</small></h6>
-                                    <h5 class="m-0">$139</h5>
                                 </div>
                             </div>
                         </div>
@@ -260,7 +252,6 @@
                             <div class="border-top mt-4 pt-4">
                                 <div class="d-flex justify-content-between">
                                     <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.7 <small>(220)</small></h6>
-                                    <h5 class="m-0">$169</h5>
                                 </div>
                             </div>
                         </div>
@@ -278,7 +269,6 @@
                                 <div class="border-top mt-4 pt-4">
                                     <div class="d-flex justify-content-between">
                                         <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.6 <small>(200)</small></h6>
-                                        <h5 class="m-0">$149</h5>
                                     </div>
                                 </div>
                             </div>
@@ -297,7 +287,6 @@
                                 <div class="border-top mt-4 pt-4">
                                     <div class="d-flex justify-content-between">
                                         <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.5 <small>(120)</small></h6>
-                                        <h5 class="m-0">$89</h5>
                                     </div>
                                 </div>
                             </div>
@@ -316,7 +305,6 @@
                                 <div class="border-top mt-4 pt-4">
                                     <div class="d-flex justify-content-between">
                                         <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.9 <small>(300)</small></h6>
-                                        <h5 class="m-0">$159</h5>
                                     </div>
                                 </div>
                             </div>
