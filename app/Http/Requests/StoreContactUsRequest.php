@@ -26,20 +26,20 @@ class StoreContactUsRequest extends FormRequest
 
             'name' => [
                 'required',
-                'max:50'
+                'max:50',
             ],
             'email' => [
                 'required',
                 'max:50',
-                'email'
+                'email',
             ],
             'subject' => [
                 'required',
-                'max:255'
+                'max:255',
             ],
             'message' => [
                 'required',
-                'max:255000'
+                'max:255000',
             ],
         ];
     }

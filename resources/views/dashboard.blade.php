@@ -1,15 +1,30 @@
 <x-app-layout>
-    <x-slot name="header">
-        <h2 class="font-semibold text-xl text-gray-800 dark:text-gray-200 leading-tight">
-            {{ __('Dashboard') }}
-        </h2>
-    </x-slot>
+    <div class="container-fluid content-inner py-0 pt-5">
 
-    <div class="py-12">
-        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-            <div class="bg-white dark:bg-gray-800 overflow-hidden shadow-xl sm:rounded-lg">
-                <x-welcome />
-            </div>
+        <div class="row">
+            @foreach($data as $d)
+
+                <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                    <a href="{{$d['route']}}">
+                        <div class=" card">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="{{$d['bgClass']}} rounded p-3">
+                                        <i class="fa {!! $d['icon'] !!}"></i>
+                                    </div>
+                                    <div class="text-end">
+                                        <h2 class="counter"
+                                            style="visibility: visible;">{{$d['count']}}</h2>
+                                        {!! $d['name'] !!}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            @endforeach
         </div>
+
     </div>
+
 </x-app-layout>

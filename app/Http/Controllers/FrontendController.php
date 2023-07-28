@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\StoreContactUsRequest;
 use App\Models\ContactUs;
-use Illuminate\Http\Request;
 
 class FrontendController extends Controller
 {
@@ -25,6 +24,7 @@ class FrontendController extends Controller
         return view('frontend.teachers');
 
     }
+
     public function contactUs()
     {
         return view('frontend.contact-us');
@@ -36,6 +36,7 @@ class FrontendController extends Controller
 
         ContactUs::query()->create($request->validated());
         flash()->addSuccess('Your message has been sent successfully. Thank you!');
+
         return back();
         //
     }
@@ -58,13 +59,18 @@ class FrontendController extends Controller
 
     }
 
-    public function  privacyPolicy(){
+    public function privacyPolicy()
+    {
         return view('frontend.privacy-policy');
     }
-    public function  termsAndCondition(){
+
+    public function termsAndCondition()
+    {
         return view('frontend.terms-and-condition');
     }
-    public function  faq(){
+
+    public function faq()
+    {
         return view('frontend.faq');
     }
 }

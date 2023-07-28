@@ -13,7 +13,7 @@ class ContactUsController extends Controller
      */
     public function index()
     {
-        //
+        return view('backend.contact_us.index');
     }
 
     /**
@@ -31,6 +31,7 @@ class ContactUsController extends Controller
     {
 
         ContactUs::query()->create($request->validated());
+
         return back()->with('success', 'Your message has been sent successfully. Thank you!');
         //
     }
