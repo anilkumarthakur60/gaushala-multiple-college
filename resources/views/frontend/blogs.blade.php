@@ -1,7 +1,6 @@
 @extends('layouts.frontend-layout')
 @section('content')
 
-
     <!-- Header Start -->
     <div class="container-fluid page-header" style="margin-bottom: 90px;">
         <div class="container">
