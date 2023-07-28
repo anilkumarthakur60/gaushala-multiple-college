@@ -35,7 +35,8 @@ class FrontendController extends Controller
     {
 
         ContactUs::query()->create($request->validated());
-        return back()->with('success', 'Your message has been sent successfully. Thank you!');
+        flash()->addSuccess('Your message has been sent successfully. Thank you!');
+        return back();
         //
     }
 }
