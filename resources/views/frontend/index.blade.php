@@ -282,16 +282,16 @@
             <div class="row align-items-center">
                 <div class="col-lg-7 mb-5 mb-lg-0">
                     <div class="mb-4">
-                        <h5 class="text-primary text-uppercase mb-3" style="letter-spacing: 5px;">Need Any Courses</h5>
-                        <h1 class="text-white">30% Off For New Students</h1>
+                        <h5 class="text-primary text-uppercase mb-3" style="letter-spacing: 5px;">Enroll in Exciting Courses</h5>
+                        <h1 class="text-white">Get a 30% Discount as a New Student!</h1>
                     </div>
-                    <p class="text-white">Invidunt lorem justo sanctus clita. Erat lorem labore ea, justo dolor lorem ipsum ut sed eos,
-                        ipsum et dolor kasd sit ea justo. Erat justo sed sed diam. Ea et erat ut sed diam sea ipsum est
-                        dolor</p>
+                    <p class="text-white">At SKPS, we offer a wide range of enriching courses to suit your interests and ambitions. Whether you're looking to enhance your skills, dive into a new subject, or simply pursue a passion, we've got you covered!r</p>
                     <ul class="list-inline text-white m-0">
-                        <li class="py-2"><i class="fa fa-check text-primary mr-3"></i>Labore eos amet dolor amet diam</li>
-                        <li class="py-2"><i class="fa fa-check text-primary mr-3"></i>Etsea et sit dolor amet ipsum</li>
-                        <li class="py-2"><i class="fa fa-check text-primary mr-3"></i>Diam dolor diam elitripsum vero.</li>
+                        <li class="py-2"><i class="fa fa-check text-primary mr-3"></i>Unleash Your Creativity with Art and Design</li>
+                        <li class="py-2"><i class="fa fa-check text-primary mr-3"></i>Master Coding and Programming for Tech Enthusiasts</li>
+                        <li class="py-2"><i class="fa fa-check text-primary mr-3"></i>Dive into the Fascinating World of History</li>
+                        <li class="py-2"><i class="fa fa-check text-primary mr-3"></i>Excel in Mathematics and Problem-Solving</li>
+                        <li class="py-2"><i class="fa fa-check text-primary mr-3"></i>Embark on a Journey of Personal Development and Mindfulness</li>
                     </ul>
                 </div>
                 <div class="col-lg-5">
