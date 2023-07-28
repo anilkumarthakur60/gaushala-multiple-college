@@ -25,7 +25,7 @@
                 <div class="col-lg-12">
                     <div class="mb-5">
                         <h6 class="text-primary mb-3">Jan 01, 2050</h6>
-                        <h1 class="mb-5">Vero ipsum sea justo dolore eirmod amet dolor tempor lorem</h1>
+                        <h1 class="mb-5">Navigating the Future: How SKPS Prepares Students for Success</h1>
                         <img class="img-fluid rounded w-100 mb-4" src="{{asset('frontend/img/carousel-1.jpg')}}" alt="Image">
                         <p class="lead">Introduction</p>
     <p>In a rapidly evolving world, preparing students for a successful future is of paramount importance. At SKPS, we take pride in our unwavering commitment to providing our students with a comprehensive education that equips them with the skills, knowledge, and mindset needed to navigate the challenges of tomorrow. In this blog post, we will delve into the various initiatives and strategies that make SKPS a hub for fostering academic excellence, personal growth, and lifelong success.</p>
