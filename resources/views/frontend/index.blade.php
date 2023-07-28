@@ -1,8 +1,6 @@
 @extends('layouts.frontend-layout')
 
 @section('content')
-
-
     <div class="container-fluid p-0 pb-5 mb-5">
         <div id="header-carousel" class="carousel slide carousel-fade" data-ride="carousel">
             <ol class="carousel-indicators">
@@ -54,7 +52,7 @@
                         <h1>Innovative Way To Learn</h1>
                     </div>
                     <p>Welcome to SKPS where we are passionate about revolutionizing the learning experience. Our platform takes a dynamic and engaging approach to education, combining cutting-edge technology with proven teaching methodologies. We believe in the power of interactive learning, allowing students to immerse themselves in the subject matter for a deeper understanding. Our mission is to make learning enjoyable and rewarding for everyone, regardless of age or background. At our core, we value creativity, curiosity, and collaboration, tailoring our innovative solutions to cater to the unique learning needs of each individual. Join us on this exciting journey to embrace the future of education and unlock your full potential.</p>
-                    <a href="" class="btn btn-primary py-md-2 px-md-4 font-weight-semi-bold mt-2">Learn More</a>
+                    <a href="{{ route('about') }}" class="btn btn-primary py-md-2 px-md-4 font-weight-semi-bold mt-2">Learn More</a>
                 </div>
             </div>
         </div>
@@ -75,7 +73,6 @@
                         <img class="img-fluid" src=" {{asset('frontend/img/cat-1.jpg')}}" alt="">
                         <a class="cat-overlay text-white text-decoration-none" href="">
                             <h4 class="text-white font-weight-medium">Web Design</h4>
-                            <span>100 Courses</span>
                         </a>
                     </div>
                 </div>
@@ -84,7 +81,6 @@
                         <img class="img-fluid" src="{{asset('frontend/img/cat-2.jpg')}}" alt="">
                         <a class="cat-overlay text-white text-decoration-none" href="">
                             <h4 class="text-white font-weight-medium">Development</h4>
-                            <span>100 Courses</span>
                         </a>
                     </div>
                 </div>
@@ -92,8 +88,7 @@
                     <div class="cat-item position-relative overflow-hidden rounded mb-2">
                         <img class="img-fluid"src=" {{asset('frontend/img/cat-3.jpg')}}" alt="">
                         <a class="cat-overlay text-white text-decoration-none" href="">
-                            <h4 class="text-white font-weight-medium">Game Design</h4>
-                            <span>100 Courses</span>
+                            <h4 class="text-white font-weight-medium">Quality Analyst</h4>
                         </a>
                     </div>
                 </div>
@@ -102,7 +97,6 @@
                         <img class="img-fluid" src=" {{asset('frontend/img/cat-4.jpg')}}" alt="">
                         <a class="cat-overlay text-white text-decoration-none" href="">
                             <h4 class="text-white font-weight-medium">Apps Design</h4>
-                            <span>100 Courses</span>
                         </a>
                     </div>
                 </div>
@@ -111,7 +105,6 @@
                         <img class="img-fluid" src=" {{asset('frontend/img/cat-5.jpg')}}" alt="">
                         <a class="cat-overlay text-white text-decoration-none" href="">
                             <h4 class="text-white font-weight-medium">Marketing</h4>
-                            <span>100 Courses</span>
                         </a>
                     </div>
                 </div>
@@ -119,8 +112,7 @@
                     <div class="cat-item position-relative overflow-hidden rounded mb-2">
                         <img class="img-fluid" src=" {{asset('frontend/img/cat-6.jpg')}}" alt="">
                         <a class="cat-overlay text-white text-decoration-none" href="">
-                            <h4 class="text-white font-weight-medium">Research</h4>
-                            <span>100 Courses</span>
+                            <h4 class="text-white font-weight-medium">UI/UX</h4>
                         </a>
                     </div>
                 </div>
@@ -129,7 +121,6 @@
                         <img class="img-fluid" src=" {{asset('frontend/img/cat-7.jpg')}}" alt="">
                         <a class="cat-overlay text-white text-decoration-none" href="">
                             <h4 class="text-white font-weight-medium">Content Writing</h4>
-                            <span>100 Courses</span>
                         </a>
                     </div>
                 </div>
@@ -138,7 +129,6 @@
                         <img class="img-fluid" src=" {{asset('frontend/img/cat-8.jpg')}}" alt="">
                         <a class="cat-overlay text-white text-decoration-none" href="">
                             <h4 class="text-white font-weight-medium">SEO</h4>
-                            <span>100 Courses</span>
                         </a>
                     </div>
                 </div>
@@ -405,31 +395,28 @@
         <div class="container py-5">
             <div class="text-center mb-5">
                 <h5 class="text-primary text-uppercase mb-3" style="letter-spacing: 5px;">Testimonial</h5>
-                <h1>What Say Our Students</h1>
+                <h1>What Our Parents Say</h1>
             </div>
             <div class="row justify-content-center">
                 <div class="col-lg-8">
                     <div class="owl-carousel testimonial-carousel">
                         <div class="text-center">
                             <i class="fa fa-3x fa-quote-left text-primary mb-4"></i>
-                            <h4 class="font-weight-normal mb-4">Dolor eirmod diam stet kasd sed. Aliqu rebum est eos. Rebum elitr dolore et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</h4>
-                            <img class="img-fluid mx-auto mb-3" {{asset('frontend/img/testimonial-1.jpg')}}" alt="">
-                            <h5 class="m-0">Client Name</h5>
-                            <span>Profession</span>
+                            <h4 class="font-weight-normal mb-4">Enrolling my child in SKPS was life-changing. The caring environment and devoted teachers have nurtured their growth both academically and personally. Thank you for shaping their future!</h4>
+                            <img class="img-fluid mx-auto mb-3" src="{{asset('frontend/img/testimonial-1.jpg')}}" alt="">
+                            <h5 class="m-0">Rajesh Sharma</h5>
                         </div>
                         <div class="text-center">
                             <i class="fa fa-3x fa-quote-left text-primary mb-4"></i>
-                            <h4 class="font-weight-normal mb-4">Dolor eirmod diam stet kasd sed. Aliqu rebum est eos. Rebum elitr dolore et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</h4>
-                            <img class="img-fluid mx-auto mb-3" {{asset('frontend/img/testimonial-2.jpg')}}" alt="">
-                            <h5 class="m-0">Client Name</h5>
-                            <span>Profession</span>
+                            <h4 class="font-weight-normal mb-4">SKPS provided an unforgettable experience. The emphasis on holistic development and supportive teachers helped me discover my true potential. Grateful for the memories!</h4>
+                            <img class="img-fluid mx-auto mb-3" src="{{asset('frontend/img/testimonial-2.jpg')}}" alt="">
+                            <h5 class="m-0">Hari Subedi</h5>
                         </div>
                         <div class="text-center">
                             <i class="fa fa-3x fa-quote-left text-primary mb-4"></i>
-                            <h4 class="font-weight-normal mb-4">Dolor eirmod diam stet kasd sed. Aliqu rebum est eos. Rebum elitr dolore et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</h4>
-                            <img class="img-fluid mx-auto mb-3" {{asset('frontend/img/testimonial-3.jpg')}}" alt="">
-                            <h5 class="m-0">Client Name</h5>
-                            <span>Profession</span>
+                            <h4 class="font-weight-normal mb-4">Thanks to SKPS, my daughter's grades and confidence soared. The personalized attention and passion of the teachers made all the difference. Forever grateful!</h4>
+                            <img class="img-fluid mx-auto mb-3" src="{{asset('frontend/img/testimonial-3.jpg')}}" alt="">
+                            <h5 class="m-0">Sita Rai</h5>
                         </div>
                     </div>
                 </div>
