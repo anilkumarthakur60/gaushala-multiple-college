@@ -104,7 +104,7 @@
                     <div class="cat-item position-relative overflow-hidden rounded mb-2">
                         <img class="img-fluid" src=" {{asset('frontend/img/cat-5.jpg')}}" alt="">
                         <a class="cat-overlay text-white text-decoration-none" href="">
-                            <h4 class="text-white font-weight-medium">Marketing</h4>
+                            <h4 class="text-white font-weight-medium">Digital Marketing</h4>
                         </a>
                     </div>
                 </div>
