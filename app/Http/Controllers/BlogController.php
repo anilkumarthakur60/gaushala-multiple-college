@@ -6,6 +6,8 @@ use App\Http\Requests\StoreBlogRequest;
 use App\Http\Requests\UpdateBlogRequest;
 use App\Models\Blog;
 use Cviebrock\EloquentTaggable\Models\Tag;
+use Illuminate\Support\Facades\DB;
+use Plank\Mediable\Facades\MediaUploader;
 
 class BlogController extends Controller
 {
@@ -19,6 +21,40 @@ class BlogController extends Controller
     }
 
     /**
+     * Store a newly created resource in storage.
+     */
+    public function store(StoreBlogRequest $request)
+    {
+
+
+        try {
+            DB::beginTransaction();
+
+            $blog = Blog::query()->create(attributes: $request->only([
+                'name',
+                'description',
+            ]));
+            $blog->tag($request->input('tags'));
+            if ($request->hasFile('image')) {
+                $media = MediaUploader::fromSource($request->file('image'))
+                    ->useHashForFilename()
+                    ->toDisk('uploads')
+                    ->upload();
+                $blog->attachMedia($media->id, 'blogImage');
+            }
+            DB::commit();
+
+        }catch (\Exception $exception){
+            DB::rollBack();
+            flash()->addError($exception->getMessage());
+            return redirect()->back();
+        }
+
+
+        return redirect()->route('blogs.index');
+    }
+
+    /**
      * Show the form for creating a new resource.
      */
     public function create()
@@ -28,14 +64,6 @@ class BlogController extends Controller
 
         return view('backend.blogs.create', compact('tags'));
 
-    }
-
-    /**
-     * Store a newly created resource in storage.
-     */
-    public function store(StoreBlogRequest $request)
-    {
-        //
     }
 
     /**

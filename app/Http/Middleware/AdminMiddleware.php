@@ -10,8 +10,9 @@ class AdminMiddleware
 {
     public function handle(Request $request, Closure $next): Response
     {
-        if (auth()->user()->type === false) {
-            return redirect()->route('frontend.index');
+
+        if (!auth()->check() ||!auth()->user()->isAdmin()) {
+            return redirect()->route('login');
         }
 
         return $next($request);

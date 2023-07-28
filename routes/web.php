@@ -20,7 +20,7 @@ Route::controller(FrontendController::class)->as('frontend.')->group(function ()
 });
 
 Route::controller(DashboardController::class)
-    ->middleware(['admin'])
+    ->middleware(['admin','auth'])
     ->prefix('dashboard')->group(function () {
         Route::get('', 'index')->name('dashboard');
         Route::resource('blogs', BlogController::class);
