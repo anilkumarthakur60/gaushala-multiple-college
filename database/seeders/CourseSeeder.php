@@ -114,7 +114,7 @@ class CourseSeeder extends Seeder
         ];
 
         foreach ($courses as $course) {
-            Course::query()->firstOrCreate(
+            Course::query()->updateOrCreate(
                 ['name' => $course['name']],
                 [
                     'description' => $course['description'],
