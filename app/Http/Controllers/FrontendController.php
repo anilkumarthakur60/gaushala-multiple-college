@@ -39,4 +39,10 @@ class FrontendController extends Controller
         return back();
         //
     }
+
+    public function courses()
+    {
+        return view('frontend.courses');
+
+    }
 }
