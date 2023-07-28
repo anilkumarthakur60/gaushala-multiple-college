@@ -20,6 +20,7 @@
 
     <!-- Libraries Stylesheet -->
     <link href="{{asset('frontend/lib/owlcarousel/assets/owl.carousel.min.css')}}" rel="stylesheet">
+    <link href="https://bootswatch.com/5/sketchy/bootstrap.min.css" rel="stylesheet">
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="{{asset('frontend/css/style.css')}}" rel="stylesheet">
