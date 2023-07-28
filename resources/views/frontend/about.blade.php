@@ -18,8 +18,8 @@
     <!-- Header End -->
 
     <!-- About Start -->
-    <div class="container-fluid pb-5">
-        <div class="container pb-5">
+    <div class="container-fluid py-5">
+        <div class="container py-5">
             <div class="row align-items-center">
                 <div class="col-lg-12 mb-4">
                     <div class="text-left mb-4">
