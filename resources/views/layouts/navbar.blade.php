@@ -77,7 +77,7 @@
                         <a href="{{route('frontend.index')}}" class="nav-item nav-link active">Home</a>
                         <a href="{{route('frontend.about')}}" class="nav-item nav-link">About</a>
                         <a href="course.html" class="nav-item nav-link">Courses</a>
-                        <a href="teacher.html" class="nav-item nav-link">Teachers</a>
+                        <a href="{{route('frontend.teachers')}}" class="nav-item nav-link">Teachers</a>
                         <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Blog</a>
                             <div class="dropdown-menu rounded-0 m-0">
