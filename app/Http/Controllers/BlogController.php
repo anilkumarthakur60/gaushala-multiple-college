@@ -96,13 +96,7 @@ class BlogController extends Controller
 
         try {
             DB::beginTransaction();
-            $data = $request->safe([
-                'name',
-                'slug',
-                'subtitle',
-                'description',
-                'blog_category_id',
-                'featured', ]);
+            $data = $request->safe(['name','description']);
 
             $blog->update($data);
 
