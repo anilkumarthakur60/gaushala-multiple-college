@@ -17,7 +17,7 @@ Route::controller(FrontendController::class)->as('frontend.')->group(function ()
     Route::get('terms-and-condition', 'termsAndCondition')->name('terms-and-condition');
     Route::get('faq', 'faq')->name('faq');
     Route::get('blogs', 'blogs')->name('blogs');
-    Route::get('blogs/{slug}', 'blogsDetail')->name('blogs.detail');
+    Route::get('blogs/{blog:slug}', 'blogsDetail')->name('blogs.detail');
     Route::post('contact-us', 'contactUsStore')->name('contact-us.store');
 });
 

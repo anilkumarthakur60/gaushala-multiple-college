@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\Http\Requests\StoreContactUsRequest;
 use App\Models\Blog;
 use App\Models\ContactUs;
+use Cviebrock\EloquentTaggable\Models\Tag;
+use Illuminate\Http\Request;
 
 class FrontendController extends Controller
 {
@@ -48,23 +50,33 @@ class FrontendController extends Controller
 
     }
 
-    public function blogs()
+    public function blogs(Request $request)
     {
+        $queryTag=$request->query('tag');
         $blogs=Blog::query()
             ->active()
+            ->withAnyTags($queryTag)
             ->paginate(10);
+
         $recentBlogs=Blog::query()
             ->active()
             ->latest()
             ->take(4)
             ->get();
-        return view('frontend.blogs',compact(['blogs','recentBlogs']));
+        $tags=Blog::query()
+            ->withWhereHas('tags')
+            ->get()
+            ?->pluck('tags')
+            ?->flatten(1)
+            ?->pluck('name')
+            ?->toArray();
+        return view('frontend.blogs',compact(['blogs','recentBlogs','tags']));
 
     }
 
-    public function blogsDetail($slug)
+    public function blogsDetail(Blog $blog)
     {
-        return view('frontend.blog-detail');
+        return view('frontend.blog-detail',compact('blog'));
 
     }
 

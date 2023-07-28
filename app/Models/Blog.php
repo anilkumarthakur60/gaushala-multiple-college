@@ -36,5 +36,10 @@ class Blog extends Model
     {
         return $query->where('status', true);
     }
+
+    public function scopeQueryTag(Builder $query): Builder
+    {
+        return $query->where();
+    }
 }
 
