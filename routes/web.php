@@ -1,6 +1,8 @@
 <?php
 
+use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\FrontendController;
+use App\Http\Middleware\AdminMiddleware;
 use Illuminate\Support\Facades\Route;
 
 Route::controller(FrontendController::class)->as('frontend.')->group(function () {
@@ -16,3 +18,11 @@ Route::controller(FrontendController::class)->as('frontend.')->group(function ()
     Route::get('blogs/{slug}', 'blogsDetail')->name('blogs.detail');
     Route::post('contact-us', 'contactUsStore')->name('contact-us.store');
 });
+
+
+Route::controller(DashboardController::class)
+    ->middleware([AdminMiddleware::class])
+    ->prefix('dashboard')->group(function () {
+        Route::get('', 'index')->name('dashboard');
+
+    });
