@@ -21,7 +21,7 @@
 <div class="container-fluid py-5">
     <div class="container py-5">
         <div class="row">
-            <div class="col-lg-12">
+            <div class="col-lg-8">
                 <div class="row pb-3">
                     @foreach($blogs as $blog)
 
@@ -37,33 +37,39 @@
                             </a>
                         </div>
                     </div>
-
-                    @endforeach
-
-                </div>
-            </div>
-
-            <div class="col-lg-3 mt-5 mt-lg-0">
-                <!-- Recent Post -->
-                <div class="mb-5">
-                    <h3 class="text-uppercase mb-4" style="letter-spacing: 5px;">Recent Posts</h3>
-
-                    @foreach($recentBlogs as $r)
-                    <a class="d-flex align-items-center text-decoration-none mb-3"
-                        href="{{route('frontend.blogs.detail',$r->slug)}}">
-                        <img class="img-fluid rounded" src="{{asset('frontend/img/blog-80x80.jpg')}}" alt="">
-                        <div class="pl-3">
-                            <h6 class="m-1">{{$r->name}}</h6>
-                            <small>
-                                {{$r->created_at?->format('M d, Y')}}
-                            </small>
-                        </div>
                     </a>
-                    @endforeach
                 </div>
             </div>
+
+            @endforeach
+            @endforeach
+
         </div>
     </div>
+</div>
+</div>
+
+<div class="col-lg-3 mt-5 mt-lg-0">
+    <!-- Recent Post -->
+    <div class="mb-5">
+        <h3 class="text-uppercase mb-4" style="letter-spacing: 5px;">Recent Posts</h3>
+
+        @foreach($recentBlogs as $r)
+        <a class="d-flex align-items-center text-decoration-none mb-3"
+            href="{{route('frontend.blogs.detail',$r->slug)}}">
+            <img class="img-fluid rounded" src="{{asset('frontend/img/blog-80x80.jpg')}}" alt="">
+            <div class="pl-3">
+                <h6 class="m-1">{{$r->name}}</h6>
+                <small>
+                    {{$r->created_at?->format('M d, Y')}}
+                </small>
+            </div>
+        </a>
+        @endforeach
+    </div>
+</div>
+</div>
+</div>
 </div>
 <!-- Blog End -->
 @endsection
