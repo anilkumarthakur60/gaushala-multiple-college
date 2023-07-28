@@ -25,14 +25,14 @@
                     <a class="nav-link {{ request()->routeIs('*blogs*') ? 'active' : '' }}"
                        href="{{route('blogs.index')}}">
                         <x-dashboard-icons.slider/>
-                        <span>Slider</span>
+                        <span>Blogs</span>
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link {{ request()->routeIs('*contact-us*') ? 'active' : '' }}"
                        href="{{route('contact-us.index')}}">
                         <x-dashboard-icons.slider/>
-                        <span>Slider</span>
+                        <span>Contact Us</span>
                     </a>
                 </li>
         </div>
