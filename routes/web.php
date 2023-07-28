@@ -26,7 +26,7 @@ Route::controller(DashboardController::class)
     ->prefix('dashboard')->group(function () {
         Route::get('', 'index')->name('dashboard');
         Route::resource('blogs', BlogController::class)->scoped(['blog' => 'slug']);
-        Route::resource('contact-us', ContactUsController::class)->only(['index']);
+        Route::resource('contact-us', ContactUsController::class)->only(['index','destroy']);
     });
 
 
