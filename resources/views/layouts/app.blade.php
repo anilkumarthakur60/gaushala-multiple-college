@@ -1,45 +1,90 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="csrf-token" content="{{ csrf_token() }}">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
 
-        <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>{{ config('app.name', 'Skill Training Nepal') }}</title>
 
-        <!-- Fonts -->
-        <link rel="preconnect" href="https://fonts.bunny.net">
-        <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
+    <!-- Fonts -->
+    <link rel="stylesheet" href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="{{asset('back/assets/images/brand-logo.png')}}"/>
 
-        <!-- Scripts -->
-        @vite(['resources/css/app.css', 'resources/js/app.js'])
+    <!-- Library / Plugin Css Build -->
+    <link rel="stylesheet" href="{{asset('back/assets/css/core/libs.min.css')}}"/>
 
-        <!-- Styles -->
-        @livewireStyles
-    </head>
-    <body class="font-sans antialiased">
-        <x-banner />
+    <!-- Aos Animation Css -->
+    <link rel="stylesheet" href="{{asset('back/assets/vendor/aos/dist/aos.css')}}"/>
 
-        <div class="min-h-screen bg-gray-100 dark:bg-gray-900">
-            @livewire('navigation-menu')
+    <!-- Hope Ui Design System Css -->
+    <link rel="stylesheet" href="{{asset('back/assets/css/hope-ui.min.css?v=1.2.0')}}"/>
 
-            <!-- Page Heading -->
-            @if (isset($header))
-                <header class="bg-white dark:bg-gray-800 shadow">
-                    <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
-                        {{ $header }}
-                    </div>
-                </header>
-            @endif
+    <!-- Custom Css -->
+    <link rel="stylesheet" href="{{asset('back/assets/css/custom.min.css?v=1.2.0')}}'"/>
 
-            <!-- Page Content -->
-            <main>
-                {{ $slot }}
-            </main>
-        </div>
+    <!-- Customizer Css -->
+    <link rel="stylesheet" href="{{asset('back/assets/css/customizer.min.css')}}"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"  />
 
-        @stack('modals')
+    <link rel="icon" type="image/x-icon" href="{{asset('front/images/favicon.png')}}">
+    @vite(['resources/js/app.js'])
+    @stack('css')
 
-        @livewireScripts
-    </body>
+
+    <!-- Styles -->
+    @livewireStyles
+</head>
+<body class="font-sans antialiased">
+
+<div class="min-h-screen bg-gray-100">
+    @livewire('navigation-menu')
+    <!-- Page Content -->
+    @include('layouts.aside')
+    <main class="main-content mt-2 h-100 overflow-scroll">
+        {{ $slot }}
+    </main>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<!-- Library Bundle Script -->
+<script src="{{asset('back/assets/js/core/libs.min.js')}}"></script>
+
+<!-- External Library Bundle Script -->
+<script src="{{asset('back/assets/js/core/external.min.js')}}"></script>
+
+<!-- Widgetchart Script -->
+<script src="{{asset('back/assets/js/charts/widgetcharts.js')}}"></script>
+
+<!-- mapchart Script -->
+<script src="{{asset('back/assets/js/charts/vectore-chart.js')}}"></script>
+<script src="{{asset('back/assets/js/charts/dashboard.js')}}"></script>
+
+<!-- fslightbox Script -->
+<script src="{{asset('back/assets/js/plugins/fslightbox.js')}}"></script>
+
+
+<!-- Slider-tab Script -->
+<script src="{{asset('back/assets/js/plugins/slider-tabs.js')}}"></script>
+
+<!-- Form Wizard Script -->
+<script src="{{asset('back/assets/js/plugins/form-wizard.js')}}"></script>
+
+<!-- AOS Animation Plugin-->
+<script src="{{asset('back/assets/vendor/aos/dist/aos.js')}}"></script>
+
+<!-- App Script -->
+<script src="{{asset('back/assets/js/hope-ui.js')}}" defer></script>
+
+<script>
+    function preview() {
+        imagePreview.src = URL.createObjectURL(event.target.files[0]);
+    }
+</script>
+@stack('modals')
+
+@livewireScripts
+@stack('js')
+</body>
 </html>
