@@ -31,7 +31,7 @@
         </div>
         <div class="col-lg-5 col-md-12 mb-5">
             <h5 class="text-primary text-uppercase mb-4" style="letter-spacing: 5px;">Newsletter</h5>
-            <p>Rebum labore lorem dolores kasd est, et ipsum amet et at kasd, ipsum sea tempor magna tempor. Accu kasd sed ea duo ipsum. Dolor duo eirmod sea justo no lorem est diam</p>
+            <p>Get the latest updates on school events, academic achievements, exciting activities, and important announcements delivered right to your inbox.</p>
             <div class="w-100">
                 <div class="input-group">
                     <input type="text" class="form-control border-light" style="padding: 30px;" placeholder="Your Email Address">
