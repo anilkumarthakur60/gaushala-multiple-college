@@ -2,9 +2,6 @@
 
 @section('content')
 
-
-
-
     <!-- Header Start -->
     <div class="container-fluid page-header" style="margin-bottom: 90px;">
         <div class="container">
@@ -24,17 +21,48 @@
     <div class="container-fluid py-5">
         <div class="container py-5">
             <div class="row align-items-center">
+                <div class="col-lg-12 mb-4">
+                    <div class="text-left mb-4">
+                        <h1>Welcome to SKPS: Inspiring Excellence</h1>
+                    </div>
+                    <p>
+                        At SKPS, we are devoted to creating an environment where students are valued, respected, and encouraged to unleash their full potential. Our passionate educators guide students on an enriching educational journey, fostering a love for learning that extends beyond textbooks. We believe in a holistic approach, nurturing not only young minds but also compassionate and responsible individuals. Join SKPS, where dreams take flight and futures are shaped with care.
+                    </p>
+                </div>
                 <div class="col-lg-5">
                     <img class="img-fluid rounded mb-4 mb-lg-0" src="{{asset('frontend/img/about.jpg')}}" alt="">
                 </div>
                 <div class="col-lg-7">
                     <div class="text-left mb-4">
-                        <h5 class="text-primary text-uppercase mb-3" style="letter-spacing: 5px;">About Us</h5>
-                        <h1>Innovative Way To Learn</h1>
+                        <h1>A Holistic Approach: Nurturing Minds, Hearts, and Souls</h1>
                     </div>
-                    <p>Aliquyam accusam clita nonumy ipsum sit sea clita ipsum clita, ipsum dolores amet voluptua duo dolores et sit ipsum rebum, sadipscing et erat eirmod diam kasd labore clita est. Diam sanctus gubergren sit rebum clita amet, sea est sea vero sed et. Sadipscing labore tempor at sit dolor clita consetetur diam. Diam ut diam tempor no et, lorem dolore invidunt no nonumy stet ea labore, dolor justo et sit gubergren diam sed sed no ipsum. Sit tempor ut nonumy elitr dolores justo aliquyam ipsum stet</p>
-                    <a href="" class="btn btn-primary py-md-2 px-md-4 font-weight-semi-bold mt-2">Learn More</a>
+                    <p>
+                        We understand that education extends beyond academics. At SKPS, we embrace a holistic approach to foster well-rounded individuals. Our nurturing environment ensures that students grow not just academically but also emotionally and socially. We offer a diverse range of extracurricular activities, sports, and cultural programs, encouraging students to discover their passions and develop their personalities. Our strong parent-teacher partnership ensures open communication, enabling us to work together in the best interest of each child's growth and development. Together, let's shape a future where knowledge, creativity, and empathy combine to create exceptional leaders and lifelong learners. Join us at SKPS, and experience a transformative educational journey in our vibrant learning community.
+                    </p>
                 </div>
+                <div class="col-lg-7">
+                    <div class="text-left mb-4">
+                        <h1>Academic Excellence for a Changing World</h1>
+                    </div>
+                    <p>
+                        We believe in preparing our students to excel in a rapidly evolving world. Our rigorous academic programs are designed to challenge and engage young minds, equipping them with the knowledge, skills, and critical thinking abilities they need to thrive. In state-of-the-art facilities and modern classrooms, students benefit from innovative teaching methods and access to cutting-edge technology. This creates a dynamic learning environment where students can confidently tackle real-world challenges.
+                    </p>
+                </div>
+                <div class="col-lg-5">
+                    <img class="img-fluid rounded mb-4 mb-lg-0" src="{{asset('frontend/img/about.jpg')}}" alt="">
+                </div>
+                <div class="col-lg-5">
+                    <img class="img-fluid rounded mb-4 mb-lg-0" src="{{asset('frontend/img/about.jpg')}}" alt="">
+                </div>
+                <div class="col-lg-7">
+                    <div class="text-left mb-4">
+                        <h1>Parent-Teacher Partnership</h1>
+                    </div>
+                    <p>
+                        We strongly believe that a successful educational journey requires collaboration between parents, teachers, and students. Our close-knit school community encourages open communication and active involvement from parents. Through this partnership, we ensure that each child receives personalized support and guidance, creating a conducive environment for growth and learning. Join us at SKPS, where academic excellence and nurturing care converge to provide a transformative educational experience. Together, let's prepare your child for a future of endless possibilities and empower them to become confident, compassionate, and successful individuals. We look forward to welcoming you to our vibrant learning community!
+                    </p>
+                </div>
+
             </div>
         </div>
     </div>
@@ -47,16 +75,16 @@
             <div class="row align-items-center">
                 <div class="col-lg-7 mb-5 mb-lg-0">
                     <div class="mb-4">
-                        <h5 class="text-primary text-uppercase mb-3" style="letter-spacing: 5px;">Need Any Courses</h5>
-                        <h1 class="text-white">30% Off For New Students</h1>
+                        <h5 class="text-primary text-uppercase mb-3" style="letter-spacing: 5px;">Join Us Now</h5>
+                        <h1 class="text-white">Our Salient Features</h1>
                     </div>
-                    <p class="text-white">Invidunt lorem justo sanctus clita. Erat lorem labore ea, justo dolor lorem ipsum ut sed eos,
-                        ipsum et dolor kasd sit ea justo. Erat justo sed sed diam. Ea et erat ut sed diam sea ipsum est
-                        dolor</p>
+                    <p class="text-white">Experience excellence at SKPS: Extensive courses, innovative teaching, nurturing environment. Join us now!</p>
                     <ul class="list-inline text-white m-0">
-                        <li class="py-2"><i class="fa fa-check text-primary mr-3"></i>Labore eos amet dolor amet diam</li>
-                        <li class="py-2"><i class="fa fa-check text-primary mr-3"></i>Etsea et sit dolor amet ipsum</li>
-                        <li class="py-2"><i class="fa fa-check text-primary mr-3"></i>Diam dolor diam elitripsum vero.</li>
+                        <li class="py-2"><i class="fa fa-check text-primary mr-3"></i>Extensive Course Offerings</li>
+                        <li class="py-2"><i class="fa fa-check text-primary mr-3"></i>Innovative Teaching Methods</li>
+                        <li class="py-2"><i class="fa fa-check text-primary mr-3"></i>Nurturing Environment</li>
+                        <li class="py-2"><i class="fa fa-check text-primary mr-3"></i>Parent-Teacher Partnership</li>
+                        <li class="py-2"><i class="fa fa-check text-primary mr-3"></i>Engaging and Enriching Curriculum</li>
                     </ul>
                 </div>
                 <div class="col-lg-5">
@@ -98,32 +126,42 @@
         <div class="container py-5">
             <div class="text-center mb-5">
                 <h5 class="text-primary text-uppercase mb-3" style="letter-spacing: 5px;">Testimonial</h5>
-                <h1>What Say Our Students</h1>
+                <h1>What Our Students Say</h1>
             </div>
             <div class="row justify-content-center">
                 <div class="col-lg-8">
                     <div class="owl-carousel testimonial-carousel">
                         <div class="text-center">
                             <i class="fa fa-3x fa-quote-left text-primary mb-4"></i>
-                            <h4 class="font-weight-normal mb-4">Dolor eirmod diam stet kasd sed. Aliqu rebum est eos. Rebum elitr dolore et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</h4>
-                            <img class="img-fluid mx-auto mb-3" src="img/testimonial-1.jpg" alt="">
-                            <h5 class="m-0">Client Name</h5>
-                            <span>Profession</span>
+                            <h4 class="font-weight-normal mb-4">Life-changing experience! Engaging teachers, supportive environment. SKPS empowered me to chase my dreams!</h4>
+                            <img class="img-fluid mx-auto mb-3" src="{{asset('frontend/img/testimonial-1.jpg')}}" alt="">
+                            <h5 class="m-0">Kavya Adhikari</h5>
                         </div>
                         <div class="text-center">
                             <i class="fa fa-3x fa-quote-left text-primary mb-4"></i>
-                            <h4 class="font-weight-normal mb-4">Dolor eirmod diam stet kasd sed. Aliqu rebum est eos. Rebum elitr dolore et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</h4>
-                            <img class="img-fluid mx-auto mb-3" src="img/testimonial-2.jpg" alt="">
-                            <h5 class="m-0">Client Name</h5>
-                            <span>Profession</span>
+                            <h4 class="font-weight-normal mb-4">Unforgettable journey! Challenging curriculum, lifelong friends. SKPS shaped my future!</h4>
+                            <img class="img-fluid mx-auto mb-3" src="{{asset('frontend/img/testimonial-1.jpg')}}" alt="">
+                            <h5 class="m-0">Aryan Shrestha</h5>
                         </div>
                         <div class="text-center">
                             <i class="fa fa-3x fa-quote-left text-primary mb-4"></i>
-                            <h4 class="font-weight-normal mb-4">Dolor eirmod diam stet kasd sed. Aliqu rebum est eos. Rebum elitr dolore et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</h4>
-                            <img class="img-fluid mx-auto mb-3" src="img/testimonial-3.jpg" alt="">
-                            <h5 class="m-0">Client Name</h5>
-                            <span>Profession</span>
+                            <h4 class="font-weight-normal mb-4">Best decision ever! Dedicated teachers, boosted confidence. Grateful for SKPS!</h4>
+                            <img class="img-fluid mx-auto mb-3" src="{{asset('frontend/img/testimonial-1.jpg')}}" alt="">
+                            <h5 class="m-0">Anika Gurung</h5>
                         </div>
+                        <div class="text-center">
+                            <i class="fa fa-3x fa-quote-left text-primary mb-4"></i>
+                            <h4 class="font-weight-normal mb-4">Inspiring and valued! Personalized attention, aim higher. Excited for the future!</h4>
+                            <img class="img-fluid mx-auto mb-3" src="{{asset('frontend/img/testimonial-1.jpg')}}" alt="">
+                            <h5 class="m-0">Nirav Thapa</h5>
+                        </div>
+                        <div class="text-center">
+                            <i class="fa fa-3x fa-quote-left text-primary mb-4"></i>
+                            <h4 class="font-weight-normal mb-4">Transformative education! Innovative learning, lifelong impact. SKPS exceeded my expectations!</h4>
+                            <img class="img-fluid mx-auto mb-3" src="{{asset('frontend/img/testimonial-1.jpg')}}" alt="">
+                            <h5 class="m-0">Rohan Bhattarai</h5>
+                        </div>
+
                     </div>
                 </div>
             </div>
