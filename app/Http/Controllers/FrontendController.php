@@ -10,9 +10,18 @@ use Illuminate\Http\Request;
 
 class FrontendController extends Controller
 {
-    public function index()
+    public function index(Request $request)
     {
-        return view('frontend.index');
+        $queryTag=$request->query('tag');
+        $search=$request->query('query');
+        $blogs=Blog::query()
+            ->active()
+            ->queryFilter($search)
+            ->when($queryTag,fn($query) => $query->withAnyTags($queryTag))
+            ->limit(3)
+            ->get();
+
+        return view('frontend.index',compact('blogs'));
 
     }
 

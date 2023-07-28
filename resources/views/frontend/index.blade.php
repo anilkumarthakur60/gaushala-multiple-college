@@ -10,7 +10,8 @@
             </ol>
             <div class="carousel-inner">
                 <div class="carousel-item active" style="min-height: 300px;">
-                    <img class="position-relative w-100" src="{{asset('frontend/img/carousel-1.jpg')}}" style="min-height: 300px; object-fit: cover;">
+                    <img class="position-relative w-100" src="{{asset('frontend/img/carousel-1.jpg')}}"
+                         style="min-height: 300px; object-fit: cover;">
                     <div class="carousel-caption d-flex align-items-center justify-content-center">
                         <div class="p-5" style="width: 100%; max-width: 900px;">
                             <h1 class="display-3 text-white mb-md-4">Unlock Your Potential</h1>
@@ -18,7 +19,8 @@
                     </div>
                 </div>
                 <div class="carousel-item" style="min-height: 300px;">
-                    <img class="position-relative w-100" src="{{asset('frontend/img/carousel-2.jpg')}}" style="min-height: 300px; object-fit: cover;">
+                    <img class="position-relative w-100" src="{{asset('frontend/img/carousel-2.jpg')}}"
+                         style="min-height: 300px; object-fit: cover;">
                     <div class="carousel-caption d-flex align-items-center justify-content-center">
                         <div class="p-5" style="width: 100%; max-width: 900px;">
                             <h1 class="display-3 text-white mb-md-4">Empowering Future Leaders</h1>
@@ -26,7 +28,8 @@
                     </div>
                 </div>
                 <div class="carousel-item" style="min-height: 300px;">
-                    <img class="position-relative w-100" src="{{asset('frontend/img/carousel-3.jpg')}}" style="min-height: 300px; object-fit: cover;">
+                    <img class="position-relative w-100" src="{{asset('frontend/img/carousel-3.jpg')}}"
+                         style="min-height: 300px; object-fit: cover;">
                     <div class="carousel-caption d-flex align-items-center justify-content-center">
                         <div class="p-5" style="width: 100%; max-width: 900px;">
                             <h1 class="display-3 text-white mb-md-4">Innovative Learning for Modern Minds</h1>
@@ -51,8 +54,16 @@
                         <h5 class="text-primary text-uppercase mb-3" style="letter-spacing: 5px;">About Us</h5>
                         <h1>Innovative Way To Learn</h1>
                     </div>
-                    <p>Welcome to SKPS where we are passionate about revolutionizing the learning experience. Our platform takes a dynamic and engaging approach to education, combining cutting-edge technology with proven teaching methodologies. We believe in the power of interactive learning, allowing students to immerse themselves in the subject matter for a deeper understanding. Our mission is to make learning enjoyable and rewarding for everyone, regardless of age or background. At our core, we value creativity, curiosity, and collaboration, tailoring our innovative solutions to cater to the unique learning needs of each individual. Join us on this exciting journey to embrace the future of education and unlock your full potential.</p>
-                    <a href="{{ route('frontend.about') }}" class="btn btn-primary py-md-2 px-md-4 font-weight-semi-bold mt-2">Learn More</a>
+                    <p>Welcome to SKPS where we are passionate about revolutionizing the learning experience. Our
+                        platform takes a dynamic and engaging approach to education, combining cutting-edge technology
+                        with proven teaching methodologies. We believe in the power of interactive learning, allowing
+                        students to immerse themselves in the subject matter for a deeper understanding. Our mission is
+                        to make learning enjoyable and rewarding for everyone, regardless of age or background. At our
+                        core, we value creativity, curiosity, and collaboration, tailoring our innovative solutions to
+                        cater to the unique learning needs of each individual. Join us on this exciting journey to
+                        embrace the future of education and unlock your full potential.</p>
+                    <a href="{{ route('frontend.about') }}"
+                       class="btn btn-primary py-md-2 px-md-4 font-weight-semi-bold mt-2">Learn More</a>
                 </div>
             </div>
         </div>
@@ -78,7 +89,8 @@
                             <a class="h5" href="">Web design & development courses for beginner</a>
                             <div class="border-top mt-4 pt-4">
                                 <div class="d-flex justify-content-between">
-                                    <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.5 <small>(250)</small></h6>
+                                    <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.5 <small>(250)</small>
+                                    </h6>
                                     <h5 class="m-0">$99</h5>
                                 </div>
                             </div>
@@ -96,7 +108,8 @@
                             <a class="h5" href="">Web design & development courses for beginner</a>
                             <div class="border-top mt-4 pt-4">
                                 <div class="d-flex justify-content-between">
-                                    <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.5 <small>(250)</small></h6>
+                                    <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.5 <small>(250)</small>
+                                    </h6>
                                     <h5 class="m-0">$99</h5>
                                 </div>
                             </div>
@@ -114,7 +127,8 @@
                             <a class="h5" href="">Web design & development courses for beginner</a>
                             <div class="border-top mt-4 pt-4">
                                 <div class="d-flex justify-content-between">
-                                    <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.5 <small>(250)</small></h6>
+                                    <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.5 <small>(250)</small>
+                                    </h6>
                                     <h5 class="m-0">$99</h5>
                                 </div>
                             </div>
@@ -132,7 +146,8 @@
                             <a class="h5" href="">Web design & development courses for beginner</a>
                             <div class="border-top mt-4 pt-4">
                                 <div class="d-flex justify-content-between">
-                                    <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.5 <small>(250)</small></h6>
+                                    <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.5 <small>(250)</small>
+                                    </h6>
                                     <h5 class="m-0">$99</h5>
                                 </div>
                             </div>
@@ -150,7 +165,8 @@
                             <a class="h5" href="">Web design & development courses for beginner</a>
                             <div class="border-top mt-4 pt-4">
                                 <div class="d-flex justify-content-between">
-                                    <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.5 <small>(250)</small></h6>
+                                    <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.5 <small>(250)</small>
+                                    </h6>
                                     <h5 class="m-0">$99</h5>
                                 </div>
                             </div>
@@ -168,7 +184,8 @@
                             <a class="h5" href="">Web design & development courses for beginner</a>
                             <div class="border-top mt-4 pt-4">
                                 <div class="d-flex justify-content-between">
-                                    <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.5 <small>(250)</small></h6>
+                                    <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.5 <small>(250)</small>
+                                    </h6>
                                     <h5 class="m-0">$99</h5>
                                 </div>
                             </div>
@@ -187,16 +204,29 @@
             <div class="row align-items-center">
                 <div class="col-lg-7 mb-5 mb-lg-0">
                     <div class="mb-4">
-                        <h5 class="text-primary text-uppercase mb-3" style="letter-spacing: 5px;">Enroll in Exciting Courses</h5>
+                        <h5 class="text-primary text-uppercase mb-3" style="letter-spacing: 5px;">Enroll in Exciting
+                            Courses</h5>
                         <h1 class="text-white">Get a 30% Discount as a New Student!</h1>
                     </div>
-                    <p class="text-white">At SKPS, we offer a wide range of enriching courses to suit your interests and ambitions. Whether you're looking to enhance your skills, dive into a new subject, or simply pursue a passion, we've got you covered!r</p>
+                    <p class="text-white">At SKPS, we offer a wide range of enriching courses to suit your interests and
+                        ambitions. Whether you're looking to enhance your skills, dive into a new subject, or simply
+                        pursue a passion, we've got you covered!r</p>
                     <ul class="list-inline text-white m-0">
-                        <li class="py-2"><i class="fa fa-check text-primary mr-3"></i>Unleash Your Creativity with Art and Design</li>
-                        <li class="py-2"><i class="fa fa-check text-primary mr-3"></i>Master Coding and Programming for Tech Enthusiasts</li>
-                        <li class="py-2"><i class="fa fa-check text-primary mr-3"></i>Dive into the Fascinating World of History</li>
-                        <li class="py-2"><i class="fa fa-check text-primary mr-3"></i>Excel in Mathematics and Problem-Solving</li>
-                        <li class="py-2"><i class="fa fa-check text-primary mr-3"></i>Embark on a Journey of Personal Development and Mindfulness</li>
+                        <li class="py-2"><i class="fa fa-check text-primary mr-3"></i>Unleash Your Creativity with Art
+                            and Design
+                        </li>
+                        <li class="py-2"><i class="fa fa-check text-primary mr-3"></i>Master Coding and Programming for
+                            Tech Enthusiasts
+                        </li>
+                        <li class="py-2"><i class="fa fa-check text-primary mr-3"></i>Dive into the Fascinating World of
+                            History
+                        </li>
+                        <li class="py-2"><i class="fa fa-check text-primary mr-3"></i>Excel in Mathematics and
+                            Problem-Solving
+                        </li>
+                        <li class="py-2"><i class="fa fa-check text-primary mr-3"></i>Embark on a Journey of Personal
+                            Development and Mindfulness
+                        </li>
                     </ul>
                 </div>
                 <div class="col-lg-5">
@@ -207,10 +237,12 @@
                         <div class="card-body rounded-bottom bg-primary p-5">
                             <form>
                                 <div class="form-group">
-                                    <input type="text" class="form-control border-0 p-4" placeholder="Your name" required="required" />
+                                    <input type="text" class="form-control border-0 p-4" placeholder="Your name"
+                                           required="required"/>
                                 </div>
                                 <div class="form-group">
-                                    <input type="email" class="form-control border-0 p-4" placeholder="Your email" required="required" />
+                                    <input type="email" class="form-control border-0 p-4" placeholder="Your email"
+                                           required="required"/>
                                 </div>
                                 <div class="form-group">
                                     <select class="custom-select border-0 px-4" style="height: 47px;">
@@ -221,7 +253,8 @@
                                     </select>
                                 </div>
                                 <div>
-                                    <button class="btn btn-dark btn-block border-0 py-3" type="submit">Sign Up Now</button>
+                                    <button class="btn btn-dark btn-block border-0 py-3" type="submit">Sign Up Now
+                                    </button>
                                 </div>
                             </form>
                         </div>
@@ -315,20 +348,29 @@
                     <div class="owl-carousel testimonial-carousel">
                         <div class="text-center">
                             <i class="fa fa-3x fa-quote-left text-primary mb-4"></i>
-                            <h4 class="font-weight-normal mb-4">Enrolling my child in SKPS was life-changing. The caring environment and devoted teachers have nurtured their growth both academically and personally. Thank you for shaping their future!</h4>
-                            <img class="img-fluid mx-auto mb-3" src="{{asset('frontend/img/testimonial-1.jpg')}}" alt="">
+                            <h4 class="font-weight-normal mb-4">Enrolling my child in SKPS was life-changing. The caring
+                                environment and devoted teachers have nurtured their growth both academically and
+                                personally. Thank you for shaping their future!</h4>
+                            <img class="img-fluid mx-auto mb-3" src="{{asset('frontend/img/testimonial-1.jpg')}}"
+                                 alt="">
                             <h5 class="m-0">Rajesh Sharma</h5>
                         </div>
                         <div class="text-center">
                             <i class="fa fa-3x fa-quote-left text-primary mb-4"></i>
-                            <h4 class="font-weight-normal mb-4">SKPS provided an unforgettable experience. The emphasis on holistic development and supportive teachers helped me discover my true potential. Grateful for the memories!</h4>
-                            <img class="img-fluid mx-auto mb-3" src="{{asset('frontend/img/testimonial-2.jpg')}}" alt="">
+                            <h4 class="font-weight-normal mb-4">SKPS provided an unforgettable experience. The emphasis
+                                on holistic development and supportive teachers helped me discover my true potential.
+                                Grateful for the memories!</h4>
+                            <img class="img-fluid mx-auto mb-3" src="{{asset('frontend/img/testimonial-2.jpg')}}"
+                                 alt="">
                             <h5 class="m-0">Hari Subedi</h5>
                         </div>
                         <div class="text-center">
                             <i class="fa fa-3x fa-quote-left text-primary mb-4"></i>
-                            <h4 class="font-weight-normal mb-4">Thanks to SKPS, my daughter's grades and confidence soared. The personalized attention and passion of the teachers made all the difference. Forever grateful!</h4>
-                            <img class="img-fluid mx-auto mb-3" src="{{asset('frontend/img/testimonial-3.jpg')}}" alt="">
+                            <h4 class="font-weight-normal mb-4">Thanks to SKPS, my daughter's grades and confidence
+                                soared. The personalized attention and passion of the teachers made all the difference.
+                                Forever grateful!</h4>
+                            <img class="img-fluid mx-auto mb-3" src="{{asset('frontend/img/testimonial-3.jpg')}}"
+                                 alt="">
                             <h5 class="m-0">Sita Rai</h5>
                         </div>
                     </div>
@@ -344,33 +386,19 @@
                 <h1>Latest From Our Blog</h1>
             </div>
             <div class="row pb-3">
-                <div class="col-lg-4 mb-4">
-                    <div class="blog-item position-relative overflow-hidden rounded mb-2">
-                        <img class="img-fluid" src=" {{asset('frontend/img/blog-1.jpg')}}" alt="">
-                        <a class="blog-overlay text-decoration-none" href="">
-                            <h5 class="text-white mb-3">Navigating the Future: How SKPS Prepares Students for Success</h5>
-                            <p class="text-primary m-0">Jan 01, 2050</p>
-                        </a>
+                @foreach($blogs as $blog)
+                    <div class="col-lg-4 mb-4">
+                        <div class="blog-item position-relative overflow-hidden rounded mb-2">
+                            <img class="img-fluid" src=" {{asset($blog->firstMedia(['blogImage'])->getUrl())}}" alt="">
+                            <a class="blog-overlay text-decoration-none"
+                               href="{{route('frontend.blogs.detail',$blog->slug)}}">
+                                <h5 class="text-white mb-3">{{$blog->name}}</h5>
+                                <p class="text-primary m-0">{{$blog->created_at?->format('M d, Y')}}</p>
+                            </a>
+                        </div>
                     </div>
-                </div>
-                <div class="col-lg-4 mb-4">
-                    <div class="blog-item position-relative overflow-hidden rounded mb-2">
-                        <img class="img-fluid" src=" {{asset('frontend/img/blog-2.jpg')}}" alt="">
-                        <a class="blog-overlay text-decoration-none" href="">
-                            <h5 class="text-white mb-3">Parent-Teacher Collaboration at SKPS: Empowering Together</h5>
-                            <p class="text-primary m-0">Jan 01, 2050</p>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-4 mb-4">
-                    <div class="blog-item position-relative overflow-hidden rounded mb-2">
-                        <img class="img-fluid" src=" {{asset('frontend/img/blog-3.jpg')}}" alt="">
-                        <a class="blog-overlay text-decoration-none" href="">
-                            <h5 class="text-white mb-3">Celebrating Diversity: Embracing Inclusivity at SKPS</h5>
-                            <p class="text-primary m-0">Jan 01, 2050</p>
-                        </a>
-                    </div>
-                </div>
+                @endforeach
+
             </div>
         </div>
     </div>
