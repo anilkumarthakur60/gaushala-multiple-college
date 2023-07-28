@@ -141,6 +141,7 @@ class BlogController extends Controller
      */
     public function destroy(Blog $blog)
     {
+        return back();
 
     }
 }
