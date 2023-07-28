@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\StoreContactUsRequest;
+use App\Models\Blog;
 use App\Models\ContactUs;
 
 class FrontendController extends Controller
@@ -49,7 +50,15 @@ class FrontendController extends Controller
 
     public function blogs()
     {
-        return view('frontend.blogs');
+        $blogs=Blog::query()
+            ->active()
+            ->paginate(10);
+        $recentBlogs=Blog::query()
+            ->active()
+            ->latest()
+            ->take(4)
+            ->get();
+        return view('frontend.blogs',compact(['blogs','recentBlogs']));
 
     }
 
