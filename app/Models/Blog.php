@@ -37,9 +37,14 @@ class Blog extends Model
         return $query->where('status', true);
     }
 
-    public function scopeQueryTag(Builder $query): Builder
+
+
+    public function scopeQueryFilter(Builder $query,$search): Builder
     {
-        return $query->where();
+        if (empty($search)){
+            return $query;
+        }
+        return $query->likeWhere(['name','description'],$search);
     }
 }
 

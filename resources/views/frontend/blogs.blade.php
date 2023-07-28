@@ -23,8 +23,7 @@
         <div class="row">
             <div class="col-lg-8">
                 <div class="row pb-3">
-                    @foreach($blogs as $blog)
-
+                    @forelse ($blogs as $blog )
                     <div class="col-lg-4 mb-4">
                         <div class="blog-item position-relative overflow-hidden rounded mb-2">
                             <img class="img-fluid" src="{{asset($blog->firstMedia('blogImage')->getUrl())}}" alt="">
@@ -37,37 +36,33 @@
                             </a>
                         </div>
                     </div>
-                    </a>
+
+                    @endforeach
+
                 </div>
             </div>
-
-            @endforeach
-            @endforeach
-
         </div>
     </div>
-</div>
-</div>
 
-<div class="col-lg-3 mt-5 mt-lg-0">
-    <!-- Recent Post -->
-    <div class="mb-5">
-        <h3 class="text-uppercase mb-4" style="letter-spacing: 5px;">Recent Posts</h3>
+    <div class="col-lg-3 mt-5 mt-lg-0">
+        <!-- Recent Post -->
+        <div class="mb-5">
+            <h3 class="text-uppercase mb-4" style="letter-spacing: 5px;">Recent Posts</h3>
 
-        @foreach($recentBlogs as $r)
-        <a class="d-flex align-items-center text-decoration-none mb-3"
-            href="{{route('frontend.blogs.detail',$r->slug)}}">
-            <img class="img-fluid rounded" src="{{asset('frontend/img/blog-80x80.jpg')}}" alt="">
-            <div class="pl-3">
-                <h6 class="m-1">{{$r->name}}</h6>
-                <small>
-                    {{$r->created_at?->format('M d, Y')}}
-                </small>
-            </div>
-        </a>
-        @endforeach
+            @foreach($recentBlogs as $r)
+            <a class="d-flex align-items-center text-decoration-none mb-3"
+                href="{{route('frontend.blogs.detail',$r->slug)}}">
+                <img class="img-fluid rounded" src="{{asset('frontend/img/blog-80x80.jpg')}}" alt="">
+                <div class="pl-3">
+                    <h6 class="m-1">{{$r->name}}</h6>
+                    <small>
+                        {{$r->created_at?->format('M d, Y')}}
+                    </small>
+                </div>
+            </a>
+            @endforeach
+        </div>
     </div>
-</div>
 </div>
 </div>
 </div>
