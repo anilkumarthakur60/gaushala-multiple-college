@@ -11,7 +11,7 @@ class UpdateBlogRequest extends FormRequest
      */
     public function authorize(): bool
     {
-        return false;
+        return true;
     }
 
     /**
@@ -19,10 +19,30 @@ class UpdateBlogRequest extends FormRequest
      *
      * @return array<string, \Illuminate\Contracts\Validation\ValidationRule|array|string>
      */
-    public function rules(): array
+    public function rules(StoreBlogRequest $request): array
     {
         return [
-            //
+
+            'name' => [
+                'required',
+                'max:255',
+            ],
+            'description' => [
+                'required',
+                'max:255000',
+            ],
+            'tags' => [
+                'required',
+                'array',
+            ],
+            'tags.*' => [
+                'required',
+                'max:50',
+            ],
+            'image' => [
+                'nullable',
+                'image',
+            ],
         ];
     }
 }

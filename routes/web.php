@@ -23,5 +23,7 @@ Route::controller(DashboardController::class)
     ->middleware(['admin','auth'])
     ->prefix('dashboard')->group(function () {
         Route::get('', 'index')->name('dashboard');
-        Route::resource('blogs', BlogController::class);
+        Route::resource('blogs', BlogController::class)->scoped([
+            'blog' => 'slug'
+        ]);
     });

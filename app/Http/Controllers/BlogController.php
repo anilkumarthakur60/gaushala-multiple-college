@@ -6,8 +6,10 @@ use App\Http\Requests\StoreBlogRequest;
 use App\Http\Requests\UpdateBlogRequest;
 use App\Models\Blog;
 use Cviebrock\EloquentTaggable\Models\Tag;
+use Illuminate\Database\QueryException;
 use Illuminate\Support\Facades\DB;
 use Plank\Mediable\Facades\MediaUploader;
+use Plank\Mediable\Media;
 
 class BlogController extends Controller
 {
@@ -79,8 +81,10 @@ class BlogController extends Controller
      */
     public function edit(Blog $blog)
     {
+        $blog->load('tags');
+        $tags = Tag::query()->get();
 
-        return view('backend.blogs.edit');
+        return view('backend.blogs.edit',compact('blog','tags'));
         //
     }
 
@@ -89,6 +93,45 @@ class BlogController extends Controller
      */
     public function update(UpdateBlogRequest $request, Blog $blog)
     {
+
+        try {
+            DB::beginTransaction();
+            $data = $request->safe([
+                'name',
+                'slug',
+                'subtitle',
+                'description',
+                'blog_category_id',
+                'featured', ]);
+
+            $blog->update($data);
+
+            if ($request->hasFile('image')) {
+                if ($blog->firstMedia('blogImage')) {
+                    $media = Media::find($blog->firstMedia('blogImage')->id);
+                    MediaUploader::fromSource($request->file('image'))->useHashForFilename()->toDisk('uploads')->replace($media);
+                } else {
+                    $media = MediaUploader::fromSource($request->file('image'))->useHashForFilename()->toDisk('uploads')->upload();
+                    $blog->attachMedia($media, 'blogImage');
+                }
+            }
+
+            if ($request->filled('tags')) {
+                $blog->retag($request->input('tags'));
+            }
+
+            DB::commit();
+        } catch (QueryException $e) {
+            DB::rollBack();
+            flasher($e->getMessage());
+            dd($e);
+        } catch (\Throwable $e) {
+            DB::rollBack();
+            flasher($e->getMessage());
+            dd($e);
+        }
+
+        return to_route('blogs.index');
 
         //
     }
