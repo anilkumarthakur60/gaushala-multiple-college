@@ -1,14 +1,17 @@
 <x-app-layout>
-
-
-    <div class="my-4">
-        <a href="{{route('blogs.create')}}"
-           class="text-white my-5 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Default</a>
-    </div>
-
-
-    <livewire:blog-table/>
-
-
-
+    <main class="main-content mt-5">
+        <div class="container-fluid content-inner py-0">
+            <div class="card">
+                <div class="card-header d-flex justify-content-between">
+                    <div class="header-title">
+                        <h4 class="card-title">Blogs</h4>
+                    </div>
+                    <a href="{{route('blogs.create')}}" class="btn btn-primary">Add</a>
+                </div>
+                <div class="card-body">
+                    @livewire('blog-table')
+                </div>
+            </div>
+        </div>
+    </main>
 </x-app-layout>

@@ -29,6 +29,4 @@ Route::controller(DashboardController::class)
     });
 
 
-Route::group(['prefix' => 'laravel-filemanager', 'middleware' => ['web', 'auth']], function () {
-    Lfm::routes();
-});
+
