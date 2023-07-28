@@ -22,8 +22,15 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link {{ request()->routeIs('*slider*') ? 'active' : '' }}"
+                    <a class="nav-link {{ request()->routeIs('*blogs*') ? 'active' : '' }}"
                        href="{{route('blogs.index')}}">
+                        <x-dashboard-icons.slider/>
+                        <span>Slider</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link {{ request()->routeIs('*contact-us*') ? 'active' : '' }}"
+                       href="{{route('contact-us.index')}}">
                         <x-dashboard-icons.slider/>
                         <span>Slider</span>
                     </a>
