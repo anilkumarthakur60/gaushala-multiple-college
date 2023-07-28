@@ -1,6 +1,6 @@
 <aside class="sidebar sidebar-default navs-rounded-all">
     <div class="sidebar-header d-flex align-items-center justify-content-start ">
-        <a href="{{route('dashboard')}}" class="navbar-brand" target="_blank">
+        <a href="{{route('frontend.index')}}" class="navbar-brand" target="_blank">
 
 
             <h5 class="logo-title font-bold pt-1 ms-1">SKPS School</h5>
