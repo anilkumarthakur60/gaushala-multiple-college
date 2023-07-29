@@ -5,6 +5,7 @@ use App\Http\Controllers\ContactUsController;
 use App\Http\Controllers\CourseController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\FrontendController;
+use App\Http\Controllers\TeacherController;
 use Illuminate\Support\Facades\Route;
 use UniSharp\LaravelFilemanager\Lfm;
 
@@ -28,6 +29,7 @@ Route::controller(DashboardController::class)
         Route::get('', 'index')->name('dashboard');
         Route::resource('blogs', BlogController::class)->scoped(['blog' => 'slug']);
         Route::resource('courses', CourseController::class)->scoped(['course' => 'slug']);
+        Route::resource('teachers', TeacherController::class)->scoped(['teacher' => 'slug']);
         Route::resource('contact-us', ContactUsController::class)->only(['index', 'destroy']);
     });
 
