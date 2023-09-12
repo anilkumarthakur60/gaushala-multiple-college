@@ -6,7 +6,7 @@
             <h5 class="logo-title font-bold pt-1 ms-1">SKPS School</h5>
         </a>
         <div class="sidebar-toggle" data-toggle="sidebar" data-active="true">
-            <x-dashboard-icons.toggle/>
+            <x-dashboard-icons.toggle />
         </div>
     </div>
     <div class="sidebar-body pt-0 data-scrollbar">
@@ -14,30 +14,37 @@
             <ul class="navbar-nav iq-main-menu" id="sidebar-menu">
                 <li class="nav-item">
                     <a class="nav-link {{ request()->routeIs('dashboard') ? 'active' : '' }}"
-                       href="{{route('dashboard')}}">
-                        <x-dashboard-icons.dashboard/>
+                        href="{{route('dashboard')}}">
+                        <x-dashboard-icons.dashboard />
                         <span class="item-name">Dashboard</span>
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link {{ request()->routeIs('*blogs*') ? 'active' : '' }}"
-                       href="{{route('blogs.index')}}">
-                        <x-dashboard-icons.slider/>
+                        href="{{route('blogs.index')}}">
+                        <x-dashboard-icons.slider />
                         <span>Blogs</span>
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link {{ request()->routeIs('*contact-us*') ? 'active' : '' }}"
-                       href="{{route('contact-us.index')}}">
-                        <x-dashboard-icons.slider/>
+                        href="{{route('contact-us.index')}}">
+                        <x-dashboard-icons.slider />
                         <span>Contact Us</span>
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link {{ request()->routeIs('*courses*') ? 'active' : '' }}"
-                       href="{{route('courses.index')}}">
-                        <x-dashboard-icons.slider/>
+                        href="{{route('courses.index')}}">
+                        <x-dashboard-icons.slider />
                         <span>Courses</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link {{ request()->routeIs('*teachers*') ? 'active' : '' }}"
+                        href="{{route('teachers.index')}}">
+                        <x-dashboard-icons.slider />
+                        <span>Teachers</span>
                     </a>
                 </li>
         </div>
