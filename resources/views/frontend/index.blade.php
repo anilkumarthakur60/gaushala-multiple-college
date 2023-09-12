@@ -57,7 +57,7 @@
                     <p>Welcome to SKPS where we are passionate about revolutionizing the learning experience. Our
                         platform takes a dynamic and engaging approach to education, combining cutting-edge technology
                         with proven teaching methodologies. We believe in the power of interactive learning, allowing
-                        students to immerse themselves in the subject matter for a deeper understanding. Our mission is
+                        students to immerse themselves in the subject for a deeper understanding. Our mission is
                         to make learning enjoyable and rewarding for everyone, regardless of age or background. At our
                         core, we value creativity, curiosity, and collaboration, tailoring our innovative solutions to
                         cater to the unique learning needs of each individual. Join us on this exciting journey to
