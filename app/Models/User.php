@@ -62,7 +62,7 @@ class User extends Authenticatable
 
     public function isAdmin()
     {
-        return $this->type===true;
+        return $this->type === true;
 
     }
 }

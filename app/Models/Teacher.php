@@ -2,9 +2,9 @@
 
 namespace App\Models;
 
+use Cviebrock\EloquentSluggable\Sluggable;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use Cviebrock\EloquentSluggable\Sluggable;
 use Plank\Mediable\Mediable;
 
 class Teacher extends Model
@@ -17,15 +17,15 @@ class Teacher extends Model
         'name',
         'email',
         'slug',
-        'description'
+        'description',
     ];
 
     public function sluggable(): array
     {
         return [
             'slug' => [
-                'source' => 'name'
-            ]
+                'source' => 'name',
+            ],
         ];
     }
 }

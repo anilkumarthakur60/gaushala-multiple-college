@@ -28,7 +28,6 @@ class BlogController extends Controller
     public function store(StoreBlogRequest $request)
     {
 
-
         try {
             DB::beginTransaction();
 
@@ -46,12 +45,12 @@ class BlogController extends Controller
             }
             DB::commit();
 
-        }catch (\Exception $exception){
+        } catch (\Exception $exception) {
             DB::rollBack();
             flash()->addError($exception->getMessage());
+
             return redirect()->back();
         }
-
 
         return redirect()->route('blogs.index');
     }
@@ -84,7 +83,7 @@ class BlogController extends Controller
         $blog->load('tags');
         $tags = Tag::query()->get();
 
-        return view('backend.blogs.edit',compact('blog','tags'));
+        return view('backend.blogs.edit', compact('blog', 'tags'));
         //
     }
 
@@ -96,7 +95,7 @@ class BlogController extends Controller
 
         try {
             DB::beginTransaction();
-            $data = $request->safe(['name','description']);
+            $data = $request->safe(['name', 'description']);
 
             $blog->update($data);
 

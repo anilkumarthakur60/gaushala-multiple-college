@@ -26,7 +26,7 @@ class CourseController extends Controller
      */
     public function store(StoreCourseRequest $request)
     {
-        $course=Course::query()->create($request->validated());
+        $course = Course::query()->create($request->validated());
 
         $course->tag($request->input('tags'));
         if ($request->hasFile('image')) {
@@ -36,6 +36,7 @@ class CourseController extends Controller
                 ->upload();
             $course->attachMedia($media->id, 'blogImage');
         }
+
         return redirect()->route('courses.index');
     }
 
@@ -64,7 +65,7 @@ class CourseController extends Controller
         $course->load('tags');
         $tags = Tag::query()->get();
 
-        return view('backend.courses.edit',compact('course','tags'));
+        return view('backend.courses.edit', compact('course', 'tags'));
 
     }
 
@@ -74,8 +75,7 @@ class CourseController extends Controller
     public function update(UpdateCourseRequest $request, Course $course)
     {
 
-
-        $data = $request->safe(['name','students']);
+        $data = $request->safe(['name', 'students']);
 
         $course->update($data);
 

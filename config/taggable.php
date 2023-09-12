@@ -52,7 +52,7 @@ return [
      * to get a collection of all the Posts that are tagged "Apple".
      */
     'taggedModels' => [
-        'blogs'=>\App\Models\Blog::class
+        'blogs' => \App\Models\Blog::class,
     ],
 
     /**

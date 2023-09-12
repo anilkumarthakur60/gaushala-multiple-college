@@ -13,22 +13,22 @@ class Blog extends Model
 {
     use HasFactory;
     use Mediable;
-    use Taggable;
     use Sluggable;
+    use Taggable;
 
     protected $fillable = [
         'name',
         'slug',
         'description',
-        'status'
+        'status',
     ];
 
     public function sluggable(): array
     {
         return [
             'slug' => [
-                'source' => 'name'
-            ]
+                'source' => 'name',
+            ],
         ];
     }
 
@@ -37,14 +37,12 @@ class Blog extends Model
         return $query->where('status', true);
     }
 
-
-
-    public function scopeQueryFilter(Builder $query,$search): Builder
+    public function scopeQueryFilter(Builder $query, $search): Builder
     {
-        if (empty($search)){
+        if (empty($search)) {
             return $query;
         }
-        return $query->likeWhere(['name','description'],$search);
+
+        return $query->likeWhere(['name', 'description'], $search);
     }
 }
-

@@ -70,7 +70,6 @@
     </div>
     <!-- About End -->
 
-    <!-- Courses Start -->
     <div class="container-fluid py-5">
         <div class="container py-5">
             <div class="text-center mb-5">
@@ -188,10 +187,7 @@
             </div>
         </div>
     </div>
-    <!-- Courses End -->
 
-
-    <!-- Registration Start -->
     <div class="container-fluid bg-registration py-5" style="margin: 90px 0;">
         <div class="container py-5">
             <div class="row align-items-center">

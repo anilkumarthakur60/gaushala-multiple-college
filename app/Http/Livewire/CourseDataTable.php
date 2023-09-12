@@ -2,10 +2,9 @@
 
 namespace App\Http\Livewire;
 
+use App\Models\Course;
 use Rappasoft\LaravelLivewireTables\DataTableComponent;
 use Rappasoft\LaravelLivewireTables\Views\Column;
-use App\Models\Course;
-use Rappasoft\LaravelLivewireTables\Views\Columns\BooleanColumn;
 use Rappasoft\LaravelLivewireTables\Views\Columns\ButtonGroupColumn;
 use Rappasoft\LaravelLivewireTables\Views\Columns\ImageColumn;
 use Rappasoft\LaravelLivewireTables\Views\Columns\LinkColumn;
@@ -47,7 +46,7 @@ class CourseDataTable extends DataTableComponent
                 })
                 ->buttons([
                     LinkColumn::make('View') // make() has no effect in this case but needs to be set anyway
-                    ->title(fn ($row) => 'Edit')
+                        ->title(fn ($row) => 'Edit')
                         ->location(fn ($row) => route('courses.edit', $row?->slug))
                         ->attributes(function ($row) {
                             return [

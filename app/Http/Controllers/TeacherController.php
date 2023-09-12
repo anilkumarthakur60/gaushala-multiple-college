@@ -31,7 +31,7 @@ class TeacherController extends Controller
      */
     public function store(StoreTeacherRequest $request)
     {
-        $teacher=Teacher::query()->create($request->validated());
+        $teacher = Teacher::query()->create($request->validated());
 
         if ($request->hasFile('image')) {
             $media = MediaUploader::fromSource($request->file('image'))
@@ -40,6 +40,7 @@ class TeacherController extends Controller
                 ->upload();
             $teacher->attachMedia($media->id, 'teacherImage');
         }
+
         return to_route('teachers.index');
     }
 
@@ -48,7 +49,7 @@ class TeacherController extends Controller
      */
     public function edit(Teacher $teacher)
     {
-            return view('backend.teachers.edit',compact('teacher'));
+        return view('backend.teachers.edit', compact('teacher'));
     }
 
     /**
@@ -56,7 +57,7 @@ class TeacherController extends Controller
      */
     public function update(UpdateTeacherRequest $request, Teacher $teacher)
     {
-        $data = $request->safe(['name','description']);
+        $data = $request->safe(['name', 'description']);
 
         $teacher->update($data);
 

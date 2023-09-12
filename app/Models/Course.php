@@ -11,10 +11,10 @@ use Plank\Mediable\Mediable;
 class Course extends Model
 {
     use HasFactory;
-
     use Mediable;
-    use Taggable;
     use Sluggable;
+    use Taggable;
+
     protected $fillable = [
         'name',
         'description',
@@ -28,9 +28,8 @@ class Course extends Model
     {
         return [
             'slug' => [
-                'source' => 'name'
-            ]
+                'source' => 'name',
+            ],
         ];
     }
-
 }

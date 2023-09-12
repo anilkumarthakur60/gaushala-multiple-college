@@ -11,7 +11,6 @@ class UpdateTeacherRequest extends FormRequest
         return true;
     }
 
-
     public function rules(StoreTeacherRequest $request): array
     {
         return [

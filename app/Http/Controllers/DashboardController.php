@@ -24,10 +24,10 @@ class DashboardController extends Controller
                 'icon' => 'fa-solid fa-panorama',
                 'count' => Blog::count(),
                 'name' => 'Blogs',
-            ]
+            ],
         ];
 
-        return view('dashboard',compact('data'));
+        return view('dashboard', compact('data'));
     }
     //
 }

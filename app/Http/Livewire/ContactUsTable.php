@@ -2,12 +2,9 @@
 
 namespace App\Http\Livewire;
 
-use App\Models\Blog;
+use App\Models\ContactUs;
 use Rappasoft\LaravelLivewireTables\DataTableComponent;
 use Rappasoft\LaravelLivewireTables\Views\Column;
-use App\Models\ContactUs;
-use Rappasoft\LaravelLivewireTables\Views\Columns\ButtonGroupColumn;
-use Rappasoft\LaravelLivewireTables\Views\Columns\LinkColumn;
 
 class ContactUsTable extends DataTableComponent
 {
@@ -21,17 +18,17 @@ class ContactUsTable extends DataTableComponent
     public function columns(): array
     {
         return [
-            Column::make("Id", "id")
+            Column::make('Id', 'id')
                 ->sortable(),
-            Column::make("Name", "name")
+            Column::make('Name', 'name')
                 ->sortable(),
-            Column::make("Email", "email")
+            Column::make('Email', 'email')
                 ->sortable(),
-            Column::make("Subject", "subject")
+            Column::make('Subject', 'subject')
                 ->sortable(),
-            Column::make("Message", "message")
+            Column::make('Message', 'message')
                 ->sortable(),
-            Column::make("Created at", "created_at")
+            Column::make('Created at', 'created_at')
                 ->sortable(),
         ];
     }

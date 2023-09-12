@@ -2,9 +2,9 @@
 
 namespace App\Http\Livewire;
 
+use App\Models\Teacher;
 use Rappasoft\LaravelLivewireTables\DataTableComponent;
 use Rappasoft\LaravelLivewireTables\Views\Column;
-use App\Models\Teacher;
 use Rappasoft\LaravelLivewireTables\Views\Columns\ButtonGroupColumn;
 use Rappasoft\LaravelLivewireTables\Views\Columns\ImageColumn;
 use Rappasoft\LaravelLivewireTables\Views\Columns\LinkColumn;
@@ -21,24 +21,24 @@ class TeacherDataTable extends DataTableComponent
     public function columns(): array
     {
         return [
-            Column::make("Id", "id")
+            Column::make('Id', 'id')
                 ->sortable(),
-                ImageColumn::make('Image')
+            ImageColumn::make('Image')
                 ->location(fn ($row) => $row->firstMedia('teacherImage')?->getUrl()
                 )->attributes(fn ($row) => [
                     'class' => 'rounded-full ',
                     'style' => 'height:40px',
                     'alt' => $row->name,
                 ]),
-                Column::make('Name', 'name')
+            Column::make('Name', 'name')
                 ->searchable()
                 ->sortable(),
-                Column::make('Email', 'email')
+            Column::make('Email', 'email')
                 ->searchable()
                 ->sortable(),
             Column::make('Slug', 'slug')
                 ->sortable(),
-                ButtonGroupColumn::make('Actions')
+            ButtonGroupColumn::make('Actions')
                 ->attributes(function ($row) {
                     return [
                         'class' => 'mx-2',
@@ -46,7 +46,7 @@ class TeacherDataTable extends DataTableComponent
                 })
                 ->buttons([
                     LinkColumn::make('View') // make() has no effect in this case but needs to be set anyway
-                    ->title(fn ($row) => 'Edit')
+                        ->title(fn ($row) => 'Edit')
                         ->location(fn ($row) => route('teachers.edit', $row?->slug))
                         ->attributes(function ($row) {
                             return [
@@ -54,7 +54,7 @@ class TeacherDataTable extends DataTableComponent
                             ];
                         }),
 
-                ])
+                ]),
         ];
     }
 }

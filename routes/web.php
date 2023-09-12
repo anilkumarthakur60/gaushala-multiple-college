@@ -33,7 +33,6 @@ Route::controller(DashboardController::class)
         Route::resource('contact-us', ContactUsController::class)->only(['index', 'destroy']);
     });
 
-
 Route::group(['prefix' => 'laravel-filemanager', 'middleware' => ['web', 'auth']], function () {
     Lfm::routes();
 });

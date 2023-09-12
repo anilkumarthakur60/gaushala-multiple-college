@@ -5,23 +5,22 @@ namespace App\Http\Controllers;
 use App\Http\Requests\StoreContactUsRequest;
 use App\Models\Blog;
 use App\Models\ContactUs;
-use Cviebrock\EloquentTaggable\Models\Tag;
 use Illuminate\Http\Request;
 
 class FrontendController extends Controller
 {
     public function index(Request $request)
     {
-        $queryTag=$request->query('tag');
-        $search=$request->query('query');
-        $blogs=Blog::query()
+        $queryTag = $request->query('tag');
+        $search = $request->query('query');
+        $blogs = Blog::query()
             ->active()
             ->queryFilter($search)
-            ->when($queryTag,fn($query) => $query->withAnyTags($queryTag))
+            ->when($queryTag, fn ($query) => $query->withAnyTags($queryTag))
             ->limit(3)
             ->get();
 
-        return view('frontend.index',compact('blogs'));
+        return view('frontend.index', compact('blogs'));
 
     }
 
@@ -61,33 +60,34 @@ class FrontendController extends Controller
 
     public function blogs(Request $request)
     {
-        $queryTag=$request->query('tag');
-        $search=$request->query('query');
-        $blogs=Blog::query()
+        $queryTag = $request->query('tag');
+        $search = $request->query('query');
+        $blogs = Blog::query()
             ->active()
             ->queryFilter($search)
-            ->when($queryTag,fn($query) => $query->withAnyTags($queryTag))
+            ->when($queryTag, fn ($query) => $query->withAnyTags($queryTag))
             ->paginate(10);
 
-        $recentBlogs=Blog::query()
+        $recentBlogs = Blog::query()
             ->active()
             ->latest()
             ->take(4)
             ->get();
-        $tags=Blog::query()
+        $tags = Blog::query()
             ->withWhereHas('tags')
             ->get()
             ?->pluck('tags')
             ?->flatten(1)
             ?->pluck('name')
             ?->toArray();
-        return view('frontend.blogs',compact(['blogs','recentBlogs','tags']));
+
+        return view('frontend.blogs', compact(['blogs', 'recentBlogs', 'tags']));
 
     }
 
     public function blogsDetail(Blog $blog)
     {
-        return view('frontend.blog-detail',compact('blog'));
+        return view('frontend.blog-detail', compact('blog'));
 
     }
 
