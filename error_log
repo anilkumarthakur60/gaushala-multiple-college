@@ -1,0 +1,20 @@
+[14-Sep-2023 18:23:53 UTC] PHP Warning:  require(/home/meriaama/skps/skps_back/vendor/autoload.php): Failed to open stream: No such file or directory in /home/meriaama/skps/skps_back/artisan on line 18
+[14-Sep-2023 18:23:53 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/meriaama/skps/skps_back/vendor/autoload.php' (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/meriaama/skps/skps_back/artisan:18
+Stack trace:
+#0 {main}
+  thrown in /home/meriaama/skps/skps_back/artisan on line 18
+[14-Sep-2023 18:23:55 UTC] PHP Warning:  require(/home/meriaama/skps/skps_back/vendor/autoload.php): Failed to open stream: No such file or directory in /home/meriaama/skps/skps_back/artisan on line 18
+[14-Sep-2023 18:23:55 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/meriaama/skps/skps_back/vendor/autoload.php' (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/meriaama/skps/skps_back/artisan:18
+Stack trace:
+#0 {main}
+  thrown in /home/meriaama/skps/skps_back/artisan on line 18
+[14-Sep-2023 18:24:01 UTC] PHP Warning:  require(/home/meriaama/skps/skps_back/vendor/autoload.php): Failed to open stream: No such file or directory in /home/meriaama/skps/skps_back/artisan on line 18
+[14-Sep-2023 18:24:01 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/meriaama/skps/skps_back/vendor/autoload.php' (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/meriaama/skps/skps_back/artisan:18
+Stack trace:
+#0 {main}
+  thrown in /home/meriaama/skps/skps_back/artisan on line 18
+[14-Sep-2023 18:24:06 UTC] PHP Warning:  require(/home/meriaama/skps/skps_back/vendor/autoload.php): Failed to open stream: No such file or directory in /home/meriaama/skps/skps_back/artisan on line 18
+[14-Sep-2023 18:24:06 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/meriaama/skps/skps_back/vendor/autoload.php' (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/meriaama/skps/skps_back/artisan:18
+Stack trace:
+#0 {main}
+  thrown in /home/meriaama/skps/skps_back/artisan on line 18
