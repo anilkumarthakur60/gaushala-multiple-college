@@ -15,7 +15,6 @@ class ContactUsController extends Controller
         return view('backend.contact_us.index');
     }
 
-
     /**
      * Store a newly created resource in storage.
      */

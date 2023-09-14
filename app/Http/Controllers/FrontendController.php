@@ -57,6 +57,7 @@ class FrontendController extends Controller
         return view('frontend.courses');
 
     }
+
     public function principalMessage()
     {
         return view('frontend.principal-message');
