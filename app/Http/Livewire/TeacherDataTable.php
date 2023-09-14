@@ -23,21 +23,26 @@ class TeacherDataTable extends DataTableComponent
         return [
             Column::make('Id', 'id')
                 ->sortable(),
+
             ImageColumn::make('Image')
                 ->location(fn ($row) => $row->firstMedia('teacherImage')?->getUrl()
                 )->attributes(fn ($row) => [
                     'class' => 'rounded-full ',
                     'style' => 'height:40px',
-                    'alt' => $row->name,
+                    'alt' => $row->firstMedia('teacherImage')?->getUrl(),
                 ]),
+
             Column::make('Name', 'name')
                 ->searchable()
                 ->sortable(),
+
             Column::make('Email', 'email')
                 ->searchable()
                 ->sortable(),
+
             Column::make('Slug', 'slug')
                 ->sortable(),
+
             ButtonGroupColumn::make('Actions')
                 ->attributes(function ($row) {
                     return [

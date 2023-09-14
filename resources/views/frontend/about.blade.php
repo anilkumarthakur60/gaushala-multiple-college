@@ -15,9 +15,6 @@
             </div>
         </div>
     </div>
-    <!-- Header End -->
-
-    <!-- About Start -->
     <div class="container-fluid py-5">
         <div class="container py-5">
             <div class="row align-items-center">
@@ -66,106 +63,7 @@
             </div>
         </div>
     </div>
-    <!-- About End -->
 
+    <x-landing-contact-us-component/>
 
-    <!-- Registration Start -->
-    <div class="container-fluid bg-registration py-5" style="margin: 90px 0;">
-        <div class="container py-5">
-            <div class="row align-items-center">
-                <div class="col-lg-7 mb-5 mb-lg-0">
-                    <div class="mb-4">
-                        <h5 class="text-primary text-uppercase mb-3" style="letter-spacing: 5px;">Join Us Now</h5>
-                        <h1 class="text-white">Our Salient Features</h1>
-                    </div>
-                    <p class="text-white">Experience excellence at SKPS: Extensive courses, innovative teaching, nurturing environment. Join us now!</p>
-                    <ul class="list-inline text-white m-0">
-                        <li class="py-2"><i class="fa fa-check text-primary mr-3"></i>Extensive Course Offerings</li>
-                        <li class="py-2"><i class="fa fa-check text-primary mr-3"></i>Innovative Teaching Methods</li>
-                        <li class="py-2"><i class="fa fa-check text-primary mr-3"></i>Nurturing Environment</li>
-                        <li class="py-2"><i class="fa fa-check text-primary mr-3"></i>Parent-Teacher Partnership</li>
-                        <li class="py-2"><i class="fa fa-check text-primary mr-3"></i>Engaging and Enriching Curriculum</li>
-                    </ul>
-                </div>
-                <div class="col-lg-5">
-                    <div class="card border-0">
-                        <div class="card-header bg-light text-center p-4">
-                            <h1 class="m-0">Sign Up Now</h1>
-                        </div>
-                        <div class="card-body rounded-bottom bg-primary p-5">
-                            <form>
-                                <div class="form-group">
-                                    <input type="text" class="form-control border-0 p-4" placeholder="Your name" required="required" />
-                                </div>
-                                <div class="form-group">
-                                    <input type="email" class="form-control border-0 p-4" placeholder="Your email" required="required" />
-                                </div>
-                                <div class="form-group">
-                                    <select class="custom-select border-0 px-4" style="height: 47px;">
-                                        <option selected>Select a course</option>
-                                        <option value="1">Course 1</option>
-                                        <option value="2">Course 1</option>
-                                        <option value="3">Course 1</option>
-                                    </select>
-                                </div>
-                                <div>
-                                    <button class="btn btn-dark btn-block border-0 py-3" type="submit">Sign Up Now</button>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Registration End -->
-
-
-    <!-- Testimonial Start -->
-    <div class="container-fluid py-5">
-        <div class="container py-5">
-            <div class="text-center mb-5">
-                <h5 class="text-primary text-uppercase mb-3" style="letter-spacing: 5px;">Testimonial</h5>
-                <h1>What Our Students Say</h1>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <div class="owl-carousel testimonial-carousel">
-                        <div class="text-center">
-                            <i class="fa fa-3x fa-quote-left text-primary mb-4"></i>
-                            <h4 class="font-weight-normal mb-4">Life-changing experience! Engaging teachers, supportive environment. SKPS empowered me to chase my dreams!</h4>
-                            <img class="img-fluid mx-auto mb-3" src="{{asset('frontend/img/testimonial-1.jpg')}}" alt="">
-                            <h5 class="m-0">Kavya Adhikari</h5>
-                        </div>
-                        <div class="text-center">
-                            <i class="fa fa-3x fa-quote-left text-primary mb-4"></i>
-                            <h4 class="font-weight-normal mb-4">Unforgettable journey! Challenging curriculum, lifelong friends. SKPS shaped my future!</h4>
-                            <img class="img-fluid mx-auto mb-3" src="{{asset('frontend/img/testimonial-1.jpg')}}" alt="">
-                            <h5 class="m-0">Aryan Shrestha</h5>
-                        </div>
-                        <div class="text-center">
-                            <i class="fa fa-3x fa-quote-left text-primary mb-4"></i>
-                            <h4 class="font-weight-normal mb-4">Best decision ever! Dedicated teachers, boosted confidence. Grateful for SKPS!</h4>
-                            <img class="img-fluid mx-auto mb-3" src="{{asset('frontend/img/testimonial-1.jpg')}}" alt="">
-                            <h5 class="m-0">Anika Gurung</h5>
-                        </div>
-                        <div class="text-center">
-                            <i class="fa fa-3x fa-quote-left text-primary mb-4"></i>
-                            <h4 class="font-weight-normal mb-4">Inspiring and valued! Personalized attention, aim higher. Excited for the future!</h4>
-                            <img class="img-fluid mx-auto mb-3" src="{{asset('frontend/img/testimonial-1.jpg')}}" alt="">
-                            <h5 class="m-0">Nirav Thapa</h5>
-                        </div>
-                        <div class="text-center">
-                            <i class="fa fa-3x fa-quote-left text-primary mb-4"></i>
-                            <h4 class="font-weight-normal mb-4">Transformative education! Innovative learning, lifelong impact. SKPS exceeded my expectations!</h4>
-                            <img class="img-fluid mx-auto mb-3" src="{{asset('frontend/img/testimonial-1.jpg')}}" alt="">
-                            <h5 class="m-0">Rohan Bhattarai</h5>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Testimonial End -->
 @endsection
