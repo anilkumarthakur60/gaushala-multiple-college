@@ -18,14 +18,7 @@ jobs:
         key: ${{ secrets.SSH_PRIVATE_KEY }}
         port: 22
         script: |
-          cd /home/meriaama/skps/skps_back
-          git pull origin main
-          git status
-          composer install --optimize-autoloader --no-dev
-          php artisan config:cache
-          php artisan event:cache
-          php artisan route:cache
-          php artisan view:cache
+
           git push ssh://meriaama@69.57.172.2/home/meriaama/repo/skps.git main
 
 
