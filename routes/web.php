@@ -19,12 +19,18 @@ Route::controller(FrontendController::class)->as('frontend.')->group(function ()
     Route::get('privacy-policy', 'privacyPolicy')->name('privacy-policy');
     Route::get('terms-and-condition', 'termsAndCondition')->name('terms-and-condition');
     Route::get('faq', 'faq')->name('faq');
-    Route::get('blogs', 'blogs')->name('blogs');
-    Route::get('blogs/{blog:slug}', 'blogsDetail')->name('blogs.detail');
+    Route::get('notice', 'blogs')->name('blogs');
+    Route::get('notice/{blog:slug}', 'blogsDetail')->name('blogs.detail');
     Route::post('contact-us', 'contactUsStore')->name('contact-us.store');
     Route::get('admission', 'admission')->name('admission');
     Route::get('technology', 'technology')->name('technology');
     Route::get('facilities', 'facilities')->name('facilities');
+
+    Route::get('community-service', 'communityService')->name('community-service');
+    Route::get('educational-tour', 'educationalTour')->name('educational-tour');
+    Route::get('scout', 'scout')->name('scout');
+    Route::get('project-based-learning', 'projectBasedLearning')->name('project-based-learning');
+    Route::get('prize-distribution', 'prizeDistribution')->name('prize-distribution');
 });
 
 

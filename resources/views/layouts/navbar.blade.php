@@ -84,6 +84,29 @@
                                 </a>
                             </div>
                         </div>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown"
+                                aria-expanded="false">
+                                Activities
+                            </a>
+                            <div class="dropdown-menu rounded-0 m-0">
+                                <a href="{{ route('frontend.community-service') }}" class="dropdown-item">
+                                    Community Services
+                                </a>
+                                <a href="{{ route('frontend.educational-tour') }}" class="dropdown-item">
+                                    Education Tour
+                                </a>
+                                <a href="{{ route('frontend.scout') }}" class="dropdown-item">
+                                    Scout
+                                </a>
+                                <a href="{{ route('frontend.project-based-learning') }}" class="dropdown-item">
+                                    Project Based Learning
+                                </a>
+                                <a href="{{ route('frontend.prize-distribution') }}" class="dropdown-item">
+                                    Prize Distribution
+                                </a>
+                            </div>
+                        </div>
 
                         <a href="{{ route('frontend.blogs') }}"
                             class="nav-item nav-link {{ request()->routeIs('frontend.blogs') ? 'active' : '' }}">

@@ -14,10 +14,7 @@
             </div>
         </div>
     </div>
-    <!-- Header End -->
 
-
-    <!-- Blog Start -->
     <div class="container-fluid py-5">
         <div class="container py-5">
             <div class="row">
@@ -41,7 +38,7 @@
                         @empty
                             <div class="col-lg-12">
                                 <div class="alert alert-danger">
-                                    No Blog Found
+                                    No Notice Found
                                 </div>
                             </div>
                         @endforelse
@@ -65,7 +62,7 @@
                     </div>
 
                     <div class="mb-5">
-                        <h3 class="text-uppercase mb-4" style="letter-spacing: 5px;">Recent Posts</h3>
+                        <h3 class="text-uppercase mb-4" style="letter-spacing: 5px;">Recent Notice</h3>
                         @foreach($recentBlogs as $r)
                             <a class="d-flex align-items-center text-decoration-none mb-3"
                                href="{{route('frontend.blogs.detail',$r->slug)}}">

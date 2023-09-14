@@ -126,4 +126,24 @@ class FrontendController extends Controller
     {
         return view('frontend.facilities');
     }
+    public function communityService()
+    {
+        return view('frontend.community-service');
+    }
+    public function educationalTour()
+    {
+        return view('frontend.educational-tour');
+    }
+    public function scout()
+    {
+        return view('frontend.scout');
+    }
+    public function projectBasedLearning()
+    {
+        return view('frontend.project-based-learning');
+    }
+    public function prizeDistribution()
+    {
+        return view('frontend.prize-distribution');
+    }
 }
