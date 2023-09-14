@@ -1,33 +1,29 @@
 name: Deploy
 on:
   push:
-    branches: [ main ]
-
-run-name: Deploy to Server
+    branches: [main]
+run-name: Deploy to shared repository
 jobs:
-
   build:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Deploy using ssh
-      uses: appleboy/ssh-action@master
-      with:
-        host: ${{ secrets.HOST }}
-        username: ${{ secrets.USERNAME }}
-        key: ${{ secrets.SSH_PRIVATE_KEY }}
-        port: 22
-        script: |
+      - name: Deploy using ssh
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          port: 22
+          script: |
+            # Configure SSH key for authentication
+            mkdir -p ~/.ssh
+            echo "$SSH_PRIVATE_KEY" > ~/.ssh/youtube
+            chmod 600 ~/.ssh/youtube
 
-          # Configure SSH key for authentication
-          echo "$SSH_PRIVATE_KEY" > ~/.ssh/youtube
-          chmod 600 ~/.ssh/youtube
-
-          # Push to the remote server using the private key
-          git remote add deploy ssh://meriaama@69.57.172.2/home/meriaama/repo/skps.git
-          git push deploy main
+            # Push to the remote server using the private key
+            git remote add deploy ssh://meriaama@69.57.172.2/home/meriaama/repo/skps.git
+            git push deploy main
 
         env:
           SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
-
-
