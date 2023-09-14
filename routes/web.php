@@ -15,12 +15,17 @@ Route::controller(FrontendController::class)->as('frontend.')->group(function ()
     Route::get('teachers', 'teachers')->name('teachers');
     Route::get('contact-us', 'contactUs')->name('contact-us');
     Route::get('courses', 'courses')->name('courses');
+    Route::get('principal-message', 'principalMessage')->name('principal-message');
     Route::get('privacy-policy', 'privacyPolicy')->name('privacy-policy');
     Route::get('terms-and-condition', 'termsAndCondition')->name('terms-and-condition');
     Route::get('faq', 'faq')->name('faq');
     Route::get('blogs', 'blogs')->name('blogs');
     Route::get('blogs/{blog:slug}', 'blogsDetail')->name('blogs.detail');
     Route::post('contact-us', 'contactUsStore')->name('contact-us.store');
+});
+
+Route::controller(ContactUsController::class)->prefix('contact-us')->as('contact-us.')->group(function () {
+    Route::post('', 'store')->name('store');
 });
 
 Route::controller(DashboardController::class)
