@@ -33,7 +33,7 @@
                         <h1 class="m-0">Enquiry you thought</h1>
                     </div>
                     <div class="card-body rounded-bottom bg-primary p-5">
-                        <form action="{{route('contact-us.store')}}" method="POST">
+                        <form action="{{route('frontend.contact-us.store')}}" method="POST">
                             @csrf
                             <div class="form-group">
                                     <input type="text" name="name" class="form-control border-0 p-4" placeholder="Your name"

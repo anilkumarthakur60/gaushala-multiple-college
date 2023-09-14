@@ -22,11 +22,11 @@ Route::controller(FrontendController::class)->as('frontend.')->group(function ()
     Route::get('blogs', 'blogs')->name('blogs');
     Route::get('blogs/{blog:slug}', 'blogsDetail')->name('blogs.detail');
     Route::post('contact-us', 'contactUsStore')->name('contact-us.store');
+    Route::get('admission', 'admission')->name('admission');
+    Route::get('technology', 'technology')->name('technology');
+    Route::get('facilities', 'facilities')->name('facilities');
 });
 
-Route::controller(ContactUsController::class)->prefix('contact-us')->as('contact-us.')->group(function () {
-    Route::post('', 'store')->name('store');
-});
 
 Route::controller(DashboardController::class)
     ->middleware(['admin', 'auth'])

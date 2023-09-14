@@ -73,13 +73,13 @@
                                 Curriculum
                             </a>
                             <div class="dropdown-menu rounded-0 m-0">
-                                <a href="{{ route('frontend.about') }}" class="dropdown-item">
+                                <a href="{{ route('frontend.admission') }}" class="dropdown-item">
                                     Admission
                                 </a>
-                                <a href="{{ route('frontend.principal-message') }}" class="dropdown-item">
+                                <a href="{{ route('frontend.technology') }}" class="dropdown-item">
                                     Technology
                                 </a>
-                                <a href="{{ route('frontend.teachers') }}" class="dropdown-item">
+                                <a href="{{ route('frontend.facilities') }}" class="dropdown-item">
                                     Facilities
                                 </a>
                             </div>

@@ -16,7 +16,7 @@ class FrontendController extends Controller
         $blogs = Blog::query()
             ->active()
             ->queryFilter($search)
-            ->when($queryTag, fn ($query) => $query->withAnyTags($queryTag))
+            ->when($queryTag, fn($query) => $query->withAnyTags($queryTag))
             ->limit(3)
             ->get();
 
@@ -71,7 +71,7 @@ class FrontendController extends Controller
         $blogs = Blog::query()
             ->active()
             ->queryFilter($search)
-            ->when($queryTag, fn ($query) => $query->withAnyTags($queryTag))
+            ->when($queryTag, fn($query) => $query->withAnyTags($queryTag))
             ->paginate(10);
 
         $recentBlogs = Blog::query()
@@ -110,5 +110,20 @@ class FrontendController extends Controller
     public function faq()
     {
         return view('frontend.faq');
+    }
+
+    public function admission()
+    {
+        return view('frontend.admission');
+    }
+
+    public function technology()
+    {
+        return view('frontend.technology');
+    }
+
+    public function facilities()
+    {
+        return view('frontend.facilities');
     }
 }
