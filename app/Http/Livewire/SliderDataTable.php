@@ -22,7 +22,6 @@ class SliderDataTable extends DataTableComponent
     public function columns(): array
     {
         return [
-
             ImageColumn::make('Image')
                 ->location(fn ($row) => $row->firstMedia('image')?->getUrl()
                 )->attributes(fn ($row) => [

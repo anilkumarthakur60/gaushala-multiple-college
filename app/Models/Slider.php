@@ -15,7 +15,7 @@ class Slider extends Model
     use Sluggable;
     use Taggable;
 
-    protected $fillable=['name','slug'];
+    protected $fillable = ['name', 'slug'];
 
     public function sluggable(): array
     {

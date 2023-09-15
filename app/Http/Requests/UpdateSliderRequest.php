@@ -14,7 +14,7 @@ class UpdateSliderRequest extends FormRequest
     public function rules(StoreSliderRequest $request): array
     {
         return [
-                ...$request->rules()
+            ...$request->rules(),
         ];
     }
 }
