@@ -18,6 +18,7 @@ class Teacher extends Model
         'email',
         'slug',
         'description',
+        'subject'
     ];
 
     public function sluggable(): array

@@ -10,18 +10,18 @@
                 </div>
 
                 <div class="card-body">
-                    <x-all-error-component />
+                    <x-all-error-component/>
                     <form action="{{route('teachers.store')}}" method="POST" enctype="multipart/form-data">
                         @csrf
                         <div class="row">
 
                             <div class="col-12">
                                 <img id="imagePreview" src="{{asset('front/assets/images/preview.png')}}" alt=""
-                                    class="mb-2 rounded" width="125" height="125">
+                                     class="mb-2 rounded" width="125" height="125">
                                 <div class="form-group mb-3">
                                     <label for="image" class="form-label">Image</label>
                                     <input name="image" class="form-control @error('image') is-invalid @enderror"
-                                        type="file" id="image" onchange="preview()">
+                                           type="file" id="image" onchange="preview()">
                                     @error('image')
                                     <div class="invalid-feedback">{{ $message }}</div>
                                     @enderror
@@ -30,13 +30,18 @@
 
                             <div class="form-floating col-6 mb-3">
                                 <x-required-component type="text" required="required" names="name" placeholder="Name"
-                                    classes="form-control">Name
+                                                      classes="form-control">Name
                                 </x-required-component>
                             </div>
 
                             <div class="form-floating col-6 mb-3">
                                 <x-required-component type="email" required="required" names="email" placeholder="Email"
-                                    classes="form-control">Email
+                                                      classes="form-control">Email
+                                </x-required-component>
+                            </div>
+                            <div class="form-floating col-6 mb-3">
+                                <x-required-component type="text" required="required" names="subject" placeholder="Subject"
+                                                      classes="form-control">Subject
                                 </x-required-component>
                             </div>
 
@@ -44,7 +49,7 @@
                             <div class="col-12 my-2">
                                 <label for="description" class="form-label">Description</label>
                                 <textarea name="description" id="description" required cols="30"
-                                    rows="10">{!! old('description') !!}</textarea>
+                                          rows="10">{!! old('description') !!}</textarea>
 
                                 <x-jet-input-error for="description"></x-jet-input-error>
                             </div>
@@ -57,7 +62,8 @@
 
             </div>
         </div>
-    </main>>
+    </main>
+    >
     <script src="//cdn.ckeditor.com/4.6.2/standard/ckeditor.js"></script>
     <script>
         var options = {

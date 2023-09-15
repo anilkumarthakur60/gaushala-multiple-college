@@ -22,6 +22,10 @@ class StoreTeacherRequest extends FormRequest
                 'required',
                 'max:255',
             ],
+            'subject' => [
+                'required',
+                'max:30',
+            ],
             'description' => [
                 'required',
                 'max:255',
