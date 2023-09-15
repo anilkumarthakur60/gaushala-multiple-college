@@ -31,6 +31,7 @@ Route::controller(FrontendController::class)->as('frontend.')->group(function ()
     Route::get('scout', 'scout')->name('scout');
     Route::get('project-based-learning', 'projectBasedLearning')->name('project-based-learning');
     Route::get('prize-distribution', 'prizeDistribution')->name('prize-distribution');
+    Route::get('calendar', 'calendar')->name('calendar');
 });
 
 

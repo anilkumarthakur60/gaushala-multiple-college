@@ -105,6 +105,9 @@
                                 <a href="{{ route('frontend.prize-distribution') }}" class="dropdown-item">
                                     Prize Distribution
                                 </a>
+                                <a href="{{ route('frontend.calendar') }}" class="dropdown-item">
+                                    Calendar
+                                </a>
                             </div>
                         </div>
 

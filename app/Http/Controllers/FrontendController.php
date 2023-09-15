@@ -146,4 +146,8 @@ class FrontendController extends Controller
     {
         return view('frontend.prize-distribution');
     }
+    public function calendar()
+    {
+        return view('frontend.calendar');
+    }
 }
