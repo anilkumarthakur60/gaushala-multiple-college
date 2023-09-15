@@ -47,6 +47,13 @@
                         <span>Teachers</span>
                     </a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link {{ request()->routeIs('*sliders*') ? 'active' : '' }}"
+                       href="{{route('sliders.index')}}">
+                        <x-dashboard-icons.slider/>
+                        <span>Sliders</span>
+                    </a>
+                </li>
             </ul>
         </div>
     </div>

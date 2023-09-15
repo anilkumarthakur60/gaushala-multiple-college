@@ -57,7 +57,7 @@ class TeacherController extends Controller
      */
     public function update(UpdateTeacherRequest $request, Teacher $teacher)
     {
-        $data = $request->safe(['name', 'description','subject']);
+        $data = $request->safe(['name', 'description', 'subject']);
 
         $teacher->update($data);
 

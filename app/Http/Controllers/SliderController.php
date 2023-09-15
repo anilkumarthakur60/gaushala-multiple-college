@@ -2,46 +2,43 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Requests\StoreBlogRequest;
-use App\Http\Requests\UpdateBlogRequest;
-use App\Models\Blog;
-use Cviebrock\EloquentTaggable\Models\Tag;
+use App\Http\Requests\StoreSliderRequest;
+use App\Http\Requests\UpdateSliderRequest;
+use App\Models\Slider;
 use Illuminate\Database\QueryException;
 use Illuminate\Support\Facades\DB;
 use Plank\Mediable\Facades\MediaUploader;
 use Plank\Mediable\Media;
 
-class BlogController extends Controller
+class SliderController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        return view('backend.blogs.index');
+        return view('backend.sliders.index');
         //
     }
 
     /**
      * Store a newly created resource in storage.
      */
-    public function store(StoreBlogRequest $request)
+    public function store(StoreSliderRequest $request)
     {
 
         try {
             DB::beginTransaction();
 
-            $blog = Blog::query()->create(attributes: $request->only([
+            $blog = Slider::query()->create(attributes: $request->only([
                 'name',
-                'description',
             ]));
-            $blog->tag($request->input('tags'));
             if ($request->hasFile('image')) {
                 $media = MediaUploader::fromSource($request->file('image'))
                     ->useHashForFilename()
                     ->toDisk('uploads')
                     ->upload();
-                $blog->attachMedia($media->id, 'blogImage');
+                $blog->attachMedia($media->id, 'image');
             }
             DB::commit();
 
@@ -52,7 +49,7 @@ class BlogController extends Controller
             return redirect()->back();
         }
 
-        return redirect()->route('blogs.index');
+        return redirect()->route('sliders.index');
     }
 
     /**
@@ -61,16 +58,14 @@ class BlogController extends Controller
     public function create()
     {
 
-        $tags = Tag::query()->get();
-
-        return view('backend.blogs.create', compact('tags'));
+        return view('backend.sliders.create');
 
     }
 
     /**
      * Display the specified resource.
      */
-    public function show(Blog $blog)
+    public function show(Slider $slider)
     {
         //
     }
@@ -78,39 +73,33 @@ class BlogController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(Blog $blog)
+    public function edit(Slider $slider)
     {
-        $blog->load('tags');
-        $tags = Tag::query()->get();
 
-        return view('backend.blogs.edit', compact('blog', 'tags'));
+        return view('backend.sliders.edit', compact('slider'));
         //
     }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(UpdateBlogRequest $request, Blog $blog)
+    public function update(UpdateSliderRequest $request, Slider $slider)
     {
 
         try {
             DB::beginTransaction();
-            $data = $request->safe(['name', 'description', 'short_description']);
+            $data = $request->safe(['name']);
 
-            $blog->update($data);
+            $slider->update($data);
 
             if ($request->hasFile('image')) {
-                if ($blog->firstMedia('blogImage')) {
-                    $media = Media::find($blog->firstMedia('blogImage')->id);
+                if ($slider->firstMedia('image')) {
+                    $media = Media::find($slider->firstMedia('image')->id);
                     MediaUploader::fromSource($request->file('image'))->useHashForFilename()->toDisk('uploads')->replace($media);
                 } else {
                     $media = MediaUploader::fromSource($request->file('image'))->useHashForFilename()->toDisk('uploads')->upload();
-                    $blog->attachMedia($media, 'blogImage');
+                    $slider->attachMedia($media, 'image');
                 }
-            }
-
-            if ($request->filled('tags')) {
-                $blog->retag($request->input('tags'));
             }
 
             DB::commit();
@@ -124,7 +113,7 @@ class BlogController extends Controller
             dd($e);
         }
 
-        return to_route('blogs.index');
+        return to_route('sliders.index');
 
         //
     }
@@ -132,7 +121,7 @@ class BlogController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Blog $blog)
+    public function destroy(Slider $slider)
     {
         return back();
 

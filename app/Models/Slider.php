@@ -3,23 +3,19 @@
 namespace App\Models;
 
 use Cviebrock\EloquentSluggable\Sluggable;
+use Cviebrock\EloquentTaggable\Taggable;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Plank\Mediable\Mediable;
 
-class Teacher extends Model
+class Slider extends Model
 {
     use HasFactory;
     use Mediable;
     use Sluggable;
+    use Taggable;
 
-    protected $fillable = [
-        'name',
-        'email',
-        'slug',
-        'description',
-        'subject',
-    ];
+    protected $fillable=['name','slug'];
 
     public function sluggable(): array
     {

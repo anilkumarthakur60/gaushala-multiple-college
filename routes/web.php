@@ -5,9 +5,9 @@ use App\Http\Controllers\ContactUsController;
 use App\Http\Controllers\CourseController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\FrontendController;
+use App\Http\Controllers\SliderController;
 use App\Http\Controllers\TeacherController;
 use Illuminate\Support\Facades\Route;
-use UniSharp\LaravelFilemanager\Lfm;
 
 Route::controller(FrontendController::class)->as('frontend.')->group(function () {
     Route::get('/', 'index')->name('index');
@@ -34,12 +34,12 @@ Route::controller(FrontendController::class)->as('frontend.')->group(function ()
     Route::get('calendar', 'calendar')->name('calendar');
 });
 
-
 Route::controller(DashboardController::class)
     ->middleware(['admin', 'auth'])
     ->prefix('dashboard')->group(function () {
         Route::get('', 'index')->name('dashboard');
         Route::resource('blogs', BlogController::class)->scoped(['blog' => 'slug']);
+        Route::resource('sliders', SliderController::class)->scoped(['slider' => 'slug']);
         Route::resource('courses', CourseController::class)->scoped(['course' => 'slug']);
         Route::resource('teachers', TeacherController::class)->scoped(['teacher' => 'slug']);
         Route::resource('contact-us', ContactUsController::class)->only(['index', 'destroy']);

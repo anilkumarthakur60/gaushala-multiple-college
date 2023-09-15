@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1a3d8d94628259095a0b93427b2fbf3d",
+    "content-hash": "dd79d590f4c5e47455a83ddda8ad0534",
     "packages": [
         {
             "name": "anil/fast-api-crud",

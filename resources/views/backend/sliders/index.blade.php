@@ -4,12 +4,12 @@
             <div class="card">
                 <div class="card-header d-flex justify-content-between">
                     <div class="header-title">
-                        <h4 class="card-title">Notice</h4>
+                        <h4 class="card-title">Slider</h4>
                     </div>
-                    <a href="{{route('blogs.create')}}" class="btn btn-primary">Add</a>
+                    <a href="{{route('sliders.create')}}" class="btn btn-primary">Add</a>
                 </div>
                 <div class="card-body">
-                    @livewire('blog-table')
+                    @livewire('slider-data-table')
                 </div>
             </div>
         </div>

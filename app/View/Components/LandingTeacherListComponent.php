@@ -22,7 +22,8 @@ class LandingTeacherListComponent extends Component
      */
     public function render(): View|Closure|string
     {
-        $teachers=Teacher::query()->whereHasMedia('teacherImage')->get();
-        return view('components.landing-teacher-list-component',['teachers'=>$teachers]);
+        $teachers = Teacher::query()->whereHasMedia('teacherImage')->get();
+
+        return view('components.landing-teacher-list-component', ['teachers' => $teachers]);
     }
 }

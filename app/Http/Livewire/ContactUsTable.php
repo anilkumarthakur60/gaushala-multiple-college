@@ -18,8 +18,7 @@ class ContactUsTable extends DataTableComponent
     public function columns(): array
     {
         return [
-            Column::make('Id', 'id')
-                ->sortable(),
+
             Column::make('Name', 'name')
                 ->sortable(),
             Column::make('Email', 'email')

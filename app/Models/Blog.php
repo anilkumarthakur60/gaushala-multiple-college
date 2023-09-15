@@ -21,7 +21,7 @@ class Blog extends Model
         'slug',
         'description',
         'status',
-        'short_description'
+        'short_description',
     ];
 
     public function sluggable(): array
