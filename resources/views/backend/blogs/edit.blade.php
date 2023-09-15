@@ -31,11 +31,11 @@
                                 </div>
                             </div>
                             <div class="form-floating col-6 mb-3">
-                                <x-required-component type="text" required="required" names="name" value="{{$blog->name}}" placeholder="Name"
+                                <x-required-component type="text" required="required" names="name"
+                                                      value="{{$blog->name}}" placeholder="Name"
                                                       classes="form-control">Name
                                 </x-required-component>
                             </div>
-
 
 
                             <div class="col-12 my-2">
@@ -45,11 +45,22 @@
 
                                 <x-jet-input-error for="description"></x-jet-input-error>
                             </div>
+
+                            <div class="col-12 my-2">
+                                <label for="short_description" class="form-label">Short Description</label>
+                                <textarea name="short_description" id="short_description" required cols="30"
+                                          rows="10">{!! $blog->short_description !!}</textarea>
+
+                                <x-jet-input-error for="short_description"></x-jet-input-error>
+                            </div>
+
                             <div class="col-12 mb-3">
                                 <label for="tags" class="form-label">Tags</label>
-                                <select class="form-control multiselect-tag" id="tags" name="tags[]" multiple="multiple">
+                                <select class="form-control multiselect-tag" id="tags" name="tags[]"
+                                        multiple="multiple">
                                     @foreach($blog->tags as $tag)
-                                        <option value="{{$tag->name}}"  {{$blog->hasTag($tag->name)?'selected':''}} >{{$tag->name}}</option>
+                                        <option
+                                            value="{{$tag->name}}" {{$blog->hasTag($tag->name)?'selected':''}} >{{$tag->name}}</option>
                                     @endforeach
                                 </select>
 
@@ -86,6 +97,7 @@
     </script>
     <script>
         CKEDITOR.replace('description', options);
+        CKEDITOR.replace('short_description', options);
     </script>
 </x-app-layout>
 

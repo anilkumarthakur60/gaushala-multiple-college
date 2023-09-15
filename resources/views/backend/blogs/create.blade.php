@@ -42,6 +42,13 @@
 
                                 <x-jet-input-error for="description"></x-jet-input-error>
                             </div>
+                            <div class="col-12 my-2">
+                                <label for="short_description" class="form-label">Short Description</label>
+                                <textarea name="short_description" id="short_description" required cols="30"
+                                          rows="10">{!! old('short_description') !!}</textarea>
+
+                                <x-jet-input-error for="short_description"></x-jet-input-error>
+                            </div>
                             <div class="col-12 mb-3">
                                 <label for="tags" class="form-label">Tags</label>
                                 <select class="form-control multiselect-tag" id="tags" name="tags[]"
@@ -80,6 +87,7 @@
     </script>
     <script>
         CKEDITOR.replace('description', options);
+        CKEDITOR.replace('short_description', options);
     </script>
 </x-app-layout>
 

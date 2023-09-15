@@ -17,6 +17,7 @@ return new class extends Migration
             $table->string('slug');
             $table->boolean('status')->default(false);
             $table->longText('description');
+            $table->longText('short_description')->nullable();
             $table->timestamps();
         });
     }

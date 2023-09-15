@@ -30,6 +30,10 @@ class StoreBlogRequest extends FormRequest
                 'required',
                 'max:255000',
             ],
+            'short_description' => [
+                'required',
+                'max:255000',
+            ],
             'tags' => [
                 'required',
                 'array',

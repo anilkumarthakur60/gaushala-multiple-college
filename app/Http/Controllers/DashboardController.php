@@ -23,7 +23,7 @@ class DashboardController extends Controller
                 'bgClass' => 'bg-soft-primary',
                 'icon' => 'fa-solid fa-panorama',
                 'count' => Blog::count(),
-                'name' => 'Blogs',
+                'name' => 'Notice',
             ],
         ];
 

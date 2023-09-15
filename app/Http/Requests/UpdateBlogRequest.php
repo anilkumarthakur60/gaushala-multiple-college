@@ -2,6 +2,7 @@
 
 namespace App\Http\Requests;
 
+use Illuminate\Contracts\Validation\ValidationRule;
 use Illuminate\Foundation\Http\FormRequest;
 
 class UpdateBlogRequest extends FormRequest
@@ -17,9 +18,9 @@ class UpdateBlogRequest extends FormRequest
     /**
      * Get the validation rules that apply to the request.
      *
-     * @return array<string, \Illuminate\Contracts\Validation\ValidationRule|array|string>
+     * @return array<string, ValidationRule|array|string>
      */
-    public function rules(StoreBlogRequest $request): array
+    public function rules(): array
     {
         return [
 
@@ -28,6 +29,10 @@ class UpdateBlogRequest extends FormRequest
                 'max:255',
             ],
             'description' => [
+                'required',
+                'max:255000',
+            ],
+            'short_description' => [
                 'required',
                 'max:255000',
             ],

@@ -35,6 +35,9 @@ class TeacherDataTable extends DataTableComponent
             Column::make('Name', 'name')
                 ->searchable()
                 ->sortable(),
+            Column::make('Subject', 'subject')
+                ->searchable()
+                ->sortable(),
 
             Column::make('Email', 'email')
                 ->searchable()

@@ -33,13 +33,13 @@
                         <span>Contact Us</span>
                     </a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link {{ request()->routeIs('*courses*') ? 'active' : '' }}"
-                       href="{{route('courses.index')}}">
-                        <x-dashboard-icons.slider/>
-                        <span>Courses</span>
-                    </a>
-                </li>
+{{--                <li class="nav-item">--}}
+{{--                    <a class="nav-link {{ request()->routeIs('*courses*') ? 'active' : '' }}"--}}
+{{--                       href="{{route('courses.index')}}">--}}
+{{--                        <x-dashboard-icons.slider/>--}}
+{{--                        <span>Courses</span>--}}
+{{--                    </a>--}}
+{{--                </li>--}}
                 <li class="nav-item">
                     <a class="nav-link {{ request()->routeIs('*teachers*') ? 'active' : '' }}"
                        href="{{route('teachers.index')}}">
