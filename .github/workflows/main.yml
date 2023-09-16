@@ -21,7 +21,7 @@ jobs:
           script: |
 
 
-            cd /home/meriaama/skps/skps_back
+            cd /home/meriaama/skps.edu.np
             git pull origin main
             git status
             composer install --optimize-autoloader --no-dev
