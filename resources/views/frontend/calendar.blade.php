@@ -3,8 +3,8 @@
 @section('content')
     <x-bread-crumb-component title1="{{$t1='Calender'}}" title2="{{$t1}}" />
 
-    <div class="container">
-        <div class="my-5">
+    <div class="container-fluid">
+        <div class="container">
 
             <div class="calender-holder" style="width: 95%;">
                 <p style="font-size:20px;text-align:center;margin-top:60px;font-weight:bold" id="January">January</p>
@@ -3282,7 +3282,6 @@
                     </div>
                 </div>
             </div>
-
 
         </div>
     </div>

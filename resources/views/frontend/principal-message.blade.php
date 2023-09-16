@@ -3,13 +3,13 @@
 @section('content')
     <x-bread-crumb-component title1="{{$t1='Principal Message'}}" title2="{{$t1}}" />
 
-    <div class="container-fluid py-5 ">
-        <div class="container py-5">
+    <div class="container-fluid">
+        <div class="container">
             <div class="row align-items-center">
                 <h2 class="mb-3">
                     A Message from the Principal:
                 </h2>
-                <p class="text-justify"  >
+                <p class="text-justify " style="font-size: 1.15rem"  >
                     I am delighted and honored to extend a warm welcome to all of you to Kavya, a school with a fresh
                     vision. As we celebrate the completion of our sixth year, one of the most challenging periods since
                     our establishment, we are deeply grateful for the unwavering support of our esteemed parents,

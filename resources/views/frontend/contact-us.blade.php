@@ -3,8 +3,8 @@
 @section('content')
     <x-bread-crumb-component title1="{{$t1='Contact Us'}}" title2="{{$t1}}" />
 
-    <div class="container-fluid py-5">
-        <div class="container py-5">
+    <div class="container-fluid">
+        <div class="container">
             <div class="text-center mb-5">
                 <h5 class="text-primary text-uppercase mb-3" style="letter-spacing: 5px;">Contact</h5>
                 <h1>Contact For Any Query</h1>

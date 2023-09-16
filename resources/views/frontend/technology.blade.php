@@ -6,10 +6,10 @@
 
     <div class="container">
         <div class="">
-            <h5 class="font-weight-bold my-3 ">
+            <h3 class="font-weight-bold my-4 ">
                 To enrich our approach to e-learning, we have implemented smart boards as an integral part of our
                 classroom teaching and learning resources.
-            </h5>
+            </h3>
             <p class="text-justify my-4">
                 In our commitment to equipping students with modern technology, we have seamlessly integrated
                 Information and Communication Technology (ICT) into our educational framework. Our students have regular

@@ -4,8 +4,8 @@
 
     <x-bread-crumb-component title1="{{$t1='Notice'}}" title2="{{$t1}}" />
 
-    <div class="container-fluid py-5">
-        <div class="container py-5">
+    <div class="container-fluid">
+        <div class="container">
             <div class="row">
                 <div class="col-lg-8">
                     <div class="row pb-3">

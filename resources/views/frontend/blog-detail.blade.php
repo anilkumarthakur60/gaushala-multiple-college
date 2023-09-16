@@ -3,8 +3,9 @@
 
 
     <x-bread-crumb-component title1="{{$t1=$blog->name}}" title2="{{'notice-detail / '.$t1}}" />
-    <div class="container-fluid py-5">
-        <div class="container py-5">
+
+    <div class="container-fluid">
+        <div class="container">
             <div class="row">
                 <div class="col-lg-8">
                     <div class="mb-5">
