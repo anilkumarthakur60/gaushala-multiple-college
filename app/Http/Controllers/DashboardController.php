@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Models\Blog;
 use App\Models\ContactUs;
+use App\Models\Slider;
+use App\Models\Teacher;
 
 class DashboardController extends Controller
 {
@@ -12,6 +14,13 @@ class DashboardController extends Controller
         $data = [
 
             [
+                'route' => route('sliders.index'),
+                'bgClass' => 'bg-soft-primary',
+                'icon' => 'fa-solid fa-bell',
+                'count' => Blog::count(),
+                'name' => 'Notice',
+            ],
+            [
                 'route' => route('contact-us.index'),
                 'bgClass' => 'bg-soft-primary',
                 'icon' => 'fa-solid fa-images',
@@ -19,11 +28,18 @@ class DashboardController extends Controller
                 'name' => 'Contact Us',
             ],
             [
-                'route' => route('blogs.index'),
+                'route' => route('teachers.index'),
                 'bgClass' => 'bg-soft-primary',
-                'icon' => 'fa-solid fa-panorama',
-                'count' => Blog::count(),
-                'name' => 'Notice',
+                'icon' => 'fa-sharp fa-solid fa-chalkboard-user',
+                'count' => Teacher::count(),
+                'name' => 'Teacher',
+            ],
+            [
+                'route' => route('sliders.index'),
+                'bgClass' => 'bg-soft-primary',
+                'icon' => 'fa-solid fa-sliders',
+                'count' => Slider::count(),
+                'name' => 'Slider',
             ],
         ];
 

@@ -22,9 +22,10 @@ class BannerComponent extends Component
      */
     public function render(): View|Closure|string
     {
-        $sliders=Slider::query()->withMedia('image')->get();
-        return view('components.banner-component',[
-            "sliders"=>$sliders
+        $sliders = Slider::query()->withMedia('image')->get();
+
+        return view('components.banner-component', [
+            'sliders' => $sliders,
         ]);
     }
 }
