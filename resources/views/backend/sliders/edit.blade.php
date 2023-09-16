@@ -50,6 +50,7 @@
     </main>
     <x-select2/>
 
+
     <script>
         function thumbnailPreview() {
             blogThumbnail.src = URL.createObjectURL(event.target.files[0]);
