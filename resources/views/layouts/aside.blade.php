@@ -54,6 +54,13 @@
                         <span>Sliders</span>
                     </a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link {{ request()->routeIs('*news-letters*') ? 'active' : '' }}"
+                       href="{{route('news-letters.index')}}">
+                        <x-dashboard-icons.slider/>
+                        <span>News Letter</span>
+                    </a>
+                </li>
             </ul>
         </div>
     </div>

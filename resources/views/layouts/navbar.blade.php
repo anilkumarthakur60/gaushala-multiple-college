@@ -10,7 +10,7 @@
                 <i class="fa fa-2x fa-map-marker-alt text-primary mr-3"></i>
                 <div class="text-left">
                     <h6 class="font-weight-semi-bold mb-1">Location</h6>
-                    <small>Sunkoshi Rural Muncipality-7 Sindhupalchowk</small>
+                    <small>Sunkoshi Rural Muncipality-7,Sindhupalchowk</small>
                 </div>
             </div>
         </div>
@@ -117,7 +117,7 @@
                         </a>
                         <a href="{{ route('frontend.contact-us') }}"
                             class="nav-item nav-link {{ request()->routeIs('frontend.contact-us') ? 'active' : '' }}">
-                            Contact
+                            Contact Us
                         </a>
 
 

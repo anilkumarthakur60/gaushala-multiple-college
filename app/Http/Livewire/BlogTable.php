@@ -24,7 +24,8 @@ class BlogTable extends DataTableComponent
     public function columns(): array
     {
         return [
-
+            Column::make('ID', 'id')
+                ->sortable(),
             ImageColumn::make('Image')
                 ->location(fn ($row) => $row->firstMedia('blogImage')?->getUrl()
                 )->attributes(fn ($row) => [

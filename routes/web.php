@@ -5,6 +5,7 @@ use App\Http\Controllers\ContactUsController;
 use App\Http\Controllers\CourseController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\FrontendController;
+use App\Http\Controllers\NewsLetterController;
 use App\Http\Controllers\SliderController;
 use App\Http\Controllers\TeacherController;
 use Illuminate\Support\Facades\Route;
@@ -14,7 +15,7 @@ Route::controller(FrontendController::class)->as('frontend.')->group(function ()
     Route::get('about', 'about')->name('about');
     Route::get('teachers', 'teachers')->name('teachers');
     Route::get('contact-us', 'contactUs')->name('contact-us');
-    Route::get('courses', 'courses')->name('courses');
+//    Route::get('courses', 'courses')->name('courses');
     Route::get('principal-message', 'principalMessage')->name('principal-message');
     Route::get('privacy-policy', 'privacyPolicy')->name('privacy-policy');
     Route::get('terms-and-condition', 'termsAndCondition')->name('terms-and-condition');
@@ -32,6 +33,7 @@ Route::controller(FrontendController::class)->as('frontend.')->group(function ()
     Route::get('project-based-learning', 'projectBasedLearning')->name('project-based-learning');
     Route::get('prize-distribution', 'prizeDistribution')->name('prize-distribution');
     Route::get('calendar', 'calendar')->name('calendar');
+    Route::post('news-letters', 'newsLetters')->name('news-letters');
 });
 
 Route::controller(DashboardController::class)
@@ -43,6 +45,7 @@ Route::controller(DashboardController::class)
         Route::resource('courses', CourseController::class)->scoped(['course' => 'slug']);
         Route::resource('teachers', TeacherController::class)->scoped(['teacher' => 'slug']);
         Route::resource('contact-us', ContactUsController::class)->only(['index', 'destroy']);
+        Route::resource('news-letters', NewsLetterController::class)->only(['index', 'destroy']);
     });
 
 //Route::group(['prefix' => 'laravel-filemanager', 'middleware' => ['web', 'auth']], function () {

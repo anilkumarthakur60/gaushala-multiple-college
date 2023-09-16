@@ -3,8 +3,10 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\StoreContactUsRequest;
+use App\Http\Requests\StoreNewsLetterRequest;
 use App\Models\Blog;
 use App\Models\ContactUs;
+use App\Models\NewsLetter;
 use Illuminate\Http\Request;
 
 class FrontendController extends Controller
@@ -155,5 +157,14 @@ class FrontendController extends Controller
     public function calendar()
     {
         return view('frontend.calendar');
+    }
+
+    public function newsLetters(StoreNewsLetterRequest $request)
+    {
+
+        NewsLetter::query()->firstOrCreate($request->validated());
+        flash()->addSuccess('Your message has been sent successfully. Thank you!');
+        return back();
+
     }
 }

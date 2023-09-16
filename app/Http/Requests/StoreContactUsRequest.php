@@ -33,6 +33,10 @@ class StoreContactUsRequest extends FormRequest
                 'max:50',
                 'email',
             ],
+            'subject' => [
+                'nullable',
+                'max:50',
+            ],
             'message' => [
                 'required',
                 'max:255000',
