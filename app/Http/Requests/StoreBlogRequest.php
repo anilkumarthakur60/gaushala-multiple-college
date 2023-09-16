@@ -46,6 +46,10 @@ class StoreBlogRequest extends FormRequest
                 'required',
                 'image',
             ],
+            'created_at' => [
+                'required',
+                'date',
+            ],
         ];
     }
 }

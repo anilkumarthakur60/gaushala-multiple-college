@@ -4,7 +4,7 @@
             <div class="card pb-4">
                 <div class="card-header d-flex justify-content-between">
                     <div class="header-title">
-                        <h4 class="card-title">Blogs</h4>
+                        <h4 class="card-title">Notice</h4>
                     </div>
                     <a href="{{route('blogs.index')}}" class="btn btn-primary">Go Back</a>
                 </div>
@@ -34,6 +34,11 @@
                                 <x-required-component type="text" required="required" names="name"
                                                       value="{{$blog->name}}" placeholder="Name"
                                                       classes="form-control">Name
+                                </x-required-component>
+                            </div>
+                            <div class="form-floating col-6 mb-3">
+                                <x-required-component type="datetime-local" value="{{$blog->created_at}}"  required="required" names="created_at" placeholder="Date"
+                                                      classes="form-control">Date
                                 </x-required-component>
                             </div>
 

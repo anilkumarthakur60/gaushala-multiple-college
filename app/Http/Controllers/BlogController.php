@@ -34,6 +34,7 @@ class BlogController extends Controller
             $blog = Blog::query()->create(attributes: $request->only([
                 'name',
                 'description',
+                'created_at'
             ]));
             $blog->tag($request->input('tags'));
             if ($request->hasFile('image')) {
@@ -95,7 +96,7 @@ class BlogController extends Controller
 
         try {
             DB::beginTransaction();
-            $data = $request->safe(['name', 'description', 'short_description']);
+            $data = $request->safe(['name', 'description', 'short_description','created_at']);
 
             $blog->update($data);
 

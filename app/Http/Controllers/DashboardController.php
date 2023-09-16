@@ -14,7 +14,7 @@ class DashboardController extends Controller
         $data = [
 
             [
-                'route' => route('sliders.index'),
+                'route' => route('blogs.index'),
                 'bgClass' => 'bg-soft-primary',
                 'icon' => 'fa-solid fa-bell',
                 'count' => Blog::count(),

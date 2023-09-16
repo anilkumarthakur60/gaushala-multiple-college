@@ -48,6 +48,10 @@ class UpdateBlogRequest extends FormRequest
                 'nullable',
                 'image',
             ],
+            'created_at' => [
+                'required',
+                'date',
+            ],
         ];
     }
 }

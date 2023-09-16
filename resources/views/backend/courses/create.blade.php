@@ -4,7 +4,7 @@
             <div class="card pb-4">
                 <div class="card-header d-flex justify-content-between">
                     <div class="header-title">
-                        <h4 class="card-title">Blogs</h4>
+                        <h4 class="card-title">Notice</h4>
                     </div>
                     <a href="{{route('blogs.index')}}" class="btn btn-primary">Go Back</a>
                 </div>
