@@ -1,29 +1,31 @@
+
 name: Deploy
 on:
   push:
-    branches: [main]
+    branches: [ main ]
 
+run-name: Deploy to Server
 jobs:
+
   build:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
+      - name: Deploy using ssh
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          port: 22
+          script: |
 
-      - name: Configure SSH Key
-        run: |
-          mkdir -p ~/.ssh
-          echo "$SSH_PRIVATE_KEY" > ~/.ssh/id_rsa
-          chmod 600 ~/.ssh/id_rsa
 
-          # Add the host key of your server to known hosts
-          ssh-keyscan 69.57.172.2 >> ~/.ssh/known_hosts
-
-      - name: Deploy using SSH
-        run: |
-          cd /home/meriaama/repo/skps.git
-          git pull origin main
-
-        env:
-          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+            cd /home/meriaama/skps/skps_back
+            git pull origin main
+            git status
+            composer install --optimize-autoloader --no-dev
+            php artisan config:cache
+            php artisan event:cache
+            php artisan route:cache
+            php artisan view:cache
