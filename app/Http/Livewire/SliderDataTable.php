@@ -68,7 +68,7 @@ class SliderDataTable extends DataTableComponent
 
     public function builder(): Builder
     {
-        return Slider::query()->withMedia( );
+        return Slider::query()->withMedia();
     }
 
     public function delete(): void

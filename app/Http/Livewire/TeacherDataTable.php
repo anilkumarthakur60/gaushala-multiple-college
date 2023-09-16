@@ -2,7 +2,6 @@
 
 namespace App\Http\Livewire;
 
-use App\Models\Slider;
 use App\Models\Teacher;
 use Illuminate\Database\Eloquent\Builder;
 use Rappasoft\LaravelLivewireTables\DataTableComponent;
@@ -68,7 +67,6 @@ class TeacherDataTable extends DataTableComponent
                 ]),
         ];
     }
-
 
     public function bulkActions(): array
     {
