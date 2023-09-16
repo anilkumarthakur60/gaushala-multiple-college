@@ -22,8 +22,7 @@ jobs:
 
 
             cd /home/meriaama/skps.edu.np
-            git pull origin main
-            git status
+#            git pull origin main
             composer install --optimize-autoloader --no-dev
             php artisan config:cache
             php artisan event:cache
