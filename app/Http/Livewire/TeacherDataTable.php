@@ -77,7 +77,7 @@ class TeacherDataTable extends DataTableComponent
 
     public function builder(): Builder
     {
-        return Teacher::query()->withMedia('teacher');
+        return Teacher::query()->withMedia('image');
     }
 
     public function delete(): void
