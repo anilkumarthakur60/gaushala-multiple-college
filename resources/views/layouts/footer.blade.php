@@ -8,12 +8,12 @@
                     <p><i class="fa fa-map-marker-alt mr-2"></i>Sunkoshi Rural Muncipality-7,Sindhupalchowk</p>
                     <p><i class="fa fa-phone-alt mr-2"></i>9808711001</p>
                     <p><i class="fa fa-envelope mr-2"></i>info@skps.com.np</p>
-                    <div class="d-flex justify-content-start mt-4">
-                        <a class="btn btn-outline-light btn-square mr-2" href="#"><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-outline-light btn-square mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-outline-light btn-square mr-2" href="#"><i class="fab fa-linkedin-in"></i></a>
-                        <a class="btn btn-outline-light btn-square" href="#"><i class="fab fa-instagram"></i></a>
-                    </div>
+{{--                    <div class="d-flex justify-content-start mt-4">--}}
+{{--                        <a class="btn btn-outline-light btn-square mr-2" href="#"><i class="fab fa-twitter"></i></a>--}}
+{{--                        <a class="btn btn-outline-light btn-square mr-2" href="#"><i class="fab fa-facebook-f"></i></a>--}}
+{{--                        <a class="btn btn-outline-light btn-square mr-2" href="#"><i class="fab fa-linkedin-in"></i></a>--}}
+{{--                        <a class="btn btn-outline-light btn-square" href="#"><i class="fab fa-instagram"></i></a>--}}
+{{--                    </div>--}}
                 </div>
                 <div class="col-md-6 mb-5">
                     <h5 class="text-primary text-uppercase mb-4" style="letter-spacing: 5px;">Quick Link</h5>
@@ -56,8 +56,7 @@
      style="border-color: rgba(256, 256, 256, .1) !important;">
     <div class="row">
         <div class="col-lg-6 text-center text-md-left mb-3 mb-md-0">
-            <p class="m-0 text-white">&copy; <a href="{{route('frontend.index')}}">SKPS</a>. All Rights Reserved.
-                Developed by <a href="#">RGB I.T. Solution </a>
+            <p class="m-0 text-white">&copy; <a href="{{route('frontend.index')}}">SKPS</a>  All Rights Reserved.
             </p>
         </div>
         <div class="col-lg-6 text-center text-md-right">
@@ -66,11 +65,9 @@
                     <a class="nav-link text-white py-0" href="{{route('frontend.privacy-policy')}}">Privacy</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white py-0" href="{{route('frontend.terms-and-condition')}}">Terms</a>
+                    <a class="nav-link text-white py-0 mr-4" href="{{route('frontend.terms-and-condition')}}">Terms  and Condition</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link text-white py-0" href="{{route('frontend.faq')}}">FAQs</a>
-                </li>
+
             </ul>
         </div>
     </div>
