@@ -38,7 +38,7 @@ class TeacherController extends Controller
                 ->useHashForFilename()
                 ->toDisk('uploads')
                 ->upload();
-            $teacher->attachMedia($media->id, 'teacherImage');
+            $teacher->attachMedia($media->id, 'image');
         }
 
         return to_route('teachers.index');
@@ -62,12 +62,12 @@ class TeacherController extends Controller
         $teacher->update($data);
 
         if ($request->hasFile('image')) {
-            if ($teacher->firstMedia('teacherImage')) {
-                $media = Media::find($teacher->firstMedia('teacherImage')->id);
+            if ($teacher->firstMedia('image')) {
+                $media = Media::find($teacher->firstMedia('image')->id);
                 MediaUploader::fromSource($request->file('image'))->useHashForFilename()->toDisk('uploads')->replace($media);
             } else {
                 $media = MediaUploader::fromSource($request->file('image'))->useHashForFilename()->toDisk('uploads')->upload();
-                $teacher->attachMedia($media, 'teacherImage');
+                $teacher->attachMedia($media, 'image');
             }
         }
 

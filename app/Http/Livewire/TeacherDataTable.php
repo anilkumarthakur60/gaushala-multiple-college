@@ -2,7 +2,9 @@
 
 namespace App\Http\Livewire;
 
+use App\Models\Slider;
 use App\Models\Teacher;
+use Illuminate\Database\Eloquent\Builder;
 use Rappasoft\LaravelLivewireTables\DataTableComponent;
 use Rappasoft\LaravelLivewireTables\Views\Column;
 use Rappasoft\LaravelLivewireTables\Views\Columns\ButtonGroupColumn;
@@ -25,11 +27,12 @@ class TeacherDataTable extends DataTableComponent
                 ->sortable(),
 
             ImageColumn::make('Image')
-                ->location(fn ($row) => $row->firstMedia('teacherImage')?->getUrl()
+                ->location(
+                    fn ($row) => $row->firstMedia('image')?->getUrl()
                 )->attributes(fn ($row) => [
                     'class' => 'rounded-full ',
                     'style' => 'height:40px',
-                    'alt' => $row->firstMedia('teacherImage')?->getUrl(),
+                    'alt' => $row->firstMedia('image')?->getUrl(),
                 ]),
 
             Column::make('Name', 'name')
@@ -64,5 +67,24 @@ class TeacherDataTable extends DataTableComponent
 
                 ]),
         ];
+    }
+
+
+    public function bulkActions(): array
+    {
+        return [
+            'delete' => 'Delete',
+        ];
+    }
+
+    public function builder(): Builder
+    {
+        return Teacher::query()->withMedia('teacher');
+    }
+
+    public function delete(): void
+    {
+        Teacher::whereIn('id', $this->getSelected())->forceDelete();
+        $this->clearSelected();
     }
 }

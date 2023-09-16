@@ -22,6 +22,8 @@ class SliderDataTable extends DataTableComponent
     public function columns(): array
     {
         return [
+            Column::make('Id', 'id')
+                ->sortable(),
             ImageColumn::make('Image')
                 ->location(fn ($row) => $row->firstMedia('image')?->getUrl()
                 )->attributes(fn ($row) => [
@@ -66,7 +68,7 @@ class SliderDataTable extends DataTableComponent
 
     public function builder(): Builder
     {
-        return Slider::query()->withMedia(['image']);
+        return Slider::query()->withMedia( );
     }
 
     public function delete(): void
