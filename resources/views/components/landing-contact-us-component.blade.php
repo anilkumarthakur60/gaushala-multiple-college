@@ -1,4 +1,4 @@
-<div class="container-fluid bg-registration py-5" style="margin: 90px 0;">
+<div class="container-fluid bg-registration  " >
     <div class="container py-5">
         <div class="row align-items-center">
             <div class="col-lg-7 mb-5 mb-lg-0">

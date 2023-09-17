@@ -13,16 +13,8 @@ class FrontendController extends Controller
 {
     public function index(Request $request)
     {
-        $queryTag = $request->query('tag');
-        $search = $request->query('query');
-        $blogs = Blog::query()
-            ->active()
-            ->queryFilter($search)
-            ->when($queryTag, fn ($query) => $query->withAnyTags($queryTag))
-            ->limit(3)
-            ->get();
 
-        return view('frontend.index', compact('blogs'));
+        return view('frontend.index');
 
     }
 
@@ -73,7 +65,7 @@ class FrontendController extends Controller
         $blogs = Blog::query()
             ->active()
             ->queryFilter($search)
-            ->when($queryTag, fn ($query) => $query->withAnyTags($queryTag))
+            ->searchTag($queryTag)
             ->paginate(10);
 
         $recentBlogs = Blog::query()
@@ -82,6 +74,7 @@ class FrontendController extends Controller
             ->take(4)
             ->get();
         $tags = Blog::query()
+            ->searchTag($queryTag)
             ->withWhereHas('tags')
             ->get()
             ?->pluck('tags')

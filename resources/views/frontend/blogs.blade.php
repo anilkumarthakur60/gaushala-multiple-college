@@ -38,12 +38,12 @@
 
                 <div class="col-lg-4 mt-5 mt-lg-0">
                     <div class="mb-5">
-                        <form action="{{route('frontend.blogs')}}">
+                        <form action="{{route('frontend.blogs')}}" id="form-id" method="get">
                             <div class="input-group">
                                 <input type="text" value="{{request()->query('query')}}" name="query"
                                        class="form-control form-control-lg" placeholder="Keyword">
                                 <div class="input-group-append">
-                                    <span class="input-group-text bg-transparent text-primary"><i
+                                    <span class="input-group-text bg-transparent text-primary" id="your-id"><i
                                             class="fa fa-search"></i></span>
                                 </div>
                             </div>
@@ -76,10 +76,20 @@
                                 @endforeach
 
                             </div>
+                            <a href="{{route('frontend.blogs')}}" class="btn m-1 btn-outline-success">Clear</a>
+
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
+    <script>
+        var form = document.getElementById("form-id");
+
+        document.getElementById("your-id").addEventListener("click", function () {
+            form.submit();
+        });
+    </script>
 @endsection

@@ -47,4 +47,14 @@ class Blog extends Model
 
         return $query->likeWhere(['name', 'description'], $search);
     }
+
+    public function scopeSearchTag(Builder $query,$search): Builder
+    {
+        if (empty($search)) {
+            return $query;
+        }
+        return $query->whereHas('tags',function ($q) use ($search){
+            $q->where('taggable_tags.name',$search);
+        });
+    }
 }

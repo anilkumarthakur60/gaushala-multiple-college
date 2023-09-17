@@ -1,5 +1,5 @@
 <!-- Footer Start -->
-<div class="container-fluid bg-dark text-white py-5 px-sm-3 px-lg-5" style="margin-top: 90px;">
+<div class="container-fluid bg-dark text-white px-sm-3 px-lg-5">
     <div class="row pt-5">
         <div class="col-lg-7 col-md-12">
             <div class="row">
