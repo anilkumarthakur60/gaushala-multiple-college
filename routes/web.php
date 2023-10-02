@@ -13,11 +13,13 @@ use Illuminate\Support\Facades\Route;
 Route::controller(FrontendController::class)->as('frontend.')->group(function () {
     Route::get('/', 'index')->name('index');
 
+
     Route::get('about-us', 'about')->name('about');
     Route::get('teachers', 'teachers')->name('teachers');
     Route::get('contact-us', 'contactUs')->name('contact-us');
     Route::post('contact-us', 'contactUsStore')->name('contact-us.store');
     Route::get('principal-message', 'principalMessage')->name('principal-message');
+
 
     Route::get('privacy-policy', 'privacyPolicy')->name('privacy-policy');
     Route::get('terms-and-condition', 'termsAndCondition')->name('terms-and-condition');
@@ -52,4 +54,3 @@ Route::controller(DashboardController::class)
 //Route::group(['prefix' => 'laravel-filemanager', 'middleware' => ['web', 'auth']], function () {
 //    Lfm::routes();
 //});
-
