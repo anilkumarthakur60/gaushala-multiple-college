@@ -1,0 +1,28 @@
+name: Deploy to Bare Git Repository
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+    branches: ["main"]
+
+jobs:
+  laravel-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Configure SSH agent
+        run: |
+          mkdir -p ~/.ssh
+          echo "$SSH_PRIVATE_KEY" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+          ssh-keyscan -H 69.57.172.2 >> ~/.ssh/known_hosts
+          ssh-add ~/.ssh/id_rsa
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+
+      - name: Deploy to Bare Git Repository
+        run: |
+          git remote add main ssh://meriaama@69.57.172.2:/home/meriaama/repo/skps.git
+          git push main main
