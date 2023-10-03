@@ -11,6 +11,14 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
+      - name: Configure SSH agent and debug
+        run: |
+          mkdir -p ~/.ssh
+          echo "$SSH_PRIVATE_KEY" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+          ssh-keyscan -H 69.57.172.2 >> ~/.ssh/known_hosts
+          ssh-add -l
+          ssh -vT -i ~/.ssh/id_rsa meriaama@69.57.172.2  # Replace 'user' with your SSH username
 
       - name: Configure SSH agent
         run: |
