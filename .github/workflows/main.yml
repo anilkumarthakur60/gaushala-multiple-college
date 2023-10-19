@@ -1,9 +1,9 @@
-name: Test yml
+name: Main YML
 on:
   push:
     branches: [main]
 
-run-name: Test yml
+run-name: Running Main YML
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -14,11 +14,10 @@ jobs:
         with:
           host: ${{ secrets.SERVER_IP }}
           username: rgbitsol
+          password: ${{ secrets.PASSWORD }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           port: 22
           script: |
-
-
             cd /home/rgbitsol/test/cicd
             php artisan config:cache
             php artisan event:cache
