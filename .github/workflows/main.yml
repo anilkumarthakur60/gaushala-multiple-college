@@ -17,9 +17,12 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           port: 1980
           script: |
-            cd /home2/nirojprasaincom/anil/college
-            git pull origin main
-            php artisan config:cache
-            php artisan event:cache
-            php artisan route:cache
-            php artisan view:cache
+            whoami
+
+#            cd /home2/nirojprasaincom/anil/college
+#            git pull origin main
+#            php artisan config:cache
+#            php artisan event:cache
+#            php artisan route:cache
+#            php artisan view:cache
+
