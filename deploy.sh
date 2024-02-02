@@ -1,4 +1,4 @@
-cd /home/rgbitsol/test/cicd
+cd /home2/nirojprasaincom/anil/college
 
 git pull origin main
 

@@ -16,21 +16,6 @@ jobs:
           password: ${{ secrets.PASSWORD }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           port: 1980
-          script: |
-            whoami
-            ls -la
-            cd anil/college
-            git pull origin main
-            php artisan config:cache
-            php artisan event:cache
-            php artisan route:cache
-            php artisan view:cache
+          script: 'cd /home2/nirojprasaincom/anil/college && ./deploy.sh'
 
-
-#            cd /home2/nirojprasaincom/anil/college
-#            git pull origin main
-#            php artisan config:cache
-#            php artisan event:cache
-#            php artisan route:cache
-#            php artisan view:cache
 
