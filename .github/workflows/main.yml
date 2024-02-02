@@ -16,6 +16,6 @@ jobs:
           password: ${{ secrets.PASSWORD }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           port: 1980
-          script: 'cd /home2/nirojprasaincom/anil/college && deploy.sh'
+          script: 'cd /home2/nirojprasaincom/anil/college && ./deploy.sh'
 
 
