@@ -3,7 +3,6 @@ name: Deploy
 on:
   push:
     branches: [ main ]
-
 run-name: Deploy to Server
 jobs:
 
@@ -19,8 +18,6 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           port: 22
           script: |
-
-
             cd /home/meriaama/skps.edu.np
             composer install --optimize-autoloader --no-dev
             php artisan config:cache
