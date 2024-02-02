@@ -13,7 +13,6 @@ use Illuminate\Support\Facades\Route;
 Route::controller(FrontendController::class)->as('frontend.')->group(function () {
     Route::get('/', 'index')->name('index');
 
-
     Route::get('about-us', 'about')->name('about');
     Route::get('teachers', 'teachers')->name('teachers');
     Route::get('contact-us', 'contactUs')->name('contact-us');

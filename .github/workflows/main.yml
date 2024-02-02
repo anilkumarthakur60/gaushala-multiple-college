@@ -1,26 +1,25 @@
-
-name: Deploy
+name: Main YML
 on:
   push:
-    branches: [ main ]
-run-name: Deploy to Server
+    branches: [main]
+run-name: Running Main YML
 jobs:
-
   build:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Deploy using ssh
+      - name: Deploy using ssh cicd
         uses: appleboy/ssh-action@master
         with:
-          host: ${{ secrets.HOST }}
-          username: ${{ secrets.USERNAME }}
+          host: ${{ secrets.SERVER_IP }}
+          username: rgbitsol
+          password: ${{ secrets.PASSWORD }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           port: 22
           script: |
-            cd /home/meriaama/skps.edu.np
-            composer install --optimize-autoloader --no-dev
+            cd /home/rgbitsol/test/cicd
             php artisan config:cache
             php artisan event:cache
             php artisan route:cache
             php artisan view:cache
+            php artisan migrate
