@@ -18,6 +18,7 @@ jobs:
           port: 1980
           script: |
             whoami
+            ls -la
 
 #            cd /home2/nirojprasaincom/anil/college
 #            git pull origin main
