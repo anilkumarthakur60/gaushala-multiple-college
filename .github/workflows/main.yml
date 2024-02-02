@@ -19,7 +19,11 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           port: 1980
           script: |
+            eval $(ssh-agent)
+            ssh-add /home2/nirojprasaincom/.ssh/anil
+            ssh-add -l
             cd /home2/nirojprasaincom/anil/college
+            chmod +x ./deploy.sh
             ./deploy.sh
 
 
