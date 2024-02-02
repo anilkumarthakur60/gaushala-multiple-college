@@ -1,4 +1,3 @@
-# Add debug output
 echo "Starting deployment script..."
 
 eval $(ssh-agent)
@@ -10,6 +9,9 @@ echo "Current directory: $(pwd)"
 
 git pull origin main
 echo "Git pull completed."
+
+npm run build
+echo "NPM build completed."
 
 composer install
 echo "Composer install completed."
