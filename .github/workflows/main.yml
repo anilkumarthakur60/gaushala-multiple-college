@@ -1,7 +1,9 @@
 name: Main YML
 on:
   push:
-    branches: [main]
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
 run-name: Running Main YML
 jobs:
   build:
