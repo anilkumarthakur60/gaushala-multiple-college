@@ -20,7 +20,6 @@ jobs:
           port: 1980
           script: |
             cd /home2/nirojprasaincom/anil/college
-            chmod +x ./deploy.sh
             ./deploy.sh
 
 
