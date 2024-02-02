@@ -2,7 +2,7 @@ cd /home2/nirojprasaincom/anil/college
 
 git pull origin main
 
-composer install --no-interaction
+composer install
 
 php artisan migrate --force
 
