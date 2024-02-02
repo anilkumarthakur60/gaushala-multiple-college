@@ -1,3 +1,9 @@
+
+eval $(ssh-agent)
+ssh-add /home2/nirojprasaincom/.ssh/anil
+ssh-add -l
+
+
 cd /home2/nirojprasaincom/anil/college
 
 git pull origin main
