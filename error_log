@@ -1,0 +1,5 @@
+[03-Feb-2024 16:08:03 UTC] PHP Warning:  require(/home4/nirojprasaincom/anil/college/vendor/autoload.php): Failed to open stream: No such file or directory in /home4/nirojprasaincom/anil/college/artisan on line 18
+[03-Feb-2024 16:08:03 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home4/nirojprasaincom/anil/college/vendor/autoload.php' (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home4/nirojprasaincom/anil/college/artisan:18
+Stack trace:
+#0 {main}
+  thrown in /home4/nirojprasaincom/anil/college/artisan on line 18
