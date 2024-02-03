@@ -6,5 +6,4 @@
     <x-landing-teacher-list-component />
     <x-landing-contact-us-component />
 
-    <h1>kslaj</h1>
 @endsection
