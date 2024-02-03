@@ -2,7 +2,7 @@
     <div class="row align-items-center py-4 px-xl-5">
         <div class="col-lg-3">
             <a href="{{ route('frontend.index') }}" class="text-decoration-none">
-                <h1 class="m-0"><span class="text-primary">S</span>KPS</h1>
+                <h1 class="m-0"><span class="text-primary">G</span>MC</h1>
             </a>
         </div>
         <div class="col-lg-3 text-right">

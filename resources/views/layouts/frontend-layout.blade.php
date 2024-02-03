@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>SKPS School/College</title>
+    <title>Gaushala Multiple Campus</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="Free HTML Templates" name="keywords">
     <meta content="Free HTML Templates" name="description">
@@ -19,11 +19,11 @@
 
 <body>
 
-    @include('layouts.navbar')
+@include('layouts.navbar')
 
-    @yield('content')
+@yield('content')
 
-    @include('layouts.footer')
+@include('layouts.footer')
 
 </body>
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
