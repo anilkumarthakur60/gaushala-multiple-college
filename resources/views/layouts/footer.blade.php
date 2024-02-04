@@ -6,7 +6,7 @@
                 <div class="col-md-6 mb-5">
                     <h5 class="text-primary text-uppercase mb-4" style="letter-spacing: 5px;">Get In Touch</h5>
                     <p><i class="fa fa-map-marker-alt mr-2"></i>Gaushala -2,Mahottari</p>
-                    <p><i class="fa fa-phone-alt mr-2"></i>9808711001</p>
+                    <p><i class="fa fa-phone-alt mr-2"></i>9843262634</p>
                     <p><i class="fa fa-envelope mr-2"></i>info@gaushalamultiplecampus.edu.np</p>
                 </div>
                 <div class="col-md-6 mb-5">
