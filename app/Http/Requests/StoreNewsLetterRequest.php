@@ -11,15 +11,14 @@ class StoreNewsLetterRequest extends FormRequest
         return true;
     }
 
-
     public function rules(): array
     {
         return [
-            'email'=>[
+            'email' => [
                 'required',
                 'email',
-                'max:100'
-            ]
+                'max:100',
+            ],
         ];
     }
 }

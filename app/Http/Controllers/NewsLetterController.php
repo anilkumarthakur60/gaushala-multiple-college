@@ -2,13 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Requests\StoreNewsLetterRequest;
-use App\Http\Requests\UpdateNewsLetterRequest;
 use App\Models\NewsLetter;
 
 class NewsLetterController extends Controller
 {
-
     public function index()
     {
 

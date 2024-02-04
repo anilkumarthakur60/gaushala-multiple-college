@@ -3,12 +3,9 @@
 namespace App\Http\Livewire;
 
 use App\Models\NewsLetter;
-use App\Models\Slider;
 use Illuminate\Database\Eloquent\Builder;
 use Rappasoft\LaravelLivewireTables\DataTableComponent;
 use Rappasoft\LaravelLivewireTables\Views\Column;
-use Rappasoft\LaravelLivewireTables\Views\Columns\ButtonGroupColumn;
-use Rappasoft\LaravelLivewireTables\Views\Columns\LinkColumn;
 
 class NewsLetterDataTable extends DataTableComponent
 {
@@ -22,14 +19,13 @@ class NewsLetterDataTable extends DataTableComponent
     public function columns(): array
     {
         return [
-            Column::make("Id", "id")
+            Column::make('Id', 'id')
                 ->sortable(),
             Column::make('Email', 'email')
                 ->sortable(),
             Column::make('Date', 'created_at')
-                ->format(fn($value, $row, Column $column) => $row->created_at?->format('Y-m-d'))
+                ->format(fn ($value, $row, Column $column) => $row->created_at?->format('Y-m-d'))
                 ->sortable(),
-
 
         ];
     }

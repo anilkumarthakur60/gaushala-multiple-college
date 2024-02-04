@@ -22,7 +22,7 @@ class Blog extends Model
         'description',
         'status',
         'short_description',
-        'created_at'
+        'created_at',
     ];
 
     public function sluggable(): array
@@ -48,13 +48,14 @@ class Blog extends Model
         return $query->likeWhere(['name', 'description'], $search);
     }
 
-    public function scopeSearchTag(Builder $query,$search): Builder
+    public function scopeSearchTag(Builder $query, $search): Builder
     {
         if (empty($search)) {
             return $query;
         }
-        return $query->whereHas('tags',function ($q) use ($search){
-            $q->where('taggable_tags.name',$search);
+
+        return $query->whereHas('tags', function ($q) use ($search) {
+            $q->where('taggable_tags.name', $search);
         });
     }
 }

@@ -6,7 +6,7 @@
                     <div class="header-title">
                         <h4 class="card-title">Teachers</h4>
                     </div>
-                    <a href="{{route('teachers.create')}}" class="btn btn-primary">Add</a>
+                    <a href="{{ route('teachers.create') }}" class="btn btn-primary">Add</a>
                 </div>
                 <div class="card-body">
                     @livewire('teacher-data-table')

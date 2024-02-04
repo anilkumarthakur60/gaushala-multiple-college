@@ -10,10 +10,8 @@ class BreadCrumbComponent extends Component
 {
     /**
      * Create a new component instance.
-     * @param string|null $title1
-     * @param string|null $title2
      */
-    public function __construct(public ?string $title1,public ?string $title2=null)
+    public function __construct(public ?string $title1, public ?string $title2 = null)
     {
         //
     }

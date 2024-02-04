@@ -19,7 +19,6 @@ Route::controller(FrontendController::class)->as('frontend.')->group(function ()
     Route::post('contact-us', 'contactUsStore')->name('contact-us.store');
     Route::get('principal-message', 'principalMessage')->name('principal-message');
 
-
     Route::get('privacy-policy', 'privacyPolicy')->name('privacy-policy');
     Route::get('terms-and-condition', 'termsAndCondition')->name('terms-and-condition');
     Route::get('faq', 'faq')->name('faq');

@@ -157,6 +157,7 @@ class FrontendController extends Controller
 
         NewsLetter::query()->firstOrCreate($request->validated());
         flash()->addSuccess('Your message has been sent successfully. Thank you!');
+
         return back();
 
     }

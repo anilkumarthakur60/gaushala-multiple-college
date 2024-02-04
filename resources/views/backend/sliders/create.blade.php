@@ -6,31 +6,31 @@
                     <div class="header-title">
                         <h4 class="card-title">Sliders</h4>
                     </div>
-                    <a href="{{route('sliders.index')}}" class="btn btn-primary">Go Back</a>
+                    <a href="{{ route('sliders.index') }}" class="btn btn-primary">Go Back</a>
                 </div>
 
                 <div class="card-body">
-                    <x-all-error-component/>
-                    <form action="{{route('sliders.store')}}" method="POST" enctype="multipart/form-data">
+                    <x-all-error-component />
+                    <form action="{{ route('sliders.store') }}" method="POST" enctype="multipart/form-data">
                         @csrf
                         <div class="row">
 
                             <div class="col-12">
-                                <img id="imagePreview" src="{{asset('front/assets/images/preview.jpg')}}" alt=""
-                                     class="mb-2 rounded" width="125" height="125">
+                                <img id="imagePreview" src="{{ asset('front/assets/images/preview.jpg') }}"
+                                    alt="" class="mb-2 rounded" width="125" height="125">
                                 <div class="form-group mb-3">
                                     <label for="image" class="form-label">Image</label>
                                     <input name="image" class="form-control @error('image') is-invalid @enderror"
-                                           type="file" id="image" onchange="preview()">
+                                        type="file" id="image" onchange="preview()">
                                     @error('image')
-                                    <div class="invalid-feedback">{{ $message }}</div>
+                                        <div class="invalid-feedback">{{ $message }}</div>
                                     @enderror
                                 </div>
                             </div>
 
                             <div class="form-floating col-6 mb-3">
-                                <x-required-component type="text" required="required" names="name" placeholder="Name"
-                                                      classes="form-control">Name
+                                <x-required-component type="text" required="required" names="name"
+                                    placeholder="Name" classes="form-control">Name
                                 </x-required-component>
                             </div>
 
@@ -52,4 +52,3 @@
     </script>
 
 </x-app-layout>
-
