@@ -3,7 +3,7 @@
         <a href="{{route('frontend.index')}}" class="navbar-brand" target="_blank">
 
 
-            <h5 class="logo-title font-bold pt-1 ms-1">SKPS School</h5>
+            <h5 class="logo-title font-bold pt-1 ms-1">GMC School</h5>
         </a>
         <div class="sidebar-toggle" data-toggle="sidebar" data-active="true">
             <x-dashboard-icons.toggle/>

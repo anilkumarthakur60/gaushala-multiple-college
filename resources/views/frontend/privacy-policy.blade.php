@@ -6,7 +6,7 @@
         <div class="container">
             <h1 class="display-4">Privacy Policy</h1>
             <p class="lead">Last updated: [Insert Date]</p>
-            <p>SKPS ("us", "we", or "our") operates [Your School Website URL] (the "Site"). This page informs you of our
+            <p>GMC ("us", "we", or "our") operates [Your School Website URL] (the "Site"). This page informs you of our
                 policies regarding the collection, use, and disclosure of Personal Information we receive from users of
                 the
                 Site.</p>

@@ -9,7 +9,7 @@
                     <h5 class="text-primary text-uppercase mb-3" style="letter-spacing: 5px;"> Welcome to </h5>
                     <h1>GMC College</h1>
                 </div>
-                <p class="text-justify">Welcome to SKPS where we are passionate about revolutionizing the learning
+                <p class="text-justify">Welcome to GMC where we are passionate about revolutionizing the learning
                     experience. Our
                     platform takes a dynamic and engaging approach to education, combining cutting-edge technology
                     with proven teaching methodologies. We believe in the power of interactive learning, allowing
@@ -58,7 +58,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Language class </h5>
                         <p class="card-text text-justify">
-                            SKPS has introduced English language classes as non-credit subjects, providing
+                            GMC has introduced English language classes as non-credit subjects, providing
                             students with the opportunity to delve into the languages. This initiative fosters cultural
                             understanding and respect, nurturing tolerance for diversity and encouraging students to
                             transcend cultural boundaries.

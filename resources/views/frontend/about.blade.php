@@ -9,14 +9,14 @@
             <div class="row align-items-center">
                 <div class="col-lg-12 mb-4">
                     <div class="text-left mb-4">
-                        <h1>Welcome to SKPS: Inspiring Excellence</h1>
+                        <h1>Welcome to GMC: Inspiring Excellence</h1>
                     </div>
                     <p class="text-justify">
-                        At SKPS, we are devoted to creating an environment where students are valued, respected, and
+                        At GMC, we are devoted to creating an environment where students are valued, respected, and
                         encouraged to unleash their full potential. Our passionate educators guide students on an
                         enriching educational journey, fostering a love for learning that extends beyond textbooks. We
                         believe in a holistic approach, nurturing not only young minds but also compassionate and
-                        responsible individuals. Join SKPS, where dreams take flight and futures are shaped with care.
+                        responsible individuals. Join GMC, where dreams take flight and futures are shaped with care.
                     </p>
                 </div>
                 <div class="col-lg-5">
@@ -27,14 +27,14 @@
                         <h1>A Holistic Approach: Nurturing Minds, Hearts, and Souls</h1>
                     </div>
                     <p class="text-justify">
-                        We understand that education extends beyond academics. At SKPS, we embrace a holistic approach
+                        We understand that education extends beyond academics. At GMC, we embrace a holistic approach
                         to foster well-rounded individuals. Our nurturing environment ensures that students grow not
                         just academically but also emotionally and socially. We offer a diverse range of extracurricular
                         activities, sports, and cultural programs, encouraging students to discover their passions and
                         develop their personalities. Our strong parent-teacher partnership ensures open communication,
                         enabling us to work together in the best interest of each child's growth and development.
                         Together, let's shape a future where knowledge, creativity, and empathy combine to create
-                        exceptional leaders and lifelong learners. Join us at SKPS, and experience a transformative
+                        exceptional leaders and lifelong learners. Join us at GMC, and experience a transformative
                         educational journey in our vibrant learning community.
                     </p>
                 </div>
@@ -66,7 +66,7 @@
                         parents, teachers, and students. Our close-knit school community encourages open communication
                         and active involvement from parents. Through this partnership, we ensure that each child
                         receives personalized support and guidance, creating a conducive environment for growth and
-                        learning. Join us at SKPS, where academic excellence and nurturing care converge to provide a
+                        learning. Join us at GMC, where academic excellence and nurturing care converge to provide a
                         transformative educational experience. Together, let's prepare your child for a future of
                         endless possibilities and empower them to become confident, compassionate, and successful
                         individuals. We look forward to welcoming you to our vibrant learning community!

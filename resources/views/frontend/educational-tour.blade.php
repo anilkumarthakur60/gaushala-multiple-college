@@ -11,7 +11,7 @@
                         Embark on an Educational Journey with Us
                     </h3>
                     <p class="text-justify">
-                        At SKPS, we believe that learning extends beyond the classroom, and one of the exciting
+                        At GMC, we believe that learning extends beyond the classroom, and one of the exciting
                         ways we make this possible is through our educational tours. These tours are designed to provide
                         students with real-world experiences that complement their academic curriculum.
                     </p>

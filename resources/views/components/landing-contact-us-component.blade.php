@@ -6,7 +6,7 @@
                     <h5 class="text-primary text-uppercase mb-3" style="letter-spacing: 5px;">Enroll in This </h5>
                     <h1 class="text-white">We Always Welcome for New Student!</h1>
                 </div>
-                <p class="text-white">At SKPS, we offer a wide range of enriching courses . Whether you're looking to
+                <p class="text-white">At GMC, we offer a wide range of enriching courses . Whether you're looking to
                     enhance your skills, dive into a new subject, or simply
                     pursue a passion, we've got you covered!r</p>
                 <ul class="list-inline text-white m-0">

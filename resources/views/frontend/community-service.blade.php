@@ -11,7 +11,7 @@
                         Engage with Our Community Service Initiatives
                     </h3>
                     <p class="text-justify">
-                        At SKPS, we believe that education goes hand in hand with social responsibility. That's why
+                        At GMC, we believe that education goes hand in hand with social responsibility. That's why
                         we are proud to offer a range of community service opportunities for our students. These
                         initiatives
                         not only contribute to the betterment of our local community but also instill values and skills
