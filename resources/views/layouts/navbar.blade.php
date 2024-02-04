@@ -63,7 +63,7 @@
                                     Principal Message
                                 </a>
                                 <a href="{{ route('frontend.teachers') }}" class="dropdown-item">
-                                    Out Team
+                                    Our Team
                                 </a>
                             </div>
                         </div>
