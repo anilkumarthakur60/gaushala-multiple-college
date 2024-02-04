@@ -10,7 +10,7 @@
                 <i class="fa fa-2x fa-map-marker-alt text-primary mr-3"></i>
                 <div class="text-left">
                     <h6 class="font-weight-semi-bold mb-1">Location</h6>
-                    <small>Sunkoshi Rural Muncipality-7,Sindhupalchowk</small>
+                    <small>Gaushala-2, Mahottari</small>
                 </div>
             </div>
         </div>
@@ -19,7 +19,7 @@
                 <i class="fa fa-2x fa-envelope text-primary mr-3"></i>
                 <div class="text-left">
                     <h6 class="font-weight-semi-bold mb-1">Email Us</h6>
-                    <small>info@skps.com.np</small>
+                    <small>info@gaushalamultiplecampus.edu.np</small>
                 </div>
             </div>
         </div>
@@ -39,7 +39,7 @@
         <div class="col-lg-12">
             <nav class="navbar navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-0">
                 <a href="" class="text-decoration-none d-block d-lg-none">
-                    <h1 class="m-0"><span class="text-primary">E</span>COURSES</h1>
+                    <h1 class="m-0"><span class="text-primary">G</span>MC</h1>
                 </a>
                 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                     <span class="navbar-toggler-icon"></span>
@@ -47,12 +47,12 @@
                 <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                     <div class="navbar-nav py-0">
                         <a href="{{ route('frontend.index') }}"
-                            class="nav-item nav-link {{ request()->routeIs('frontend.index') ? 'active' : '' }}">
+                           class="nav-item nav-link {{ request()->routeIs('frontend.index') ? 'active' : '' }}">
                             Home
                         </a>
                         <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown"
-                                aria-expanded="false">
+                               aria-expanded="false">
                                 About Us
                             </a>
                             <div class="dropdown-menu rounded-0 m-0">
@@ -69,7 +69,7 @@
                         </div>
                         <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown"
-                                aria-expanded="false">
+                               aria-expanded="false">
                                 Curriculum
                             </a>
                             <div class="dropdown-menu rounded-0 m-0">
@@ -86,7 +86,7 @@
                         </div>
                         <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown"
-                                aria-expanded="false">
+                               aria-expanded="false">
                                 Activities
                             </a>
                             <div class="dropdown-menu rounded-0 m-0">
@@ -112,11 +112,11 @@
                         </div>
 
                         <a href="{{ route('frontend.blogs') }}"
-                            class="nav-item nav-link {{ request()->routeIs('frontend.blogs') ? 'active' : '' }}">
+                           class="nav-item nav-link {{ request()->routeIs('frontend.blogs') ? 'active' : '' }}">
                             Notice
                         </a>
                         <a href="{{ route('frontend.contact-us') }}"
-                            class="nav-item nav-link {{ request()->routeIs('frontend.contact-us') ? 'active' : '' }}">
+                           class="nav-item nav-link {{ request()->routeIs('frontend.contact-us') ? 'active' : '' }}">
                             Contact Us
                         </a>
 
@@ -127,7 +127,7 @@
 
                     </div>
                     <a class="btn btn-primary py-2 px-4 ml-auto d-none d-lg-block"
-                        href="{{ route('frontend.contact-us') }}">Get In Touch</a>
+                       href="{{ route('frontend.contact-us') }}">Get In Touch</a>
                 </div>
             </nav>
         </div>
