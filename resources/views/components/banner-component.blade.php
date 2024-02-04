@@ -26,7 +26,7 @@
             @empty
                 <div class="carousel-item active" style="min-height: 300px;">
                     <img class="position-relative w-100" src="{{asset('frontend/img/carousel-1.jpg')}}"
-                         style="min-height: 300px; object-fit: cover;" alt="SKPS College">
+                         style="min-height: 300px; object-fit: cover;" alt="GMC College">
                     <div class="carousel-caption d-flex align-items-center justify-content-center">
                         <div class="p-5" style="width: 100%; max-width: 900px;">
                             <h1 class="display-3 text-white mb-md-4">Unlock Your Potential</h1>
