@@ -1,8 +1,7 @@
 @extends('layouts.frontend-layout')
 
 @section('content')
-
-    <x-bread-crumb-component title1="{{$t1='Technology'}}" title2="{{$t1}}" />
+    <x-bread-crumb-component title1="{{ $t1 = 'Technology' }}" title2="{{ $t1 }}" />
 
     <div class="container">
         <div class="">
@@ -32,5 +31,4 @@
         </div>
 
     </div>
-
 @endsection

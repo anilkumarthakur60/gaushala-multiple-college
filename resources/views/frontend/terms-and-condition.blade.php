@@ -1,6 +1,6 @@
 @extends('layouts.frontend-layout')
 @section('content')
-    <x-bread-crumb-component title1="{{$t1='Terms And Condition'}}" title2="{{$t1}}"/>
+    <x-bread-crumb-component title1="{{ $t1 = 'Terms And Condition' }}" title2="{{ $t1 }}" />
 
     <div class="container-fluid">
         <div class="container">

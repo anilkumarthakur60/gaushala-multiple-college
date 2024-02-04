@@ -1,8 +1,7 @@
 @extends('layouts.frontend-layout')
 
 @section('content')
-
-    <x-bread-crumb-component title1="{{$t1='About Us'}}" title2="{{$t1}}" />
+    <x-bread-crumb-component title1="{{ $t1 = 'About Us' }}" title2="{{ $t1 }}" />
 
     <div class="container-fluid">
         <div class="container">
@@ -20,7 +19,7 @@
                     </p>
                 </div>
                 <div class="col-lg-5">
-                    <img class="img-fluid rounded mb-4 mb-lg-0" src="{{asset('frontend/img/about.jpg')}}" alt="">
+                    <img class="img-fluid rounded mb-4 mb-lg-0" src="{{ asset('frontend/img/about.jpg') }}" alt="">
                 </div>
                 <div class="col-lg-7">
                     <div class="text-left mb-4">
@@ -52,10 +51,10 @@
                     </p>
                 </div>
                 <div class="col-lg-5">
-                    <img class="img-fluid rounded mb-4 mb-lg-0" src="{{asset('frontend/img/about.jpg')}}" alt="">
+                    <img class="img-fluid rounded mb-4 mb-lg-0" src="{{ asset('frontend/img/about.jpg') }}" alt="">
                 </div>
                 <div class="col-lg-5">
-                    <img class="img-fluid rounded mb-4 mb-lg-0" src="{{asset('frontend/img/about.jpg')}}" alt="">
+                    <img class="img-fluid rounded mb-4 mb-lg-0" src="{{ asset('frontend/img/about.jpg') }}" alt="">
                 </div>
                 <div class="col-lg-7">
                     <div class="text-left mb-4">

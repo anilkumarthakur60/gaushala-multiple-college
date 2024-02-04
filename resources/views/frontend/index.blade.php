@@ -5,5 +5,4 @@
     <x-landing-about-us-component />
     <x-landing-teacher-list-component />
     <x-landing-contact-us-component />
-
 @endsection

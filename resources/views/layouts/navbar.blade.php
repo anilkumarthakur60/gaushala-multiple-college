@@ -47,12 +47,12 @@
                 <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                     <div class="navbar-nav py-0">
                         <a href="{{ route('frontend.index') }}"
-                           class="nav-item nav-link {{ request()->routeIs('frontend.index') ? 'active' : '' }}">
+                            class="nav-item nav-link {{ request()->routeIs('frontend.index') ? 'active' : '' }}">
                             Home
                         </a>
                         <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown"
-                               aria-expanded="false">
+                                aria-expanded="false">
                                 About Us
                             </a>
                             <div class="dropdown-menu rounded-0 m-0">
@@ -69,7 +69,7 @@
                         </div>
                         <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown"
-                               aria-expanded="false">
+                                aria-expanded="false">
                                 Curriculum
                             </a>
                             <div class="dropdown-menu rounded-0 m-0">
@@ -86,7 +86,7 @@
                         </div>
                         <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown"
-                               aria-expanded="false">
+                                aria-expanded="false">
                                 Activities
                             </a>
                             <div class="dropdown-menu rounded-0 m-0">
@@ -112,11 +112,11 @@
                         </div>
 
                         <a href="{{ route('frontend.blogs') }}"
-                           class="nav-item nav-link {{ request()->routeIs('frontend.blogs') ? 'active' : '' }}">
+                            class="nav-item nav-link {{ request()->routeIs('frontend.blogs') ? 'active' : '' }}">
                             Notice
                         </a>
                         <a href="{{ route('frontend.contact-us') }}"
-                           class="nav-item nav-link {{ request()->routeIs('frontend.contact-us') ? 'active' : '' }}">
+                            class="nav-item nav-link {{ request()->routeIs('frontend.contact-us') ? 'active' : '' }}">
                             Contact Us
                         </a>
 
@@ -127,7 +127,7 @@
 
                     </div>
                     <a class="btn btn-primary py-2 px-4 ml-auto d-none d-lg-block"
-                       href="{{ route('frontend.contact-us') }}">Get In Touch</a>
+                        href="{{ route('frontend.contact-us') }}">Get In Touch</a>
                 </div>
             </nav>
         </div>

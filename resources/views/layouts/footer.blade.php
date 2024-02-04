@@ -13,11 +13,16 @@
                     <h5 class="text-primary text-uppercase mb-4" style="letter-spacing: 5px;">Quick Link</h5>
                     <div class="d-flex flex-column justify-content-start">
 
-                        <a href="{{ route('frontend.about') }}" class="text-white mb-2"><i class="fa fa-angle-right mr-2"></i>About Us</a>
-                        <a href="{{ route('frontend.blogs') }}" class="text-white mb-2"><i class="fa fa-angle-right mr-2"></i>Notice</a>
-                        <a href="{{ route('frontend.calendar') }}" class="text-white mb-2"><i class="fa fa-angle-right mr-2"></i>Calender</a>
-                        <a href="{{ route('frontend.faq') }}" class="text-white mb-2"><i class="fa fa-angle-right mr-2"></i>FAQ</a>
-                        <a href="{{ route('frontend.admission') }}" class="text-white mb-2"><i class="fa fa-angle-right mr-2"></i>Admission</a>
+                        <a href="{{ route('frontend.about') }}" class="text-white mb-2"><i
+                                class="fa fa-angle-right mr-2"></i>About Us</a>
+                        <a href="{{ route('frontend.blogs') }}" class="text-white mb-2"><i
+                                class="fa fa-angle-right mr-2"></i>Notice</a>
+                        <a href="{{ route('frontend.calendar') }}" class="text-white mb-2"><i
+                                class="fa fa-angle-right mr-2"></i>Calender</a>
+                        <a href="{{ route('frontend.faq') }}" class="text-white mb-2"><i
+                                class="fa fa-angle-right mr-2"></i>FAQ</a>
+                        <a href="{{ route('frontend.admission') }}" class="text-white mb-2"><i
+                                class="fa fa-angle-right mr-2"></i>Admission</a>
                     </div>
                 </div>
             </div>
@@ -27,15 +32,15 @@
             <p>Get the latest updates on school events, academic achievements, exciting activities, and important
                 announcements delivered right to your inbox.</p>
             <div class="w-100">
-                <form action="{{route('frontend.news-letters')}}" method="POST">
+                <form action="{{ route('frontend.news-letters') }}" method="POST">
                     @csrf
                     @error('email')
-                    {{ $message }}
+                        {{ $message }}
                     @enderror
                     <div class="input-group">
 
                         <input type="email" name="email" class="form-control border-light" style="padding: 30px;"
-                               placeholder="Your Email Address">
+                            placeholder="Your Email Address">
 
                         <div class="input-group-append">
                             <button class="btn btn-primary px-4" type="submit">Sign Up</button>
@@ -47,19 +52,20 @@
     </div>
 </div>
 <div class="container-fluid bg-dark text-white border-top py-4 px-sm-3 px-md-5"
-     style="border-color: rgba(256, 256, 256, .1) !important;">
+    style="border-color: rgba(256, 256, 256, .1) !important;">
     <div class="row">
         <div class="col-lg-6 text-center text-md-left mb-3 mb-md-0">
-            <p class="m-0 text-white">&copy; <a href="{{route('frontend.index')}}">GMC</a>  All Rights Reserved.
+            <p class="m-0 text-white">&copy; <a href="{{ route('frontend.index') }}">GMC</a> All Rights Reserved.
             </p>
         </div>
         <div class="col-lg-6 text-center text-md-right">
             <ul class="nav d-inline-flex">
                 <li class="nav-item">
-                    <a class="nav-link text-white py-0" href="{{route('frontend.privacy-policy')}}">Privacy</a>
+                    <a class="nav-link text-white py-0" href="{{ route('frontend.privacy-policy') }}">Privacy</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white py-0 mr-4" href="{{route('frontend.terms-and-condition')}}">Terms  and Condition</a>
+                    <a class="nav-link text-white py-0 mr-4" href="{{ route('frontend.terms-and-condition') }}">Terms
+                        and Condition</a>
                 </li>
 
             </ul>

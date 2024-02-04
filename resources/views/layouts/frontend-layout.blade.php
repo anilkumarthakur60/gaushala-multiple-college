@@ -19,11 +19,11 @@
 
 <body>
 
-@include('layouts.navbar')
+    @include('layouts.navbar')
 
-@yield('content')
+    @yield('content')
 
-@include('layouts.footer')
+    @include('layouts.footer')
 
 </body>
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
@@ -33,4 +33,5 @@
 <script src="{{ asset('frontend/mail/jqBootstrapValidation.min.js') }}"></script>
 <script src="{{ asset('frontend/mail/contact.js') }}"></script>
 <script src="{{ asset('frontend/js/main.js') }}"></script>
+
 </html>

@@ -1,8 +1,7 @@
 @extends('layouts.frontend-layout')
 
 @section('content')
-
-    <x-bread-crumb-component title1="{{$t1='Courses'}}" title2="{{$t1}}"/>
+    <x-bread-crumb-component title1="{{ $t1 = 'Courses' }}" title2="{{ $t1 }}" />
 
     <div class="container-fluid">
         <div class="container">
@@ -13,7 +12,7 @@
             <div class="row">
                 <div class="col-lg-4 col-md-6 mb-4">
                     <div class="rounded overflow-hidden mb-2">
-                        <img class="img-fluid" src="{{asset('frontend/img/course-1.jpg')}}" alt="">
+                        <img class="img-fluid" src="{{ asset('frontend/img/course-1.jpg') }}" alt="">
                         <div class="bg-secondary p-4">
                             <div class="d-flex justify-content-between mb-3">
                                 <small class="m-0"><i class="fa fa-users text-primary mr-2"></i>25 Seats</small>
@@ -24,7 +23,7 @@
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4">
                     <div class="rounded overflow-hidden mb-2">
-                        <img class="img-fluid" src="{{asset('frontend/img/course-2.jpg')}}" alt="">
+                        <img class="img-fluid" src="{{ asset('frontend/img/course-2.jpg') }}" alt="">
                         <div class="bg-secondary p-4">
                             <div class="d-flex justify-content-between mb-3">
                                 <small class="m-0"><i class="fa fa-users text-primary mr-2"></i>30 Seats</small>
@@ -35,7 +34,7 @@
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4">
                     <div class="rounded overflow-hidden mb-2">
-                        <img class="img-fluid" src="{{asset('frontend/img/course-3.jpg')}}" alt="">
+                        <img class="img-fluid" src="{{ asset('frontend/img/course-3.jpg') }}" alt="">
                         <div class="bg-secondary p-4">
                             <div class="d-flex justify-content-between mb-3">
                                 <small class="m-0"><i class="fa fa-users text-primary mr-2"></i>20 Seats</small>
@@ -46,7 +45,7 @@
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4">
                     <div class="rounded overflow-hidden mb-2">
-                        <img class="img-fluid" src="{{asset('frontend/img/course-4.jpg')}}" alt="">
+                        <img class="img-fluid" src="{{ asset('frontend/img/course-4.jpg') }}" alt="">
                         <div class="bg-secondary p-4">
                             <div class="d-flex justify-content-between mb-3">
                                 <small class="m-0"><i class="fa fa-users text-primary mr-2"></i>40 Seats</small>
@@ -57,7 +56,7 @@
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4">
                     <div class="rounded overflow-hidden mb-2">
-                        <img class="img-fluid" src="{{asset('frontend/img/course-5.jpg')}}" alt="">
+                        <img class="img-fluid" src="{{ asset('frontend/img/course-5.jpg') }}" alt="">
                         <div class="bg-secondary p-4">
                             <div class="d-flex justify-content-between mb-3">
                                 <small class="m-0"><i class="fa fa-users text-primary mr-2"></i>15 Seats</small>
@@ -68,7 +67,7 @@
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4">
                     <div class="rounded overflow-hidden mb-2">
-                        <img class="img-fluid" src="{{asset('frontend/img/course-6.jpg')}}" alt="">
+                        <img class="img-fluid" src="{{ asset('frontend/img/course-6.jpg') }}" alt="">
                         <div class="bg-secondary p-4">
                             <div class="d-flex justify-content-between mb-3">
                                 <small class="m-0"><i class="fa fa-users text-primary mr-2"></i>28 Seats</small>
@@ -79,7 +78,7 @@
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4">
                     <div class="rounded overflow-hidden mb-2">
-                        <img class="img-fluid" src="{{asset('frontend/img/course-1.jpg')}}" alt="">
+                        <img class="img-fluid" src="{{ asset('frontend/img/course-1.jpg') }}" alt="">
                         <div class="bg-secondary p-4">
                             <div class="d-flex justify-content-between mb-3">
                                 <small class="m-0"><i class="fa fa-users text-primary mr-2"></i>18 Seats</small>
@@ -90,7 +89,7 @@
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4">
                     <div class="rounded overflow-hidden mb-2">
-                        <img class="img-fluid" src="{{asset('frontend/img/course-6.jpg')}}" alt="">
+                        <img class="img-fluid" src="{{ asset('frontend/img/course-6.jpg') }}" alt="">
                         <div class="bg-secondary p-4">
                             <div class="d-flex justify-content-between mb-3">
                                 <small class="m-0"><i class="fa fa-users text-primary mr-2"></i>22 Seats</small>
@@ -101,7 +100,7 @@
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4">
                     <div class="rounded overflow-hidden mb-2">
-                        <img class="img-fluid" src="{{asset('frontend/img/course-5.jpg')}}" alt="">
+                        <img class="img-fluid" src="{{ asset('frontend/img/course-5.jpg') }}" alt="">
                         <div class="bg-secondary p-4">
                             <div class="d-flex justify-content-between mb-3">
                                 <small class="m-0"><i class="fa fa-users text-primary mr-2"></i>35 Seats</small>
@@ -113,7 +112,7 @@
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4">
                     <div class="rounded overflow-hidden mb-2">
-                        <img class="img-fluid" src="{{asset('frontend/img/course-2.jpg')}}" alt="">
+                        <img class="img-fluid" src="{{ asset('frontend/img/course-2.jpg') }}" alt="">
                         <div class="bg-secondary p-4">
                             <div class="d-flex justify-content-between mb-3">
                                 <small class="m-0"><i class="fa fa-users text-primary mr-2"></i>28 Seats</small>
@@ -126,7 +125,7 @@
 
                 <div class="col-lg-4 col-md-6 mb-4">
                     <div class="rounded overflow-hidden mb-2">
-                        <img class="img-fluid" src="{{asset('frontend/img/course-1.jpg')}}" alt="">
+                        <img class="img-fluid" src="{{ asset('frontend/img/course-1.jpg') }}" alt="">
                         <div class="bg-secondary p-4">
                             <div class="d-flex justify-content-between mb-3">
                                 <small class="m-0"><i class="fa fa-users text-primary mr-2"></i>15 Seats</small>
@@ -139,7 +138,7 @@
 
                 <div class="col-lg-4 col-md-6 mb-4">
                     <div class="rounded overflow-hidden mb-2">
-                        <img class="img-fluid" src="{{asset('frontend/img/course-2.jpg')}}" alt="">
+                        <img class="img-fluid" src="{{ asset('frontend/img/course-2.jpg') }}" alt="">
                         <div class="bg-secondary p-4">
                             <div class="d-flex justify-content-between mb-3">
                                 <small class="m-0"><i class="fa fa-users text-primary mr-2"></i>20 Seats</small>
@@ -153,5 +152,4 @@
             </div>
         </div>
     </div>
-
 @endsection

@@ -1,6 +1,6 @@
 @extends('layouts.frontend-layout')
 @section('content')
-    <x-bread-crumb-component title1="{{$t1='Privacy Policy'}}" title2="{{$t1}}"/>
+    <x-bread-crumb-component title1="{{ $t1 = 'Privacy Policy' }}" title2="{{ $t1 }}" />
 
     <div class="container-fluid">
         <div class="container">
@@ -62,5 +62,4 @@
             </ul>
         </div>
     </div>
-
 @endsection
