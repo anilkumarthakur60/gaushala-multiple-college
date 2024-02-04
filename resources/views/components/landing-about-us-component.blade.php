@@ -7,7 +7,7 @@
             <div class="col-lg-7">
                 <div class="text-left mb-4">
                     <h5 class="text-primary text-uppercase mb-3" style="letter-spacing: 5px;"> Welcome to </h5>
-                    <h1>SKPS School/College</h1>
+                    <h1>GMC College</h1>
                 </div>
                 <p class="text-justify">Welcome to SKPS where we are passionate about revolutionizing the learning
                     experience. Our
