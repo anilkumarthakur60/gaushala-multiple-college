@@ -24,8 +24,8 @@
             </div>
         </div>
 
-        <div class="row mt-5">
-            <div class="col-12 col-md-4 col-sm-6">
+        <div class="row mt-5 ">
+            <div class="col-12 col-md-4 col-sm-6 my-2 ">
                 <div class="card">
                     <img class="card-img-top" src="{{ asset('assets/images/pages/01-page.png') }}" alt="">
                     <div class="card-body">
@@ -39,7 +39,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-md-4 col-sm-6">
+            <div class="col-12 col-md-4 col-sm-6 my-2">
                 <div class="card">
                     <img class="card-img-top" src="{{ asset('assets/images/pages/01-page.png') }}" alt="">
                     <div class="card-body">
@@ -53,7 +53,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-md-4 col-sm-6">
+            <div class="col-12 col-md-4 col-sm-6 my-2">
                 <div class="card">
                     <img class="card-img-top" src="{{ asset('assets/images/pages/01-page.png') }}" alt="">
                     <div class="card-body">

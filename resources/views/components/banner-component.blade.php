@@ -24,7 +24,7 @@
                     </div>
                 </div>
             @empty
-                <div class="carousel-item active" style="min-height: 300px;">
+                <div class="carousel-item active " style="min-height: 300px;">
                     <img class="position-relative w-100" src="{{asset('frontend/img/carousel-1.jpg')}}"
                          style="min-height: 300px; object-fit: cover;" alt="GMC College">
                     <div class="carousel-caption d-flex align-items-center justify-content-center">

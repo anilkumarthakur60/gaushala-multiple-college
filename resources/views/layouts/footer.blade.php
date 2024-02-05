@@ -29,7 +29,7 @@
         </div>
         <div class="col-lg-5 col-md-12 mb-5">
             <h5 class="text-primary text-uppercase mb-4" style="letter-spacing: 5px;">Newsletter</h5>
-            <p>Get the latest updates on school events, academic achievements, exciting activities, and important
+            <p class="text-justify">Get the latest updates on school events, academic achievements, exciting activities, and important
                 announcements delivered right to your inbox.</p>
             <div class="w-100">
                 <form action="{{ route('frontend.news-letters') }}" method="POST">
