@@ -6,8 +6,8 @@
     <div class="container-fluid">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-lg-12 mb-4">
-                    <div class="text-left mb-4">
+                <div class="col-12 mb-4">
+                    <div class="text-left text-justify mb-4">
                         <h1>Welcome to GMC: Inspiring Excellence</h1>
                     </div>
                     <p class="text-justify">
@@ -30,11 +30,8 @@
                         ready to meet the challenges of the modern world.
                     </p>
                 </div>
-                <div class="col-lg-5">
-                    <img class="img-fluid rounded mb-4 mb-lg-0" src="{{ asset('frontend/img/about.jpg') }}" alt="">
-                </div>
-                <div class="col-lg-7">
-                    <div class="text-left mb-4">
+                <div class="col-12 mb-4">
+                    <div class="text-left text-justify mb-4">
                         <h1>A Holistic Approach: Nurturing Minds, Hearts, and Souls</h1>
                     </div>
                     <p class="text-justify">
@@ -55,8 +52,8 @@
                         educational journey within our dynamic learning community.
                     </p>
                 </div>
-                <div class="col-lg-7">
-                    <div class="text-left mb-4">
+                <div class="col-12 mb-4">
+                    <div class="text-left text-justify mb-4">
                         <h1>Academic Excellence for a Changing World</h1>
                     </div>
                     <p class="text-justify">
@@ -75,14 +72,8 @@
                         real-world challenges and emerge well-prepared for the complexities of the future.
                     </p>
                 </div>
-                <div class="col-lg-5 mt-3">
-                    <img class="img-fluid rounded mb-4 mb-lg-0" src="{{ asset('frontend/img/about.jpg') }}" alt="">
-                </div>
-                <div class="col-lg-5">
-                    <img class="img-fluid rounded mb-4 mb-lg-0" src="{{ asset('frontend/img/about.jpg') }}" alt="">
-                </div>
-                <div class="col-lg-7">
-                    <div class="text-left mb-4">
+                <div class="col-12 mt-4">
+                    <div class="text-left text-justify mb-4">
                         <h1>Parent-Teacher Partnership</h1>
                     </div>
                     <p class="text-justify">
