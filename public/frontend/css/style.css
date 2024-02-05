@@ -86,7 +86,6 @@ p {
 
 abbr[title],
 abbr[data-original-title] {
-  text-decoration: underline;
   text-decoration: underline dotted;
   cursor: help;
   border-bottom: 0;
@@ -228,7 +227,6 @@ button {
 }
 
 button:focus {
-  outline: 1px dotted;
   outline: 5px auto -webkit-focus-ring-color;
 }
 
@@ -1815,7 +1813,7 @@ pre code {
   background-color: rgba(255, 255, 255, 0.075);
 }
 
-@media (max-width: 575.98px) {
+@media (max-width: 576px) {
   .table-responsive-sm {
     display: block;
     width: 100%;
@@ -1827,7 +1825,7 @@ pre code {
   }
 }
 
-@media (max-width: 767.98px) {
+@media (max-width: 768px) {
   .table-responsive-md {
     display: block;
     width: 100%;
@@ -1839,7 +1837,7 @@ pre code {
   }
 }
 
-@media (max-width: 991.98px) {
+@media (max-width: 992px) {
   .table-responsive-lg {
     display: block;
     width: 100%;
@@ -1851,7 +1849,7 @@ pre code {
   }
 }
 
-@media (max-width: 1199.98px) {
+@media (max-width: 1200px) {
   .table-responsive-xl {
     display: block;
     width: 100%;
@@ -4182,7 +4180,7 @@ input[type="button"].btn-block {
   background-size: 100% 100%;
 }
 
-@media (max-width: 575.98px) {
+@media (max-width: 576px) {
   .navbar-expand-sm > .container,
   .navbar-expand-sm > .container-fluid, .navbar-expand-sm > .container-sm, .navbar-expand-sm > .container-md, .navbar-expand-sm > .container-lg, .navbar-expand-sm > .container-xl {
     padding-right: 0;
@@ -4218,7 +4216,7 @@ input[type="button"].btn-block {
   }
 }
 
-@media (max-width: 767.98px) {
+@media (max-width: 768px) {
   .navbar-expand-md > .container,
   .navbar-expand-md > .container-fluid, .navbar-expand-md > .container-sm, .navbar-expand-md > .container-md, .navbar-expand-md > .container-lg, .navbar-expand-md > .container-xl {
     padding-right: 0;
@@ -4254,7 +4252,7 @@ input[type="button"].btn-block {
   }
 }
 
-@media (max-width: 991.98px) {
+@media (max-width: 992px) {
   .navbar-expand-lg > .container,
   .navbar-expand-lg > .container-fluid, .navbar-expand-lg > .container-sm, .navbar-expand-lg > .container-md, .navbar-expand-lg > .container-lg, .navbar-expand-lg > .container-xl {
     padding-right: 0;
@@ -4290,7 +4288,7 @@ input[type="button"].btn-block {
   }
 }
 
-@media (max-width: 1199.98px) {
+@media (max-width: 1200px) {
   .navbar-expand-xl > .container,
   .navbar-expand-xl > .container-fluid, .navbar-expand-xl > .container-sm, .navbar-expand-xl > .container-md, .navbar-expand-xl > .container-lg, .navbar-expand-xl > .container-xl {
     padding-right: 0;
@@ -4600,7 +4598,7 @@ input[type="button"].btn-block {
     margin-left: -15px;
   }
   .card-deck .card {
-    flex: 1 0 0%;
+    flex: 1 0 0;
     margin-right: 15px;
     margin-bottom: 0;
     margin-left: 15px;
@@ -4617,7 +4615,7 @@ input[type="button"].btn-block {
     flex-flow: row wrap;
   }
   .card-group > .card {
-    flex: 1 0 0%;
+    flex: 1 0 0;
     margin-bottom: 0;
   }
   .card-group > .card + .card {
@@ -5685,7 +5683,6 @@ a.close.disabled {
 
 .modal-dialog-centered::before {
   display: block;
-  height: calc(100vh - 1rem);
   height: min-content;
   content: "";
 }
@@ -5799,7 +5796,6 @@ a.close.disabled {
     min-height: calc(100% - 3.5rem);
   }
   .modal-dialog-centered::before {
-    height: calc(100vh - 3.5rem);
     height: min-content;
   }
   .modal-sm {
@@ -5829,7 +5825,6 @@ a.close.disabled {
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
-  text-align: left;
   text-align: start;
   text-decoration: none;
   text-shadow: none;
@@ -5942,7 +5937,6 @@ a.close.disabled {
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
-  text-align: left;
   text-align: start;
   text-decoration: none;
   text-shadow: none;
@@ -9775,9 +9769,9 @@ h6,
   color: #FF6600;
 }
 
-@media (max-width: 991.98px) {
+@media (max-width: 992px) {
   .navbar-light .navbar-nav .nav-link {
-    padding: 5px 0px;
+    padding: 5px 0;
   }
 }
 
@@ -9820,7 +9814,7 @@ h6,
   background: #FF6600;
 }
 
-@media (max-width: 991.98px) {
+@media (max-width: 992px) {
   .carousel-indicators {
     width: 45px;
     right: calc(100% - 45px);
@@ -9831,7 +9825,7 @@ h6,
   }
 }
 
-@media (max-width: 575.98px) {
+@media (max-width: 576px) {
   .carousel-caption h5 {
     font-size: 16px;
   }
