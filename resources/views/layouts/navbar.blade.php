@@ -57,7 +57,7 @@
                             </a>
                             <div class="dropdown-menu rounded-0 m-0">
                                 <a href="{{ route('frontend.about') }}" class="dropdown-item">
-                                    About School
+                                    About College
                                 </a>
                                 <a href="{{ route('frontend.principal-message') }}" class="dropdown-item">
                                     Principal Message
