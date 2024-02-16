@@ -15,6 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('name')->nullable();
             $table->string('slug')->nullable();
+            $table->unsignedBigInteger('order')->default(0);
             $table->timestamps();
         });
     }
