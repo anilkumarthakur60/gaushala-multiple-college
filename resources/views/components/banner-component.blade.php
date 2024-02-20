@@ -18,7 +18,7 @@
                          style="min-height: 300px; object-fit: cover;" alt="{{$slider->name}}">
                     <div class="carousel-caption d-flex align-items-center justify-content-center">
                         <div class="p-5" style="width: 100%; max-width: 900px;">
-                            <h1 class="display-3 text-white mb-md-4">{{$slider->name}}
+                            <h1 class="display-3 text-white mb-md-4">
                             </h1>
                         </div>
                     </div>

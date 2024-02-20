@@ -34,6 +34,13 @@
                                     value="{{ $slider->name }}" placeholder="Name" classes="form-control">Name
                                 </x-required-component>
                             </div>
+                            <div class="form-floating col-6 mb-3">
+                                <x-required-component type="number" required="true" names="order"
+                                                      value="{{ $slider->order }}"
+                                                      placeholder="Slider Order" classes="form-control">
+                                    Slider Order
+                                </x-required-component>
+                            </div>
 
 
                         </div>

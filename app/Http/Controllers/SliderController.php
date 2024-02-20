@@ -32,6 +32,7 @@ class SliderController extends Controller
 
             $blog = Slider::query()->create(attributes: $request->only([
                 'name',
+                'order'
             ]));
             if ($request->hasFile('image')) {
                 $media = MediaUploader::fromSource($request->file('image'))

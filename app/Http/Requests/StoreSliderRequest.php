@@ -16,6 +16,7 @@ class StoreSliderRequest extends FormRequest
         return [
             'name' => 'required|max:40',
             'image' => 'nullable|image:',
+            'order' => 'required|integer',
         ];
     }
 }
