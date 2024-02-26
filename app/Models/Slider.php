@@ -23,6 +23,7 @@ class Slider extends Model
         return [
             'slug' => [
                 'source' => ['name','id','order'],
+                'onUpdate' => true,
             ],
         ];
     }
