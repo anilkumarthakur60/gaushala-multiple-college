@@ -25,6 +25,7 @@ class BannerComponent extends Component
         $sliders = Slider::query()
             ->active()
             ->withMedia(['image'])
+            ->latest('order')
             ->get();
 
         return view('components.banner-component', [
