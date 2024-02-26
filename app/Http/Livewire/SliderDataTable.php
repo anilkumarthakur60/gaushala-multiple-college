@@ -27,8 +27,8 @@ class SliderDataTable extends DataTableComponent
             Column::make('Id', 'id')
                 ->sortable(),
             ImageColumn::make('Image')
-                ->location(fn($row) => $row->firstMedia('image')?->getUrl()
-                )->attributes(fn($row) => [
+                ->location(fn ($row) => $row->firstMedia('image')?->getUrl()
+                )->attributes(fn ($row) => [
                     'class' => 'rounded-full ',
                     'style' => 'height:40px',
                     'alt' => $row->name,
@@ -50,8 +50,8 @@ class SliderDataTable extends DataTableComponent
                 })
                 ->buttons([
                     LinkColumn::make('View') // make() has no effect in this case but needs to be set anyway
-                    ->title(fn($row) => 'Edit')
-                        ->location(fn($row) => route('sliders.edit', $row?->slug))
+                        ->title(fn ($row) => 'Edit')
+                        ->location(fn ($row) => route('sliders.edit', $row?->slug))
                         ->attributes(function ($row) {
                             return [
                                 'class' => 'btn btn-sm btn-secondary',
