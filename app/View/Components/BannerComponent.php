@@ -23,6 +23,7 @@ class BannerComponent extends Component
     public function render(): View|Closure|string
     {
         $sliders = Slider::query()
+            ->active()
             ->withMedia(['image'])
             ->get();
 
