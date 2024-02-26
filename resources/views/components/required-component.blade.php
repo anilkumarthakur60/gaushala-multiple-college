@@ -3,7 +3,7 @@
     value="{{ $value ?? old($names) }}">
 <label class="ps-4" for="{{ $names }}">
     {{ $slot }}
-    @if ($required == 'required')
+    @if ($required === 'required')
         <span class="text-danger">*</span>
     @endif
 </label>
