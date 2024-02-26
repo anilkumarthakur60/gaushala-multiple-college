@@ -92,7 +92,7 @@ class SliderController extends Controller
 
         try {
             DB::beginTransaction();
-            $data = $request->safe(['name']);
+            $data = $request->safe(['name','order']);
 
             $slider->update($data);
 
