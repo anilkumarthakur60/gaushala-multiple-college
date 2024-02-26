@@ -39,6 +39,10 @@ class SliderDataTable extends DataTableComponent
             Column::make('Slug', 'slug')
                 ->searchable()
                 ->sortable(),
+
+            Column::make('Order', 'order')
+                ->searchable()
+                ->sortable(),
             BooleanColumn::make('Status', 'status')
                 ->sortable(),
 
