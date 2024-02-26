@@ -10,28 +10,28 @@
                 </div>
 
                 <div class="card-body">
-                    <x-all-error-component />
+                    <x-all-error-component/>
                     <form action="{{ route('sliders.update', $slider->slug) }}" method="POST"
-                        enctype="multipart/form-data">
+                          enctype="multipart/form-data">
                         @csrf
                         @method('PUT')
                         <div class="row">
-
                             <div class="col-12">
                                 <img id="imagePreview" src="{{ asset($slider->firstMedia('image')?->getUrl()) }}"
-                                    alt="" class="mb-2 rounded" width="125" height="125">
+                                     alt="" class="mb-2 rounded" width="125" height="125">
                                 <div class="form-group mb-3">
                                     <label for="image" class="form-label">Image</label>
                                     <input name="image" class="form-control @error('image') is-invalid @enderror"
-                                        type="file" id="image" onchange="preview()">
+                                           type="file" id="image" onchange="preview()">
                                     @error('image')
-                                        <div class="invalid-feedback">{{ $message }}</div>
+                                    <div class="invalid-feedback">{{ $message }}</div>
                                     @enderror
                                 </div>
                             </div>
                             <div class="form-floating col-6 mb-3">
-                                <x-required-component type="text" required="required" names="name"
-                                    value="{{ $slider->name }}" placeholder="Name" classes="form-control">Name
+                                <x-required-component type="text" names="name"
+                                                      value="{{ $slider->name }}" placeholder="Name"
+                                                      classes="form-control">Name
                                 </x-required-component>
                             </div>
                             <div class="form-floating col-6 mb-3">
@@ -41,8 +41,6 @@
                                     Slider Order
                                 </x-required-component>
                             </div>
-
-
                         </div>
                         <button type="submit" class="btn btn-primary float-end">Save</button>
                         <button type="reset" class="btn btn-danger float-end me-2">Reset</button>
@@ -53,7 +51,7 @@
             </div>
         </div>
     </main>
-    <x-select2 />
+    <x-select2/>
 
 
     <script>

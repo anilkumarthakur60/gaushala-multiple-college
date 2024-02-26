@@ -5,10 +5,13 @@ namespace App\Http\Controllers;
 use App\Http\Requests\StoreSliderRequest;
 use App\Http\Requests\UpdateSliderRequest;
 use App\Models\Slider;
+use Exception;
 use Illuminate\Database\QueryException;
+use Illuminate\Http\RedirectResponse;
 use Illuminate\Support\Facades\DB;
 use Plank\Mediable\Facades\MediaUploader;
 use Plank\Mediable\Media;
+use Throwable;
 
 class SliderController extends Controller
 {
@@ -24,7 +27,7 @@ class SliderController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(StoreSliderRequest $request)
+    public function store(StoreSliderRequest $request): RedirectResponse
     {
 
         try {
@@ -43,7 +46,7 @@ class SliderController extends Controller
             }
             DB::commit();
 
-        } catch (\Exception $exception) {
+        } catch (Exception $exception) {
             DB::rollBack();
             flash()->addError($exception->getMessage());
 
@@ -66,7 +69,7 @@ class SliderController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Slider $slider)
+    public function show(Slider $slider): void
     {
         //
     }
@@ -108,7 +111,7 @@ class SliderController extends Controller
             DB::rollBack();
             flasher($e->getMessage());
             dd($e);
-        } catch (\Throwable $e) {
+        } catch (Throwable $e) {
             DB::rollBack();
             flasher($e->getMessage());
             dd($e);
