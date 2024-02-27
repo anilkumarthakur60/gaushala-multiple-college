@@ -33,16 +33,21 @@ class SliderController extends Controller
         try {
             DB::beginTransaction();
 
-            $blog = Slider::query()->create(attributes: $request->only([
+            $slider = Slider::query()->create(attributes: $request->only([
                 'name',
                 'order',
             ]));
+            if ($request->isNotFilled('name')) {
+                $slider->name = 'Slider-' . $slider->id;
+                $slider->save();
+            }
+
             if ($request->hasFile('image')) {
                 $media = MediaUploader::fromSource($request->file('image'))
                     ->useHashForFilename()
                     ->toDisk('uploads')
                     ->upload();
-                $blog->attachMedia($media->id, 'image');
+                $slider->attachMedia($media->id, 'image');
             }
             DB::commit();
 
@@ -92,9 +97,15 @@ class SliderController extends Controller
 
         try {
             DB::beginTransaction();
-            $data = $request->safe(['name','order']);
+            $data = $request->safe(['name', 'order']);
 
             $slider->update($data);
+
+
+            if ($request->isNotFilled('name')) {
+                $slider->name = 'Slider-' . $slider->id;
+                $slider->save();
+            }
 
             if ($request->hasFile('image')) {
                 if ($slider->firstMedia('image')) {
