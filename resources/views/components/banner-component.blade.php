@@ -13,7 +13,7 @@
             @forelse($sliders as $slider)
 
                 <div class="carousel-item {{$loop->iteration==1?'active':''}}" style="min-height: 300px;">
-                    <img class=""
+                    <img class="position-relative w-100"
                          src="{{$slider->firstMedia('image')?->getUrl()?? ('frontend/img/carousel-1.jpg')}}"
                          style="min-height: 300px; object-fit: cover;" alt="{{$slider->name}}">
 {{--                    <div class="carousel-caption d-flex align-items-center justify-content-center">--}}
