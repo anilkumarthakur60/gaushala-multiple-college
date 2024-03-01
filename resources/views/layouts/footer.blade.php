@@ -4,13 +4,13 @@
         <div class="col-lg-7 col-md-12">
             <div class="row">
                 <div class="col-md-6 mb-5">
-                    <h5 class="text-primary text-uppercase mb-4" style="letter-spacing: 5px;">Get In Touch</h5>
+                    <h5 class="text-danger text-uppercase mb-4" style="letter-spacing: 5px;">Get In Touch</h5>
                     <p><i class="fa fa-map-marker-alt mr-2"></i>Gaushala -2,Mahottari</p>
                     <p><i class="fa fa-phone-alt mr-2"></i>9843262634</p>
                     <p><i class="fa fa-envelope mr-2"></i>info@gaushalamultiplecampus.edu.np</p>
                 </div>
                 <div class="col-md-6 mb-5">
-                    <h5 class="text-primary text-uppercase mb-4" style="letter-spacing: 5px;">Quick Link</h5>
+                    <h5 class="text-danger text-uppercase mb-4" style="letter-spacing: 5px;">Quick Link</h5>
                     <div class="d-flex flex-column justify-content-start">
 
                         <a href="{{ route('frontend.about') }}" class="text-white mb-2"><i
@@ -28,7 +28,7 @@
             </div>
         </div>
         <div class="col-lg-5 col-md-12 mb-5">
-            <h5 class="text-primary text-uppercase mb-4" style="letter-spacing: 5px;">Newsletter</h5>
+            <h5 class="text-danger text-uppercase mb-4" style="letter-spacing: 5px;">Newsletter</h5>
             <p class="text-justify">Get the latest updates on school events, academic achievements, exciting activities, and important
                 announcements delivered right to your inbox.</p>
             <div class="w-100">
