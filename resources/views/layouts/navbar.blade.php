@@ -8,7 +8,7 @@
         </div>
         <div class="col-lg-3 text-right">
             <div class="d-inline-flex align-items-center">
-                <i class="fa fa-2x fa-map-marker-alt text-primary mr-3"></i>
+                <i class="fa fa-2x fa-map-marker-alt text-danger mr-3"></i>
                 <div class="text-left">
                     <a href="https://maps.app.goo.gl/DMoRAqVBQtHS9HQf8">
                         <h6 class="font-weight-semi-bold mb-1">Location</h6>
@@ -19,7 +19,7 @@
         </div>
         <div class="col-lg-3 text-right">
             <div class="d-inline-flex align-items-center">
-                <i class="fa fa-2x fa-envelope text-primary mr-3"></i>
+                <i class="fa fa-2x fa-envelope text-danger mr-3"></i>
                 <div class="text-left">
                     <a href="mailto:info@gaushalamultiplecampus.edu.np">
                         <h6 class="font-weight-semi-bold mb-1">Email Us</h6>
@@ -30,7 +30,7 @@
         </div>
         <div class="col-lg-3 text-right">
             <div class="d-inline-flex align-items-center">
-                <i class="fa fa-2x fa-phone text-primary mr-3"></i>
+                <i class="fa fa-2x fa-phone text-danger mr-3"></i>
                 <div class="text-left">
                     <h6 class="font-weight-semi-bold mb-1">Call Us</h6>
                     <small>9843262634</small>
@@ -131,7 +131,7 @@
                         @endif
 
                     </div>
-                    <a class="btn btn-primary py-2 px-4 ml-auto d-none d-lg-block"
+                    <a class="btn btn-danger py-2 px-4 ml-auto d-none d-lg-block"
                        href="{{ route('frontend.contact-us') }}">Get In Touch</a>
                 </div>
             </nav>

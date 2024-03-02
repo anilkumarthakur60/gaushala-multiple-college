@@ -58,7 +58,7 @@
                                 </p>
                             </div>
                             <div class="text-center">
-                                <button class="btn btn-primary py-3 px-5" type="submit" id="sendMessageButton">Send
+                                <button class="btn btn-danger py-3 px-5" type="submit" id="sendMessageButton">Send
                                     Message</button>
                             </div>
                         </form>

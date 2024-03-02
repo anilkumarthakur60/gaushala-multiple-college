@@ -43,7 +43,7 @@
                             placeholder="Your Email Address">
 
                         <div class="input-group-append">
-                            <button class="btn btn-primary px-4" type="submit">Sign Up</button>
+                            <button class="btn btn-danger px-4" type="submit">Sign Up</button>
                         </div>
                     </div>
                 </form>
@@ -72,4 +72,4 @@
         </div>
     </div>
 </div>
-<a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
+<a href="#" class="btn btn-lg btn-danger btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
