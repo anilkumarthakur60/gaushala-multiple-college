@@ -33,7 +33,7 @@
                 <i class="fa fa-2x fa-phone text-danger mr-3"></i>
                 <div class="text-left">
                     <h6 class="font-weight-semi-bold mb-1">Call Us</h6>
-                    <small>9843262634</small>
+                    <small>9843******</small>
                 </div>
             </div>
         </div>
