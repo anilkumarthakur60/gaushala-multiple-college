@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-# Back up the database and uploads with spatie/laravel-backup, then commit
+# Back up the database with spatie/laravel-backup, then commit
 # and push the result to git.
 #
 # Usage:  bash backup.sh
@@ -76,7 +76,7 @@ git config user.email >/dev/null || git config user.email "backup@$(hostname)"
 git pull --ff-only origin "$BRANCH" || fail "git pull failed - resolve local changes first (git status)"
 
 "$PHP" artisan backup:clean --disable-notifications
-"$PHP" artisan backup:run --disable-notifications
+"$PHP" artisan backup:run --only-db --disable-notifications
 
 LATEST="$(ls -t backups/*/*.zip 2>/dev/null | head -1 || true)"
 [ -n "$LATEST" ] || fail "backup:run finished but no zip was found in backups/"
@@ -84,7 +84,7 @@ log "Created $LATEST ($(du -h "$LATEST" | cut -f1))"
 
 # --- Commit and push --------------------------------------------------------
 
-git add -A backups storage/app/public
+git add -A backups
 
 if git diff --cached --quiet; then
     log "Nothing new to commit."
