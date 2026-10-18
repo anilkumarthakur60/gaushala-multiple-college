@@ -1,2 +1,1 @@
-*
-!.gitignore
+# Uploaded media (uploads disk) is tracked in git intentionally.
