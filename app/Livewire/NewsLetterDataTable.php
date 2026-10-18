@@ -1,14 +1,15 @@
 <?php
 
-namespace App\Http\Livewire;
+namespace App\Livewire;
 
-use App\Models\ContactUs;
+use App\Models\NewsLetter;
+use Illuminate\Database\Eloquent\Builder;
 use Rappasoft\LaravelLivewireTables\DataTableComponent;
 use Rappasoft\LaravelLivewireTables\Views\Column;
 
-class ContactUsTable extends DataTableComponent
+class NewsLetterDataTable extends DataTableComponent
 {
-    protected $model = ContactUs::class;
+    protected $model = NewsLetter::class;
 
     public function configure(): void
     {
@@ -18,19 +19,14 @@ class ContactUsTable extends DataTableComponent
     public function columns(): array
     {
         return [
-
-            Column::make('ID', 'id')
-                ->sortable(),
-            Column::make('Name', 'name')
+            Column::make('Id', 'id')
                 ->sortable(),
             Column::make('Email', 'email')
                 ->sortable(),
-            Column::make('Subject', 'subject')
+            Column::make('Date', 'created_at')
+                ->format(fn ($value, $row, Column $column) => $row->created_at?->format('Y-m-d'))
                 ->sortable(),
-            Column::make('Message', 'message')
-                ->sortable(),
-            Column::make('Created at', 'created_at')
-                ->sortable(),
+
         ];
     }
 
@@ -41,9 +37,14 @@ class ContactUsTable extends DataTableComponent
         ];
     }
 
-    public function delete()
+    public function builder(): Builder
     {
-        ContactUs::whereIn('id', $this->getSelected())->forceDelete();
+        return NewsLetter::query();
+    }
+
+    public function delete(): void
+    {
+        NewsLetter::whereIn('id', $this->getSelected())->forceDelete();
         $this->clearSelected();
     }
 }
