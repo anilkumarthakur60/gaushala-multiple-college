@@ -40,16 +40,12 @@ return [
      */
     'max_size' => 1024 * 1024 * 10,
 
-    /*
+    /**
      * What to do if a duplicate file is uploaded.
      *
-     * Options include:
-     *
-     * * `'increment'`: the new file's name is given an incrementing suffix
-     * * `'replace'` : the old file and media model is deleted
-     * * `'error'`: an Exception is thrown
+     * @see Plank\Mediable\Enum\OnDuplicateBehaviour for options
      */
-    'on_duplicate' => Plank\Mediable\MediaUploader::ON_DUPLICATE_INCREMENT,
+    'on_duplicate' => 'increment',
 
     /*
      * Reject files unless both their mime and extension are recognized and both match a single aggregate type
@@ -63,19 +59,98 @@ return [
     'allow_unrecognized_types' => false,
 
     /*
+     * Prefer the client-provided MIME type over the one inferred from the file contents, if provided
+     * May be slightly faster to compute, but is not guaranteed to be accurate if the source is untrusted
+     */
+    'prefer_client_mime_type' => false,
+
+    /*
      * Only allow files with specific MIME type(s) to be uploaded
+     * If blank, all MIME types will be allowed, unless it is forbidden by the `forbidden_mime_types` config
      */
     'allowed_mime_types' => [],
 
     /*
+     * Reject files with specific MIME types from being uploaded
+     */
+    'forbidden_mime_types' => [],
+
+    /*
      * Only allow files with specific file extension(s) to be uploaded
+     * If blank, all file extensions will be allowed, unless it is forbidden by the `forbidden_extensions` config
      */
     'allowed_extensions' => [],
+
+    /*
+     * Reject files with specific file extensions from being uploaded
+     * This is intended to be used as a security measure to prevent potentially executable files from being uploaded to public drives.
+     * This list should include any file extension which is configured to be executable from your Apache or Nginx configuration
+     *
+     * These extensions are also sanitized if nested in destination filenames (script.php.jpg becomes script-php.jpg) to protect against
+     * common Apache `AddHandler` and Nginx `fastcgi_split_path_info` misconfigurations
+     */
+    'forbidden_extensions' => [
+        'php',
+        'php3',
+        'php4',
+        'php5',
+        'php6',
+        'php7',
+        'php8',
+        'phtml',
+        'pht',
+        'phar',
+        'phpt',
+        'pgif',
+        'shtml',
+        'shtm',
+        'stm',
+        'pl',
+        'cgi',
+        'py',
+        'asp',
+        'aspx',
+        'ashx',
+        'jsp',
+        'jspx',
+        'cfm',
+        'cfml',
+        'htaccess',
+        'htpasswd',
+        'ini',
+        'cer',
+        'asa',
+    ],
 
     /*
      * Only allow files matching specific aggregate type(s) to be uploaded
      */
     'allowed_aggregate_types' => [],
+
+    /*
+     * Only allow remote files to be imported from specific host(s)
+     * If empty, will allow any host that is not a private IP address or localhost
+     */
+    'allowed_remote_hosts' => [],
+
+    /*
+     * Only allow remote files to be imported from URLs with specific scheme(s)
+     * If empty, will allow any scheme supported by the application.
+     * If modifying this value, be sure to also update the pattern matching in `source_adapters` as well
+     */
+    'allowed_remote_schemes' => ['https'],
+
+    /*
+     * Whether allowed_remote_hosts, allowed_remote_schemes, and private IP address
+     * validation should be applied to each step of a redirect chain
+     */
+    'validate_remote_url_redirects' => true,
+
+    /*
+     * Maximum number of redirects permitted for remote URLs
+     * Only applied if validate_remote_url_redirects is enabled
+     */
+    'max_remote_url_redirects' => 5,
 
     /*
      * List of aggregate types recognized by the application
@@ -89,13 +164,15 @@ return [
                 'image/jpeg',
                 'image/png',
                 'image/gif',
+                'image/heic',
             ],
             'extensions' => [
                 'jpg',
                 'jpeg',
                 'png',
                 'gif',
-            ],
+                'heic',
+            ]
         ],
         Plank\Mediable\Media::TYPE_IMAGE_VECTOR => [
             'mime_types' => [
@@ -103,7 +180,7 @@ return [
             ],
             'extensions' => [
                 'svg',
-            ],
+            ]
         ],
         Plank\Mediable\Media::TYPE_PDF => [
             'mime_types' => [
@@ -111,7 +188,7 @@ return [
             ],
             'extensions' => [
                 'pdf',
-            ],
+            ]
         ],
         Plank\Mediable\Media::TYPE_AUDIO => [
             'mime_types' => [
@@ -120,7 +197,7 @@ return [
                 'audio/mpeg',
                 'audio/mp3',
                 'audio/mpeg',
-                'audio/wav',
+                'audio/wav'
             ],
             'extensions' => [
                 'aac',
@@ -128,22 +205,22 @@ return [
                 'oga',
                 'mp3',
                 'wav',
-            ],
+            ]
         ],
         Plank\Mediable\Media::TYPE_VIDEO => [
             'mime_types' => [
                 'video/mp4',
                 'video/mpeg',
                 'video/ogg',
-                'video/webm',
+                'video/webm'
             ],
             'extensions' => [
                 'mp4',
                 'm4v',
                 'mov',
                 'ogv',
-                'webm',
-            ],
+                'webm'
+            ]
         ],
         Plank\Mediable\Media::TYPE_ARCHIVE => [
             'mime_types' => [
@@ -153,7 +230,7 @@ return [
             ],
             'extensions' => [
                 'zip',
-            ],
+            ]
         ],
         Plank\Mediable\Media::TYPE_DOCUMENT => [
             'mime_types' => [
@@ -163,7 +240,7 @@ return [
                 'text/json',
                 'application/json',
                 'application/msword',
-                'application/vnd.openxmlformats-officedocument.wordprocessingml.document',
+                'application/vnd.openxmlformats-officedocument.wordprocessingml.document'
             ],
             'extensions' => [
                 'doc',
@@ -172,7 +249,7 @@ return [
                 'text',
                 'xml',
                 'json',
-            ],
+            ]
         ],
         Plank\Mediable\Media::TYPE_SPREADSHEET => [
             'mime_types' => [
@@ -182,19 +259,21 @@ return [
             'extensions' => [
                 'xls',
                 'xlsx',
-            ],
+            ]
         ],
         Plank\Mediable\Media::TYPE_PRESENTATION => [
-            'mime_types' => [
-                'application/vnd.ms-powerpoint',
-                'application/vnd.openxmlformats-officedocument.presentationml.presentation',
-                'application/vnd.openxmlformats-officedocument.presentationml.slideshow',
-            ],
-            'extensions' => [
-                'ppt',
-                'pptx',
-                'ppsx',
-            ],
+            'mime_types' =>
+                [
+                    'application/vnd.ms-powerpoint',
+                    'application/vnd.openxmlformats-officedocument.presentationml.presentation',
+                    'application/vnd.openxmlformats-officedocument.presentationml.slideshow'
+                ],
+            'extensions' =>
+                [
+                    'ppt',
+                    'pptx',
+                    'ppsx',
+                ]
         ],
     ],
 
@@ -213,6 +292,7 @@ return [
             '^https?://' => Plank\Mediable\SourceAdapters\RemoteUrlAdapter::class,
             '^/' => Plank\Mediable\SourceAdapters\LocalPathAdapter::class,
             '^[a-zA-Z]:\\\\' => Plank\Mediable\SourceAdapters\LocalPathAdapter::class,
+            '^data:/?/?[^,]*,' => Plank\Mediable\SourceAdapters\DataUrlAdapter::class,
         ],
     ],
 
@@ -236,4 +316,71 @@ return [
      * Detach associated media when mediable model is soft deleted.
      */
     'detach_on_soft_delete' => false,
+
+    /**
+     * Prevents loading migrations from the package.
+     *
+     * Use this if you are renaming the published migrations and want to prevent them from being loaded twice.
+     */
+    'ignore_migrations' => false,
+
+    /**
+     * List of file sanitizers to apply to uploaded files before they are stored
+     * Used to apply security measures to prevent malicious files from being uploaded,
+     * e.g. stripping executable javascript from SVGs
+     */
+    'file_sanitizers' => [
+        Plank\Mediable\FileSanitizers\SvgSanitizer::class,
+    ],
+
+    /**
+     * Configuration for image optimization
+     */
+    'image_optimization' => [
+        /**
+         * Whether to apply image optimization after performing image manipulations by default
+         */
+        'enabled' => true,
+        /**
+         * array of optimizers to use, which should implement \Spatie\ImageOptimizer\Optimizer
+         * Each can be passed an array of command line arguments to be passed to the optimizer
+         */
+        'optimizers' => [
+            \Spatie\ImageOptimizer\Optimizers\Jpegoptim::class => [
+                '--max=85',
+                '--strip-all',
+                '--all-progressive',
+            ],
+            \Spatie\ImageOptimizer\Optimizers\Pngquant::class => [
+                '--quality=85',
+                '--force',
+                '--skip-if-larger',
+            ],
+            \Spatie\ImageOptimizer\Optimizers\Optipng::class => [
+                '-i0',
+                '-o2',
+                '-quiet',
+            ],
+            \Spatie\ImageOptimizer\Optimizers\Gifsicle::class => [
+                '-b',
+                '-O3',
+            ],
+            \Spatie\ImageOptimizer\Optimizers\Cwebp::class => [
+                '-q 80',
+                '-m 6',
+                '-pass 10',
+                '-mt',
+            ],
+            \Spatie\ImageOptimizer\Optimizers\Avifenc::class => [
+                '-a cq-level=23',
+                '-j all',
+                '--min 0',
+                '--max 63',
+                '--minalpha 0',
+                '--maxalpha 63',
+                '-a end-usage=q',
+                '-a tune=ssim',
+            ],
+        ],
+    ]
 ];

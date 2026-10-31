@@ -120,11 +120,11 @@ class SliderController extends Controller
             DB::commit();
         } catch (QueryException $e) {
             DB::rollBack();
-            flasher($e->getMessage());
+            flash()->addError($e->getMessage());
             dd($e);
         } catch (Throwable $e) {
             DB::rollBack();
-            flasher($e->getMessage());
+            flash()->addError($e->getMessage());
             dd($e);
         }
 
